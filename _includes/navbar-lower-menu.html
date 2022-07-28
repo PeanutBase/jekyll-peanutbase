@@ -1,7 +1,7 @@
 <ul class="uk-navbar-nav uk-hidden@l uk-visible@s">
   <li><a href="{{ "/" | relative_url }}">Home</a></li>
   <li>
-    <a href="{{ "/taxa" | relative_url }}">Taxa</a>
+    <a href="{{ "/taxa" | relative_url }}">SPECIES</a>
     {% if site.data.taxon_list %}
     {% assign genera = site.data.taxon_list | group_by: "genus"  %}
     <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">

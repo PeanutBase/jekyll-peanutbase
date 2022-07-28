@@ -7,13 +7,14 @@ services:
       - gem-cache:/usr/gem
 ## for Windows hosts
     environment:
+      JEKYLL_UID: ${UID:?please set UID with your userid in the .env file}
+      JEKYLL_GID: ${GID:?please set GID with your groupid in the .env file}
       VERBOSE: 1
 #     FORCE_POLLING: 1
     command: jekyll serve --incremental --livereload
     ports:
       - "4000:4000"
       - "35729:35729"
-
 volumes:
   bundle-cache:
   gem-cache:

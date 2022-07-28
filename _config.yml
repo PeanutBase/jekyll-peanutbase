@@ -18,13 +18,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "LIS: Legume Information System"
-subtitle: Information about legume traits for crop improvement
+#title: "LIS: Legume Information System"
+title: "PeanutBase:Playground"
+#subtitle: Information about legume traits for crop improvement
+subtitle: Genetic and genomic data to enable more rapid crop improvement in peanut.
 logo: /assets/img/logo.png
+favicon: /assets/icons/favicon.ico
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A collaborative, community resource to facilitate crop improvement by integrating
-  genetic, genomic, and trait data across legume species.
+  A collaborative, community resource to facilitate peanut improvement by integrating
+  genetic, genomic, and trait data across Arachis species.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: legumefed
@@ -35,6 +38,13 @@ newsletter: http://eepurl.com/cX_JjL
 theme: jekyll-theme-legumeinfo
 plugins:
   - jekyll-feed
+
+style:
+    link_color: '#0071B3'
+    link_hover_color: '#018fe2'
+      #primary_background: '#87a96b'
+    invert_navbar_text: true
+    primary_background: '#31160B'
 
 # Exclude from processing.
 # The following items will not be processed, by default.
