@@ -2,9 +2,30 @@
 layout: default
 title: Taxa
 ---
-<h1>Taxa</h1>
+<h1>Arachis Page</h1>
 
-<h3>Major genera (containing significant crop and model species)</h3>
+<h3>Species in Arachis in PeanutBase</h3>
+<hr/  style="border: 1px solid red;">
+Need to display what is shown in Link to 'taxa/Arachis'. 
+But there is no template?? How to do it?? 
+
+
+<hr/  style="border: 1px solid red;">
+{% if site.data.species_list %}
+{% assign specieslist = site.data.species_list | group_by: "species" %}
+<dt>
+  {% for element in specieslist %}
+    {% for item in element.items %}
+    {% if item.category == "main" %}
+    <dd><a href="{{ item.species | downcase }}"><b>{{ item.species }}</b> </a>:{{item.description}} </dd>
+    {% endif %}
+    {% endfor %}
+  {% endfor %}
+</dt>
+<hr/  style="border: 1px solid red;">
+{% endif %}
+
+
 {% if site.data.taxon_list %}
 {% assign genera = site.data.taxon_list | group_by: "genus"  %}
 <dt>

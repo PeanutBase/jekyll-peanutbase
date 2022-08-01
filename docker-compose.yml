@@ -11,7 +11,8 @@ services:
       JEKYLL_GID: ${GID:?please set GID with your groupid in the .env file}
       VERBOSE: 1
 #     FORCE_POLLING: 1
-    command: jekyll serve --incremental --livereload
+#original: livereload severely delays browser refresh#    command: jekyll serve --incremental --livereload
+    command: jekyll serve --incremental
     ports:
       - "4000:4000"
       - "35729:35729"
