@@ -1,0 +1,18 @@
+---
+-
+  description: "(peanut: cultivated tetraploid)"
+  species: hypogeaea
+  category: main
+-
+  description: "wild: diploid progenitor of A genome"
+  species: duranensis
+  category: main
+-
+  description: "wild: diploid progenitor of B genome"
+  species: ipaensis
+  category: main
+-
+  description: "wild: diploid"
+  species: cardenasii
+  category: main
+
