@@ -2,7 +2,7 @@
 layout: default
 title: Taxa
 ---
-<h1>Arachis Page</h1>
+<h1>Arachis Page (Original Taxa)</h1>
 
 <h3>Species in Arachis in PeanutBase</h3>
 <hr/  style="border: 1px solid red;">
@@ -22,9 +22,10 @@ But there is no template?? How to do it??
     {% endfor %}
   {% endfor %}
 </dt>
-<hr/  style="border: 1px solid red;">
 {% endif %}
 
+<hr/  style="border: 1px solid red;">
+ORIGINAL Taxa Page
 
 {% if site.data.taxon_list %}
 {% assign genera = site.data.taxon_list | group_by: "genus"  %}
