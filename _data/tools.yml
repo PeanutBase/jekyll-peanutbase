@@ -1,5 +1,20 @@
 --- 
 -
+  category: "Download / Query"
+  description: "Genetic and genomic data for all <i>Arachis</i> (peanut) data held at LIS, for browsing and download."
+  name: "Data Store"
+  url: "https://data.legumeinfo.org/Arachis/"
+-
+  category: "Download / Query"
+  description: "Overviews of data characteristics at LIS: genome assembly sizes, gene counts, BUSCO coverage, etc."
+  name: "DSCensor"
+  url: "https://dscensor.legumeinfo.org/multiqc-demo/genome_main:arachis"
+-
+  category: "Download / Query"
+  description: "InterMine interface to <i>Arachis</i> (peanut) species at LIS."
+  name: "PeanutMine"
+  url: "https://mines.legumeinfo.org/peanutmine/begin.do"
+-
   category: "Genomes"
   description: "High-quality genome assembly for peanut (<i>Arachis hypogaea</i>)."
   name: "The Peanut Genome"
@@ -14,76 +29,6 @@
   description: "Genome assembly for <i>Arachis ipaensis</i>."
   name: "Browse <i>A. ipaensis</i>"
   url: "https://peanutbase.org/gbrowse_araip1.0"
--
-  category: "Browse and Search"
-  description: "Repository for population scale phenotype data for <i>Arachis</i> (peanut) species."
-  name: "ArachisPheno"
-  url: "https://arachispheno.peanutbase.org"
--
-  category: "Browse and Search"
-  description: "Genetic and genomic data for all <i>Arachis</i> (peanut) data held at LIS, for browsing and download."
-  name: "Data Store"
-  url: "https://data.legumeinfo.org/Arachis/"
--
-  category: "Browse and Search"
-  description: "Overviews of data characteristics at LIS: genome assembly sizes, gene counts, BUSCO coverage, etc."
-  name: "DSCensor"
-  url: "https://dscensor.legumeinfo.org/multiqc-demo/genome_main:arachis"
--
-  category: "Browse and Search"
-  description: "Functional keyword search for gene families."
-  name: "Gene Family Search"
-  url: "https://funnotate.legumeinfo.org/?search=arachis"
--
-  category: "Browse and Search"
-  description: Search for genes and build a list.
-  name: "Gene Search"
-  url: "https://peanutbase.org/search/gene"
--
-  category: "Browse and Search"
-  description: "Browser for dynamically discovering and viewing genomic synteny across selected species."
-  name: "Genome Context Viewer"
-  url: "https://gcv.legumeinfo.org"
--
-  category: "Browse and Search"
-  description: View GIS location information for <i>Arachis</i> (peanut) accessions.
-  name: "Germplasm"
-  url: "https://peanutbase.org/germplasm"
--
-  category: "Browse and Search"
-  description: <i>Arachis</i> (peanut) map search.
-  name: Maps
-  url: "https://peanutbase.org/chado/featuremap"
--
-  category: "Browse and Search"
-  description: A list of traits, compiled from literature, for which MAS has been used.
-  name: Marker-Assisted Selection
-  url: "https://peanutbase.org/mas"
--
-  category: "Browse and Search"
-  description: Peanut Core Collection Genotype Phenotype Project.
-  name: NIFA PCCGP Project
-  url: "https://peanutbase.org/germplasm/nifa_pccgp"
--
-  category: "Browse and Search"
-  description: "InterMine interface to <i>Arachis</i> (peanut) species at LIS."
-  name: "PeanutMine"
-  url: "https://mines.legumeinfo.org/peanutmine/begin.do"
--
-  category: "Browse and Search"
-  description: Search for protein domain annotations derived from InterProScan analysis.
-  name: "Protein Domains"
-  url: "https://peanutbase.org/search/protein_domains"
--
-  category: "Browse and Search"
-  description: Search for <i>Arachis</i> (peanut) quantitative trait loci.
-  name: "QTL Search"
-  url: "https://peanutbase.org/search/qtl"
--
-  category: "Browse and Search"
-  description: "Interactive visualization of multiple GWAS and QTL data sets, using synteny to identify potentially conserved association regions between species."
-  name: "ZZBrowse"
-  url: "https://zzbrowse.legumeinfo.org/?tab=Manage&twoSpecies=n&datasets=Peanut%20GWAS&chr=Arahy.01&selected=100000&window=250000&traitsFromOntology=y"
 -
   category: "Sequence Search"
   description: Run BLASTs against LIS genomes, CDSes, and proteins.
@@ -104,4 +49,69 @@
   description: Search the genome browser for keywords.
   name: "Keyword Search"
   url: "https://peanutbase.org/keyword_search"
+-
+  category: "Visualize / Browse"
+  description: "Repository for population scale phenotype data for <i>Arachis</i> (peanut) species."
+  name: "ArachisPheno"
+  url: "https://arachispheno.peanutbase.org"
+-
+  category: "Visualize / Browse"
+  description: Genetic variation viewer.
+  name: "GCViT"
+  url: "https://peanutbase.org/germplasm/gcvit"
+-
+  category: "Visualize / Browse"
+  description: "Functional keyword search for gene families."
+  name: "Gene Family Search"
+  url: "https://funnotate.legumeinfo.org/?search=arachis"
+-
+  category: "Visualize / Browse"
+  description: Search for genes and build a list.
+  name: "Gene Search"
+  url: "https://peanutbase.org/search/gene"
+-
+  category: "Visualize / Browse"
+  description: "Browser for dynamically discovering and viewing genomic synteny across selected species."
+  name: "Genome Context Viewer"
+  url: "https://gcv.legumeinfo.org"
+-
+  category: "Visualize / Browse"
+  description: View GIS location information for <i>Arachis</i> (peanut) accessions.
+  name: "Germplasm"
+  url: "https://peanutbase.org/germplasm"
+-
+  category: "Visualize / Browse"
+  description: Genetic variation viewer.
+  name: "Gigwa"
+  url: "https://peanutbase.org/germplasm/gigwa"
+-
+  category: "Visualize / Browse"
+  description: <i>Arachis</i> (peanut) map search.
+  name: Maps
+  url: "https://peanutbase.org/chado/featuremap"
+-
+  category: "Visualize / Browse"
+  description: Search for protein domain annotations derived from InterProScan analysis.
+  name: "Protein Domains"
+  url: "https://peanutbase.org/search/protein_domains"
+-
+  category: "Visualize / Browse"
+  description: Search for <i>Arachis</i> (peanut) quantitative trait loci.
+  name: "QTL Search"
+  url: "https://peanutbase.org/search/qtl"
+-
+  category: "Visualize / Browse"
+  description: "Interactive visualization of multiple GWAS and QTL data sets, using synteny to identify potentially conserved association regions between species."
+  name: "ZZBrowse"
+  url: "https://zzbrowse.legumeinfo.org/?tab=Manage&twoSpecies=n&datasets=Peanut%20GWAS&chr=Arahy.01&selected=100000&window=250000&traitsFromOntology=y"
+-
+  category: "Miscellaneous"
+  description: A list of traits, compiled from literature, for which MAS has been used.
+  name: Marker-Assisted Selection
+  url: "https://peanutbase.org/mas"
+-
+  category: "Miscellaneous"
+  description: Peanut Core Collection Genotype Phenotype Project.
+  name: NIFA PCCGP Project
+  url: "https://peanutbase.org/germplasm/nifa_pccgp"
 
