@@ -88,7 +88,7 @@
   category: "Visualize / Browse"
   description: Genome browser.
   name: "JBrowse"
-  url: "jbrowse2/"
+  url: "/tools/jbrowse2/"
 -
   category: "Visualize / Browse"
   description: <i>Arachis</i> (peanut) map search.
