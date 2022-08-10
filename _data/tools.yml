@@ -86,6 +86,11 @@
   url: "https://peanutbase.org/germplasm/gigwa"
 -
   category: "Visualize / Browse"
+  description: Genome browser.
+  name: "JBrowse"
+  url: "jbrowse2/"
+-
+  category: "Visualize / Browse"
   description: <i>Arachis</i> (peanut) map search.
   name: Maps
   url: "https://peanutbase.org/chado/featuremap"
