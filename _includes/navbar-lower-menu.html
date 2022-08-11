@@ -1,19 +1,20 @@
 <ul class="uk-navbar-nav uk-hidden@l uk-visible@s">
   <li><a href="{{ "/" | relative_url }}">Home</a></li>
   <li>
-    <a href="{{ "/taxa" | relative_url }}">SPECIES</a>
-    {% if site.data.taxon_list %}
-    {% assign genera = site.data.taxon_list | group_by: "genus"  %}
+    <a href="{{ "/taxa" | relative_url }}">SPECIES(TAXA)</a>
+    <!-- ORIGINAL code -->  
+    {% if site.data.species_list %}
+    {% assign spp = site.data.species_list | group_by: "species"  %}
     <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
       <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
-      {% for genus in genera %}
-        {% for organism in genus.items %}
+      {% for sp in spp %}
+        {% for organism in sp.items %}
           {% if organism.category == "main" %}
-            <li> <a href="/taxa/{{ organism.genus | downcase | relative_url }}"> {{ organism.genus }} {{ organism.description }}</a></li>
+            <li> <a href="/taxa/{{ organism.species | downcase | relative_url }}"> {{ organism.species }} {{ organism.description }}</a></li>
           {% endif %}
         {% endfor %}
       {% endfor %}
-      <li><a href="{{ "/taxa" | relative_url }}">OTHERS (Many special-focus species and collections)</a></li>
+      <li><a href="{{ "/taxa" | relative_url }}">OTHERS(#New#) (Many special-focus species and collections)</a></li>
       </ul>
     </div>
     {% endif %}
