@@ -4,3 +4,43 @@ title: Contact
 ---
 
 <h1>Contact</h1>
+
+<p style="color: red">All fields required.</p>
+<form action="https://submit-form.com/echo" method="POST">
+  <label for="name">Your name:</label>
+  <input type="text" name="name" required>
+  <br><br>
+  <label for="email">Your e-mail address:</label>
+  <input type="email" name="email" required>
+  <br><br>
+  <label for="subject">Subject:</label>
+  <input type="text" name="subject" required>
+  <br><br>
+  <label for="message">Message:</label><br>
+  <textarea name="message" cols=60 rows=4 required></textarea>
+  <br><br>
+  <input type="hidden" id="referrer" name="referrer">
+  <br>
+  <button type="submit">Send message</button>
+</form>
+<script>
+  // Populate the hidden input with the referring URL (the previous page)
+  document.getElementById("referrer").value = document.referrer;
+</script>
+
+<hr width="50%">
+
+{% if site.data.personnel %}
+{% assign groups = site.data.personnel | group_by: "category" %}
+{% for group in groups %}
+  <dl>
+    <th>
+      <h4> {{ group.name }} </h4>
+      {% for item in group.items %}
+        <dd><b>{{ item.name }}</b>, {{ item.description }}</dd>
+      {% endfor %}
+    </th>
+  </dl>
+{% endfor %}
+{% endif %}
+
