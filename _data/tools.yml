@@ -33,7 +33,7 @@
   category: "Sequence Search"
   description: Run BLASTs against LIS genomes, CDSes, and proteins.
   name: "BLAST"
-  url: "https://peanutbase.org/pb_sequenceserver"
+  url: "/tools/sequenceserver"
 -
   category: "Sequence Search"
   description: BLAT is a tool for aligning gene/transcript sequences, or highly-similar DNA sequences, to a genome.
