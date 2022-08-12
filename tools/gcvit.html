@@ -1,0 +1,76 @@
+---
+layout: default
+title: GCViT
+---
+
+<h2>Genotype Comparison Visualization Tool (GCViT)</h2>
+
+<p>A <a href="https://www.youtube.com/watch?v=B2gPVUipWo0" target="_blank">video tutorial</a>.</p>
+
+<!-- Collapsible Instructions div goes here -->
+<details>
+  <summary>Instructions ...</summary>
+
+<!--  For instructions please click the <strong>HELP button at the bottom</strong>.  -->
+<!--  Fieldset: Instructions  (Collapsible)  -->
+<fieldset class='collapsible collapsed'>
+<!--legend ><span class='fieldset-legend'>Instructions ... ...</span></legend-->
+<div  class='fieldset-wrapper'>
+
+<b>Reference Genotype</b> Box<br/>
+-- Pick a Color to represent the reference genome (this color will only show up when "total" is indicated in the display options).<br/>
+-- Pick the dataset <!-- that has your genotype of interest--> and it will be used in this comparison <!--  All of these datasets (VCF files) can be found at the data store located at .... -->  and also in the next section "Add a Comparison."<br/>
+-- Select the reference genotype from the available ones, type or from the pull down menu. <!--  For comparisons, each selected genotyped with be compared against this reference.  -->
+<br/><br/>
+<b>Comparison Genotypes</b> Box</br>
+-- Start by clicking 'ADD COMPARISON'.
+-- Pick a Color (it wiil appear when “total” is indicated in the display options).<br/>
+-- At this time, comparisons may only be made within the dataset of the selected reference.<br/>
+-- Select the genotype for comparison. Remove or add a comparison as needed.<br/>
+<b style="text-align:center">OPTIONS</b><br/>
+<b>General Options</b> Box  <br/>
+-- Enter title if needed.  <br/>
+-- Bin Size (Default: 500000bp). Each chromosome is broken down into bins, in base pairs, for calculating the requested data. We recommended not to set a much lower value than this default, as it becomes harder to see differences in the display.  <br/>
+-- Choose ruler position in the display (default: Left).<br/>
+-- Ruler Interval (Default 5000000). Distance in bp between major divisions on the ruler. A value under 1000000 can lead to a rather cramped display.<br/>
+
+<b>Left/Right Options</b> Box<br/>
+Display Type.<br/>
+<b>NONE:</b>  Don't render anything on this side of the chromosome backbone.<br/>
+<br/>
+<b>HISTOGRAM:</b> Shows SNPs as block regions with a height that is proportional to the count in the bin and the provided min and max values. Similar to the heat map option, but uses volume instead of color to indicate bin density.<br/>
+<b><i>Comparison</i></b> (Default: different). Which comparison with the reference to display.<br/>
+<u>Different:</u> Positions where reference and comparison line have different alleles.<br/>
+<u>Same:</u> Positions where reference and comparison line have the same alleles.<br/>
+<u>Total:</u> Total number of SNPs for reference and comparison, alongside a count for locations where the allele was undefined.<br/>
+<br/> 
+<b><i>Filter Genotypes</i></b> (Default: all [blank]). Allows the restriction of the displayed genotypes when more-than-one is available, due to either more-than-one comparison, or using the total comparison. If not empty, only the selected genotypes will display. This option is useful if the user would like to see the differences between the reference and each comparison on opposite sides of the chromosome.<br/>
+<b><i>Min Value</i></b> (Default: 0). Value cuttoff for displaying any height on the glyph. Any count equal to or smaller than this number will not be displayed.<br/>
+<b><i>Max Value</i></b> (Default: 0). Here, 0 is shorthand for the largest count in the reference across all bins. Value cutoff for displaying maximum height on the glyph. Any count equal to or larger than this number will be displayed as the full height.<br/>   
+<br/>
+<b>HEATMAP</b>: Shows SNPs as block regions with a color that is proportional to the count in the bin and the provided min and max values. Similar to the histogram option, but color instead of volume to indicate bin density.<br/>
+
+**<i>Choose 'Comparison' and 'Filter Genotypes' options as in Heatmap.</i><br/>
+
+<b><i>Heat Base Color</i></b> (Default: white). Choose to go from white -> color or black -> color<br/>
+
+<b><i>Heat Direction</i></b> (Default: Min-Max). Render heat low-to-high as base -> color (Min-Max) or color -> base (Max-Min)<br/>  
+<br/>
+<b>HAPLOTYPE</b>:  Shows SNPs as block regions that only display if the count in the bin meets the provided threshold. This display is good for viewing inheritance when comparing a line with its parents.<br/>
+
+**<i>Choose 'Comparison' and 'Filter Genotypes' options as in Heatmap.</i><br/>
+<b><i>Threshold</b></i> (Default: 1). The glyph is only drawn if the count matches or exceeds this number.
+<br/><br/><br/>
+
+
+
+</div>
+</fieldset>
+
+</details>
+
+<!-- GCViT iframe goes here -->
+<div>
+  <iframe id="frameviewer" frameborder="0" width="1200" height="1500" scrolling="yes" src="https://gcvit.arachis.peanutbase.org/" name="frameviewer">
+</div>
+

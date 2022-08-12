@@ -58,7 +58,7 @@
   category: "Visualize / Browse"
   description: Genetic variation viewer.
   name: "GCViT"
-  url: "https://peanutbase.org/germplasm/gcvit"
+  url: "/tools/gcvit.html"
 -
   category: "Visualize / Browse"
   description: "Functional keyword search for gene families."
