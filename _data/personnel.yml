@@ -5,10 +5,6 @@
   description: "National Center for Genome Resources, Santa Fe, NM"
 -
   category: "PeanutBase personnel"
-  name: "Paul Otyama"
-  description: "(PhD student) Iowa State University, Ames, IA"
--
-  category: "PeanutBase personnel"
   name: "Andrew Farmer"
   description: "National Center for Genome Resources, Santa Fe, NM"
 -
@@ -23,4 +19,8 @@
   category: "Alumni"
   name: "Sudhansu Dash"
   description: "National Center for Genome Resources, data curator and developer"
-
+-
+  category: "Alumni"
+  name: "Paul Otyama"
+  description: "(PhD student) Iowa State University, Ames, IA"
+ 
