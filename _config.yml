@@ -33,6 +33,7 @@ url: "http://dev.lis.ncgr.org:50053" # the base hostname & protocol for your sit
 twitter_username: peanutbaseorg #legumefed
 github_username: peanutbase #legumeinfo
 newsletter: http://eepurl.com/cX_JjL
+date_format: "%B %d, %Y"
 
 # Build settings
 theme: jekyll-theme-legumeinfo
