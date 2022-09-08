@@ -1,0 +1,23 @@
+---
+layout: default
+title: External
+---
+
+<h1>External Links</h1>
+
+{% if site.data.external %}
+{% assign groups = site.data.external | group_by: "category" %}
+{% for group in groups %}
+  <dl>
+    <th>
+      <h4> {{ group.name }} </h4>
+      <ul>
+      {% for item in group.items %}
+        <li> {{ item.html }} </li>
+      {% endfor %}
+      </ul>
+    </th>
+  </dl>
+{% endfor %}
+{% endif %}
+

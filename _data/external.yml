@@ -1,0 +1,98 @@
+--- 
+-
+  category: "Gene Expression Resources for <i>Arachis</i> at PeanutBase and elsewhere"
+  html: "A page of <a href='https://peanutbase.org/gene_expression'>gene expression resources for Arachis</a>: microarray and high throughput sequencing data sets at NCBI GEO, Array Express and Seq Read Archive (SRA)"
+-
+  category: "Gene Expression Resources for <i>Arachis</i> at PeanutBase and elsewhere"
+  html: "Expression atlas: <a href='https://peanutbase.org/gene_expression/atlas'>tissue expression</a>"
+-
+  category: "Gene Expression Resources for <i>Arachis</i> at PeanutBase and elsewhere"
+  html: "Expression atlas: <a href='https://peanutbase.org/gene_expression/atlas_nematode'>nematode experiment</a>"
+-
+  category: "Gene Expression Resources for <i>Arachis</i> at PeanutBase and elsewhere"
+  html: "Expression atlas: <a href='https://peanutbase.org/gene_expression/atlas_drought'>drought experiment</a>"
+-
+  category: "Gene Expression Resources for <i>Arachis</i> at PeanutBase and elsewhere"
+  html: "<a href='http://bar.utoronto.ca/efp_arachis/cgi-bin/efpWeb.cgi'>The <i>Arachis</i> eFP browser from BAR</a>"
+
+-
+  category: "External Resources for <i>Arachis</i>"
+  html: "Pollination/Crossing technique in peanut: A <a href='https://drive.google.com/file/d/0B83uedJc4U40eXhIUHplMEEyNk0/view?usp=sharing'>video tutorial</a> by <a href='http://www.clemson.edu/public/rec/peedee/faculty_staff/tallury.html'>Shyam Tallury</a>, Ph.D. (Peanut Breeder, Advanced Plant Technology, Clemson Pee Dee Research & Education Center)"
+-
+  category: "External Resources for <i>Arachis</i>"
+  html: "A page of <a href='https://peanutbase.org/cytology'>cytology resources</a> for <i>Arachis</i>: C values in various <i>Arachis</i> species, links to karyotype, cytological markers, FISH markers, etc."
+-
+  category: "External Resources for <i>Arachis</i>"
+  html: "<a href='http://www.caes.uga.edu/commodities/fieldcrops/peanuts/pins/'>PINS</a>: Peanut Information Network System"
+-
+  category: "External Resources for <i>Arachis</i>"
+  html: "<a href='https://www.integratedbreeding.net/137/communities/genomics-crop-info/crop-information/groundnuts'>IBP</a>: Integrated Breeding Platform, for Peanut"
+-
+  category: "External Resources for <i>Arachis</i>"
+  html: "<a href='http://plantreactome.gramene.org/PathwayBrowser/#SPECIES=6848275&DIAGRAM=6851897'>Plant Reactome</a>: Gramene Plant Reactome for peanut species <i>Arachis duranensis</i>"
+-
+  category: "External Resources for <i>Arachis</i>"
+  html: "(Also see other links under <a href='/community'>Community</a>)"
+
+-
+  category: "Selected genetic and genomic resources for peanut and related legumes"
+  html: "<a href='https://www.legumeinfo.org'>Legume Information System (LIS)</a> - genome browsers, maps, sequence search tools"
+-
+  category: "Selected genetic and genomic resources for peanut and related legumes"
+  html: "<a href='http://plantgrn.noble.org/LegumeIP/'>Legume Integrative Platform</a> - Synteny and gene family tools, primarily focusing on <i>Medicago truncatula</i>"
+-
+  category: "Selected genetic and genomic resources for peanut and related legumes"
+  html: "<a href='http://bioinfolab.muohio.edu/txid3818v1/'>PeanutDB</a> - peanut transcriptome assembly and related tools"
+-
+  category: "Selected genetic and genomic resources for peanut and related legumes"
+  html: "<a href='http://soybase.org/'>SoyBase</a> - soybean trait/QTL/map data; genome browser; sequence search tools; pathway and gene expression information"
+-
+  category: "Selected genetic and genomic resources for peanut and related legumes"
+  html: "<a href='https://peanutbase.org/transcriptomes'>Transcriptomes (this site)</a>"
+-
+  category: "Selected genetic and genomic resources for peanut and related legumes"
+  html: "<a href='https://phytozome-next.jgi.doe.gov/info/Ahypogaea_v1_0'>Phytozome</a> - plant genomes and gene families"
+-
+  category: "Selected genetic and genomic resources for peanut and related legumes"
+  html: "<a href='http://bioinformatics.psb.ugent.be/plaza/'>Plaza</a> - a resource for plant comparative genomics"
+
+-
+  category: "Articles on the peanut genome"
+  html: "<a href='http://www.ars.usda.gov/is/noi/140402.2.htm'>USDA: ARS Scientists on Team to Sequence Peanut Genome.</a>"
+-
+  category: "Articles on the peanut genome"
+  html: "<a href='http://news.uga.edu/releases/article/first-peanut-genome-sequenced/'>University of Georgia: First peanut genome sequenced (The International Peanut Genome Initiative releases first peanut genome sequences).</a>"
+-
+  category: "Articles on the peanut genome"
+  html: "<a href='http://www.news.iastate.edu/news/2014/04/23/peanutgenome'>At ISU: Iowa State researchers contribute to global effort to sequence peanut genome.</a>"
+-
+  category: "Articles on the peanut genome"
+  html: "<a href='http://www.lipidsfatsoilssurfactantsohmy.com/2014/04/the-first-peanut-genomes-sequenced.html'>AOCS: The first peanut genomes sequenced</a>"
+-
+  category: "Articles on the peanut genome"
+  html: "<a href='http://www.icrisat.org/newsroom/news-releases/icrisat-pr-2014-media13.htm'>ICRISAT News: The first peanut genomes sequenced.</a>"
+-
+  category: "Articles on the peanut genome"
+  html: "<a href='http://www.homolog.us/blogs/blog/2014/04/02/peanut-genome-released/'>Homolog.us – Bioinformatics: Peanut Genome Released</a>"
+-
+  category: "Articles on the peanut genome"
+  html: "<a href='http://www.science20.com/news_articles/peanut_genome_initiative_sequence_success-133253'>Science 2.0: Peanut Genome Initiative Sequence Success</a>"
+-
+  category: "Articles on the peanut genome"
+  html: "<a href='http://www.redorbit.com/news/science/1113112063/peanut-genome-sequenced-first-time-040314/'>redOrbit: Geneticists Map Genome Of An Important Global Crop: The Peanut.</a>"
+-
+  category: "Articles on the peanut genome"
+  html: "<a href='http://onlineathens.com/uga/2014-04-02/first-peanut-genome-sequenced'>Online Athens: First peanut genome sequenced.</a>"
+-
+  category: "Articles on the peanut genome"
+  html: "<a href='http://southeastfarmpress.com/peanuts/peanut-genome-gets-sequenced'>Southeast Farm Press: Peanut genome gets sequenced</a>"
+-
+  category: "Articles on the peanut genome"
+  html: "<a href='http://www.gastronomiaycia.com/2014/04/02/genoma-del-cacahuete/'>Genoma del cacahuete</a>"
+-
+  category: "Articles on the peanut genome"
+  html: "<a href='http://www.albanyherald.com/news/2014/apr/02/peanut-genome-sequenced/'>Albany Herald: Peanut genome sequenced (Researchers say the sequence will aid in developing improved peanut varieties)</a>"
+-
+  category: "Articles on the peanut genome"
+  html: "<a href='http://www.agprofessional.com/news/First-peanut-genome-sequenced-253612731.html'>AG Professional: First peanut genome sequenced</a>"
+ 
