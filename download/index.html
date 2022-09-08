@@ -2,5 +2,23 @@
 layout: default
 title: Download
 ---
-
+<span>Genomes | Transcriptomes | QTL | Repeats | Maps </span>
 <h1>Download</h1>
+<b>This is a test page, work in progress</b>.
+<h2>Data Store</h2>
+<h2>Transcriptomes</h2>
+<hr/>
+<h2>Trait data</h2>
+{% if site.data.download_resources %}
+{% assign groups = site.data.download_resources | group_by: "category" %}
+{% for group in groups %}
+  <dl>
+    <th>
+      <h4> {{ group.heading }} </h4>
+      {% for item in group.items %}
+        <dd><b>{{ item.title }}:</b>, {{ item.description }}</dd>
+      {% endfor %}
+    </th>
+  </dl>
+{% endfor %}
+{% endif %}
