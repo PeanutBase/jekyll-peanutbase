@@ -29,7 +29,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   A collaborative, community resource to facilitate peanut improvement by integrating
   genetic, genomic, and trait data across Arachis species.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://dev.lis.ncgr.org:50053" # the base hostname & protocol for your site, e.g. http://example.com
+#url: "http://dev.lis.ncgr.org:50053" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://dev.peanutbas.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: peanutbaseorg #legumefed
 github_username: peanutbase #legumeinfo
 newsletter: http://eepurl.com/cX_JjL
