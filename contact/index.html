@@ -6,8 +6,8 @@ title: Contact
 <h1>Contact</h1>
 
 <p style="color: red">All fields required.</p>
-<form action="https://submit-form.com/echo" method="POST"> <!-- use in development/HTTP -->
-<!--form action="https://submit-form.com/VjbmuFcw" method="POST"--> <!-- use in production/HTTPS -->
+<!--form action="https://submit-form.com/echo" method="POST"--> <!-- use with HTTP -->
+<form action="https://submit-form.com/VjbmuFcw" method="POST"> <!-- use with HTTPS -->
   <label for="name">Your name:</label>
   <input type="text" name="name" required>
   <br><br>
@@ -21,7 +21,7 @@ title: Contact
   <textarea name="message" cols=60 rows=4 required></textarea>
   <br><br>
   <input type="hidden" id="referrer" name="referrer">
-  <!--div class="g-recaptcha" data-sitekey="6LckfWUhAAAAADkm3PHw9kheRc_k8asNs8VO6e0w"></div-->
+  <div class="g-recaptcha" data-sitekey="6LckfWUhAAAAADkm3PHw9kheRc_k8asNs8VO6e0w"></div>
   <br>
   <button type="submit">Send message</button>
 </form>
