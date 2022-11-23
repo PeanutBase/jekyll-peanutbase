@@ -1,0 +1,90 @@
+---
+layout: default
+title: ArachisMine keyword search (for genes or traits)
+---
+
+<script type="text/javascript" src="./js/graphql.js"></script>
+<script type="module" src="./js/web-components.bundled.js"></script>
+
+<h2>ArachisMine Keyword Search</h2>
+
+<div class="uk-container">
+  <!-- the custom gene search element -->
+  <lis-gene-search-element id="gene-search"></lis-gene-search-element>
+</div>
+
+<div class="uk-container">
+  <!-- the custom trait search element -->
+  <lis-trait-search-element id="trait-search"></lis-trait-search-element>
+</div>
+
+
+<!-- set the search function by property because functions can't be set as attributes -->
+<script type="text/javascript">
+  // query a local instance of the LIS GraphQL server:
+  // https://github.com/legumeinfo/graphql-server
+  const uri = 'https://dev.peanutbase.org/graphql';
+
+  const geneQuery = `
+    query ExampleGeneQuery($keyword: String!, $start: Int, $size: Int) {
+      geneSearch(keyword: $keyword, start: $start, size: $size) {
+        id
+        name
+        description
+      }
+    }
+  `;
+
+  const traitQuery = `
+    query ExampleTraitQuery($keyword: String!, $start: Int, $size: Int) {
+      traitSearch(keyword: $keyword, start: $start, size: $size) {
+        id
+        name
+        description
+      }
+    }
+  `;
+
+  // the search function given to the LIS gene search webcomponent
+  function getGenes(searchText, page=1) {
+    const pageSize = 10;
+    const start = (page-1)*pageSize;
+    const variables = {keyword: searchText, start, size: pageSize};
+    // returns a Promise that resolves to an array of Gene objects the gene search
+    // webcomponent knows how to parse: {name: string, description: string}[]
+    return graphqlQuery(uri, geneQuery, variables)
+      .then(({data}) => {
+        for (var gene of data.geneSearch) {
+          gene.name = '<a href="https://lis.ncgr.org/arachismine/report.do?id=' + gene.id + '" target="_blank">' + gene.name + '</a>';
+          if (gene.description == null) gene.description = '';
+        }
+        return data.geneSearch;
+      }
+    );
+  }
+
+  // the search function given to the LIS trait search webcomponent
+  function getTraits(searchText, page=1) {
+    const pageSize = 10;
+    const start = (page-1)*pageSize;
+    const variables = {keyword: searchText, start, size: pageSize};
+    // returns a Promise that resolves to an array of Trait objects the trait search
+    // webcomponent knows how to parse: {name: string, description: string}[]
+    return graphqlQuery(uri, traitQuery, variables)
+      .then(({data}) => {
+        for (var trait of data.traitSearch) {
+          trait.name = '<a href="https://lis.ncgr.org/arachismine/report.do?id=' + trait.id + '" target="_blank">' + trait.name + '</a>';
+          if (trait.description == null) trait.description = '';
+        }
+        return data.traitSearch;
+      }
+    );
+  }
+
+  const geneSearchElement = document.getElementById('gene-search');
+  geneSearchElement.searchFunction = getGenes;
+
+  const traitSearchElement = document.getElementById('trait-search');
+  traitSearchElement.searchFunction = getTraits;
+</script>
+
