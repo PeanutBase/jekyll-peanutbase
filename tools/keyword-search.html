@@ -56,7 +56,24 @@ title: ArachisMine keyword search (for genes or traits)
       .then(({data}) => {
         for (var gene of data.geneSearch) {
           gene.name = '<a href="https://lis.ncgr.org/arachismine/report.do?id=' + gene.id + '" target="_blank">' + gene.name + '</a>';
-          if (gene.description == null) gene.description = '';
+          if (gene.description == null) {
+            gene.description = '';
+          } else {
+            const regexGo = /(GO:\d+)/g;
+            const matchGo = [ gene.description.match(regexGo) ][0];
+            if (matchGo != null) {
+              for (var m of matchGo) {
+                gene.description = gene.description.replace(m, '<a href="http://amigo.geneontology.org/amigo/term/' + m + '" target="_blank">' + m + '</a>');
+              }
+            }
+            const regexIpr = /(IPR\d+)/g;
+            const matchIpr = [ gene.description.match(regexIpr) ][0];
+            if (matchIpr != null) {
+              for (var m of matchIpr) {
+                gene.description = gene.description.replace(m, '<a href="https://www.ebi.ac.uk/interpro/entry/' + m + '" target="_blank">' + m + '</a>');
+              }
+            }
+          }
         }
         return data.geneSearch;
       }
