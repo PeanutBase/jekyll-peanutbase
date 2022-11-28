@@ -83,7 +83,7 @@
   category: "Visualize / Browse"
   description: View GIS location information for <i>Arachis</i> (peanut) accessions.
   name: "Germplasm"
-  url: "https://peanutbase.org/germplasm"
+  url: "/germplasm"
 -
   category: "Visualize / Browse"
   description: Genetic variation viewer.
