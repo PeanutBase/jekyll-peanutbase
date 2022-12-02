@@ -35,6 +35,8 @@ twitter_username: peanutbaseorg #legumefed
 github_username: peanutbase #legumeinfo
 newsletter: http://eepurl.com/cX_JjL
 date_format: "%B %d, %Y"
+# Set the LIS Datastore base URL here
+datastoreurl: https://data.legumeinfo.org
 
 # Build settings
 theme: jekyll-theme-legumeinfo
