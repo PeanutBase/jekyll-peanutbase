@@ -46,11 +46,14 @@ title: ArachisMine keyword search (for genes or traits)
     const keyword = searchData['query'];
     const pageSize = 10;
     const start = (page-1)*pageSize;
-    const variables = {keyword, start, size: pageSize};
+    const variables = {keyword, start, size: pageSize+1};
     // returns a Promise that resolves to an array of Gene objects the gene search
     // webcomponent knows how to parse: {name: string, description: string}[]
     return graphqlQuery(uri, geneQuery, variables)
       .then(({data}) => {
+        const hasNext = pageSize+1 === data.geneSearch.length;
+        // remove the lookahead result
+        if (hasNext) data.geneSearch.pop();
         for (var gene of data.geneSearch) {
           gene.name = '<a href="https://lis.ncgr.org/arachismine/report.do?id=' + gene.id + '" target="_blank">' + gene.name + '</a>';
           if (gene.description == null) {
@@ -72,7 +75,12 @@ title: ArachisMine keyword search (for genes or traits)
             }
           }
         }
-        return data.geneSearch;
+        // construct the expected paginated results object
+        const paginatedResults = {
+          hasNext,
+          results: data.geneSearch,
+        };
+        return paginatedResults;
       }
     );
   }
@@ -82,16 +90,24 @@ title: ArachisMine keyword search (for genes or traits)
     const keyword = searchData['query'];
     const pageSize = 10;
     const start = (page-1)*pageSize;
-    const variables = {keyword, start, size: pageSize};
+    const variables = {keyword, start, size: pageSize+1};
     // returns a Promise that resolves to an array of Trait objects the trait search
     // webcomponent knows how to parse: {name: string, description: string}[]
     return graphqlQuery(uri, traitQuery, variables)
       .then(({data}) => {
+        const hasNext = pageSize+1 === data.traitSearch.length;
+        // remove the lookahead result
+        if (hasNext) data.traitSearch.pop();
         for (var trait of data.traitSearch) {
           trait.name = '<a href="https://lis.ncgr.org/arachismine/report.do?id=' + trait.id + '" target="_blank">' + trait.name + '</a>';
           if (trait.description == null) trait.description = '';
         }
-        return data.traitSearch;
+        // construct the expected paginated results object
+        const paginatedResults = {
+          hasNext,
+          results: data.traitSearch,
+        };
+        return paginatedResults;
       }
     );
   }
