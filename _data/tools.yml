@@ -16,9 +16,14 @@
   url: "https://mines.legumeinfo.org/peanutmine/begin.do"
 -
   category: "Download / Query"
-  description: "Search ArachisMine for genes or traits by keyword."
-  name: "ArachisMine Keyword Search"
-  url: "/tools/keyword-search.html"
+  description: "Search ArachisMine for genes by keyword."
+  name: "ArachisMine Gene Keyword Search"
+  url: "/tools/gene-keyword-search.html"
+-
+  category: "Download / Query"
+  description: "Search ArachisMine for traits by keyword."
+  name: "ArachisMine Trait Keyword Search"
+  url: "/tools/trait-keyword-search.html"
 -
   category: "Genomes"
   description: "High-quality genome assembly for peanut (<i>Arachis hypogaea</i>)."
