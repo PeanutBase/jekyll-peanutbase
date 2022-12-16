@@ -13,7 +13,6 @@ title: ArachisMine trait keyword search
   <lis-trait-search-element id="trait-search"></lis-trait-search-element>
 </div>
 
-
 <!-- set the search function by property because functions can't be set as attributes -->
 <script type="text/javascript">
   const traitQuery = `
@@ -27,14 +26,14 @@ title: ArachisMine trait keyword search
   `;
 
   // the search function given to the LIS trait search webcomponent
-  function getTraits(searchData, page=1) {
+  function getTraits(searchData, page, {abortSignal}) {
     const keyword = searchData['query'];
     const pageSize = 10;
     const start = (page-1)*pageSize;
     const variables = {keyword, start, size: pageSize+1};
     // returns a Promise that resolves to an array of Trait objects the trait search
     // webcomponent knows how to parse: {name: string, description: string}[]
-    return graphqlQuery(uri, traitQuery, variables)
+    return graphqlQuery(uri, traitQuery, variables, abortSignal)
       .then(({data}) => {
         const hasNext = pageSize+1 === data.traitSearch.length;
         // remove the lookahead result
