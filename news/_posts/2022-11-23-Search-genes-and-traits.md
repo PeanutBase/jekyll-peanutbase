@@ -9,6 +9,6 @@ categories: jekyll pixyll
 
 **Search genes & traits by keywords**
 The ['ArachisMine Keyword Search'](/tools/keyword-search.html).utility is available from the Tools pannel. The search result lists the relevant features and are linked to the corresponding detailed display at ArachisMine. <br/>
-[Example(gene)](https://lis.ncgr.org/arachismine/report.do?id=22097371).<br/>
-[Example(trait)](https://lis.ncgr.org/arachismine/report.do?id=43000004).
+[Example(gene)](https://mines.legumeinfo.org/arachismine/report.do?id=22097371).<br/>
+[Example(trait)](https://mines.legumeinfo.org/arachismine/report.do?id=43000004).
 

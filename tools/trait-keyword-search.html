@@ -39,7 +39,7 @@ title: ArachisMine trait keyword search
         // remove the lookahead result
         if (hasNext) data.traitSearch.pop();
         for (var trait of data.traitSearch) {
-          trait.name = '<a href="https://lis.ncgr.org/arachismine/report.do?id=' + trait.id + '" target="_blank">' + trait.name + '</a>';
+          trait.name = '<a href="https://mines.legumeinfo.org/arachismine/report.do?id=' + trait.id + '" target="_blank">' + trait.name + '</a>';
           if (trait.description == null) trait.description = '';
         }
         // construct the expected paginated results object

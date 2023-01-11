@@ -39,7 +39,7 @@ title: ArachisMine gene keyword search
         // remove the lookahead result
         if (hasNext) data.geneSearch.pop();
         for (var gene of data.geneSearch) {
-          gene.name = '<a href="https://lis.ncgr.org/arachismine/report.do?id=' + gene.id + '" target="_blank">' + gene.name + '</a>';
+          gene.name = '<a href="https://mines.legumeinfo.org/arachismine/report.do?id=' + gene.id + '" target="_blank">' + gene.name + '</a>';
           if (gene.description == null) {
             gene.description = '';
           } else {
