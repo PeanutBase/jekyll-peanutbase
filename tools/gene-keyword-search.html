@@ -16,8 +16,8 @@ title: ArachisMine gene keyword search
 <!-- set the search function by property because functions can't be set as attributes -->
 <script type="text/javascript">
   const geneQuery = `
-    query ExampleGeneQuery($keyword: String!, $start: Int, $size: Int) {
-      geneSearch(keyword: $keyword, start: $start, size: $size) {
+    query Query($description: String!, $start: Int, $size: Int) {
+      genes(description: $description, start: $start, size: $size) {
         id
         name
         description
@@ -27,18 +27,18 @@ title: ArachisMine gene keyword search
 
   // the search function given to the LIS gene search webcomponent
   function getGenes(searchData, page, {abortSignal}) {
-    const keyword = searchData['query'];
+    const description = searchData['query'];
     const pageSize = 10;
     const start = (page-1)*pageSize;
-    const variables = {keyword, start, size: pageSize+1};
+    const variables = {description, start, size: pageSize+1};
     // returns a Promise that resolves to an array of Gene objects the gene search
     // webcomponent knows how to parse: {name: string, description: string}[]
     return graphqlQuery(uri, geneQuery, variables, abortSignal)
       .then(({data}) => {
-        const hasNext = pageSize+1 === data.geneSearch.length;
+        const hasNext = pageSize+1 === data.genes.length;
         // remove the lookahead result
-        if (hasNext) data.geneSearch.pop();
-        for (var gene of data.geneSearch) {
+        if (hasNext) data.genes.pop();
+        for (var gene of data.genes) {
           gene.name = '<a href="https://mines.legumeinfo.org/arachismine/report.do?id=' + gene.id + '" target="_blank">' + gene.name + '</a>';
           if (gene.description == null) {
             gene.description = '';
@@ -62,7 +62,7 @@ title: ArachisMine gene keyword search
         // construct the expected paginated results object
         const paginatedResults = {
           hasNext,
-          results: data.geneSearch,
+          results: data.genes,
         };
         return paginatedResults;
       }

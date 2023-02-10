@@ -16,8 +16,8 @@ title: ArachisMine trait keyword search
 <!-- set the search function by property because functions can't be set as attributes -->
 <script type="text/javascript">
   const traitQuery = `
-    query ExampleTraitQuery($keyword: String!, $start: Int, $size: Int) {
-      traitSearch(keyword: $keyword, start: $start, size: $size) {
+    query Query($name: String!, $start: Int, $size: Int) {
+      traits(name: $name, start: $start, size: $size) {
         id
         name
         description
@@ -27,25 +27,25 @@ title: ArachisMine trait keyword search
 
   // the search function given to the LIS trait search webcomponent
   function getTraits(searchData, page, {abortSignal}) {
-    const keyword = searchData['query'];
+    const name = searchData['query'];
     const pageSize = 10;
     const start = (page-1)*pageSize;
-    const variables = {keyword, start, size: pageSize+1};
+    const variables = {name, start, size: pageSize+1};
     // returns a Promise that resolves to an array of Trait objects the trait search
     // webcomponent knows how to parse: {name: string, description: string}[]
     return graphqlQuery(uri, traitQuery, variables, abortSignal)
       .then(({data}) => {
-        const hasNext = pageSize+1 === data.traitSearch.length;
+        const hasNext = pageSize+1 === data.traits.length;
         // remove the lookahead result
-        if (hasNext) data.traitSearch.pop();
-        for (var trait of data.traitSearch) {
+        if (hasNext) data.traits.pop();
+        for (var trait of data.traits) {
           trait.name = '<a href="https://mines.legumeinfo.org/arachismine/report.do?id=' + trait.id + '" target="_blank">' + trait.name + '</a>';
           if (trait.description == null) trait.description = '';
         }
         // construct the expected paginated results object
         const paginatedResults = {
           hasNext,
-          results: data.traitSearch,
+          results: data.traits,
         };
         return paginatedResults;
       }
