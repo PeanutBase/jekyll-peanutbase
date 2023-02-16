@@ -8,7 +8,7 @@
   category: "Download / Query"
   description: "Overviews of data characteristics at LIS: genome assembly sizes, gene counts, BUSCO coverage, etc."
   name: "DSCensor"
-  url: "https://dscensor.legumeinfo.org/multiqc-demo/genome_main:arachis"
+  url: "https://dscensor.legumeinfo.org/multiqc-demo/genome_main:Arachis"
 -
   category: "Download / Query"
   description: "InterMine interface to <i>Arachis</i> (peanut) species at LIS."
