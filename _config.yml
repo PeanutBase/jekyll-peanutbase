@@ -40,6 +40,8 @@ datastoreurl: https://data.legumeinfo.org
 
 # Build settings
 theme: jekyll-theme-legumeinfo
+# Enable display of future Events
+future: true
 plugins:
   - jekyll-feed
 
