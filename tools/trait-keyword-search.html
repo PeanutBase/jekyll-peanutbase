@@ -21,6 +21,14 @@ title: ArachisMine trait keyword search
         id
         name
         description
+        gwas {
+          identifier
+          description
+        }
+        qtlStudy {
+          identifier
+          description
+        }
       }
     }
   `;
@@ -41,6 +49,19 @@ title: ArachisMine trait keyword search
         for (var trait of data.traits) {
           trait.name = '<a href="https://mines.legumeinfo.org/arachismine/report.do?id=' + trait.id + '" target="_blank">' + trait.name + '</a>';
           if (trait.description == null) trait.description = '';
+          if (trait.gwas != null) {
+            trait.type = 'GWAS';
+            trait.study = trait.gwas.identifier;
+            trait.long_description = trait.gwas.description;
+          } else if (trait.qtlStudy != null) {
+            trait.type = 'QTL Study';
+            trait.study = trait.qtlStudy.identifier;
+            trait.long_description = trait.qtlStudy.description;
+          } else {
+            trait.type = '';
+            trait.study = '';
+            trait.long_description = '';
+          }
         }
         // construct the expected paginated results object
         const paginatedResults = {
@@ -54,5 +75,20 @@ title: ArachisMine trait keyword search
 
   const traitSearchElement = document.getElementById('trait-search');
   traitSearchElement.searchFunction = getTraits;
+  // configure results table
+  traitSearchElement.resultAttributes = [
+    'name',
+    'type',
+    'study',
+    'description',
+    'long_description'
+  ];
+  traitSearchElement.tableHeader = {
+    name: 'Name',
+    type: 'Type',
+    study: 'Study',
+    description: 'Description',
+    long_description: 'More Details'
+  };
 </script>
 
