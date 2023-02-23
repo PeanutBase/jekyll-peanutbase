@@ -119,7 +119,7 @@ aria-label="Input"
 `}};At.styles=r``,At=St([it("lis-gene-search-element")],At);var Ct=function(t,i,e,s){for(var n,r=arguments.length,o=r<3?i:null===s?s=Object.getOwnPropertyDescriptor(i,e):s,h=t.length-1;h>=0;h--)(n=t[h])&&(o=(r<3?n(o):r>3?n(i,e,o):n(i,e))||o);return r>3&&o&&Object.defineProperty(i,e,o),o};let jt=class extends(_t(X)()){constructor(){super(),this.requiredQueryStringParams=["query"],this.resultAttributes=["name","identifier","description"],this.tableHeader={name:"Name",identifier:"Identifier",description:"Description"}}renderForm(){return T`
 <form>
 <fieldset class="uk-fieldset">
-<legend class="uk-legend">Trait name search (e.g. flower)</legend>
+<legend class="uk-legend">Trait name search (e.g. seed)</legend>
 <div class="uk-margin">
 <input
 name="query"
