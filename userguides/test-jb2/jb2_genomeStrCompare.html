@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<h3>JBrowse2: Genome structure comparison between two genomes</h3>
+ 
+<div name="steps-in-md">
+{% capture x %}
+{% include_relative jb2_genomeStrCompare.md %}
+{% endcapture %}{{ x | markdownify }}
+</div>
+<div>
+<details>
+<summary>Infographic(puml:act):</summary>
+<img src="http://www.plantuml.com/plantuml/proxy?cache=no&src=https://dev.peanutbase.org/userguides/jb2/jb2_genomeStrCompare-act.puml">
+</details>
+<!--
+<details>
+<summary>Infographic(puml:m-map):</summary>
+<img src="http://www.plantuml.com/plantuml/proxy?cache=no&src=https://dev.peanutbase.org/userguides/jb2/jb2_genomeStrCompare-mmap.puml">
+</details>
+-->
+</div>
+
+<hr/>
+<!-- <h2>Mermaid Diagram test:</h2>  -->
+<!-- v8.1 shows rendering problems!! <script src="https://unpkg.com/mermaid@8.1.0/dist/mermaid.min.js"></script> -->
+<!-- <script src="https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js"></script> -->
+<!--
+<div name="steps-in-mermaid-graph">
+  <script src="https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js"></script>
+  <details>
+    <summary>Steps infographic(mrmd:Seq):</summary>
+  <div class='mermaid'>
+    {% include_relative jb2_genomeStrCompare-seq.mrm %}
+  </div>
+  </details>
+
+  <details>
+    <summary>Steps infographici(mrmd:tline):</summary>
+  <div class='mermaid'>
+    {% include_relative jb2_genomeStrCompare-time.mrm %}
+  </div>
+  </details>
+
+</div>i
+-->

@@ -1,0 +1,24 @@
+sequenceDiagram
+title: Compare two genomes(dotplot of Aradu vs. Araca)
+    participant u as User
+    participant j as JBrowse2 
+    u->>j: Choose Dotplot view
+    j->>u: Assembly selection  
+    u->>j: Ardu.gnm2 and Araca.gnm1
+    Note right of j: Matrix view
+    u->>j: Zoom(in/out) until two needed Chrs (Chr 5)<br> on x and y axes visible
+    u->>j: Select entire rectangle(click-drag) <br>representing the two Chrs for comparison.  
+    u->>j: Select zoom in from popup. 
+    j->>u: An empty chart appears 
+    Note right of j: Track selection(&#9776) <br>(right panel) 
+    u->>j: Select aradu.gnm2-x-araca.gnm1
+    Note right of j: Dotplot of the selected region <br>or Chr appears
+    Note right of u: (Optional) Add synteny view of region
+    u->>j: Select a region from dotplot (click-drag)
+    Note right of j: Options in Popup
+    u->>j: Select open linear synteny view.
+    Note right of u: Draws synteny in bottom viewer
+
+
+
+

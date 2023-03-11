@@ -1,0 +1,53 @@
+### JBrowse2: Genome structure comparison between two genomes
+@startuml
+  'title Genome Structure Comparison (Aradu vs Araca)
+
+    |Genome Viewer|
+     partition START {
+       :Choose Dotplot view;
+       : Assembly selections:
+         (Ardu.gnm2 and Araca.gnm1);
+     }
+     partition Empty dotplot matrix view {
+       : Zoom until <br>needed Chrs visible;
+     
+    
+    |Track Selection&#9776;\n(Right panel)|
+       : Select aradu.gnm2-x-araca.gnm1;
+    }
+    |Genome Viewer|
+       #Lightgreen: Dotplot of the selected region;
+    
+    partition (Optional) Add synteny view {
+       : Select a region from dotplot (click-drag);
+       : Options in Popup:
+         Select open linear synteny view;
+       partition Bottom Viewer{
+          #Lightgreen: Synteny is drawn;
+       }
+       }
+@enduml
+@startuml
+/'
+|Viewer|
+:Start a new session;
+:Select Dotplot view and launch.;
+:At Select assemblies for dotplot view.;
+:Ardu.gnm2 and Araca.gnm1. Open.;
+:At matrix view;
+:Zoom until the two needed Chrs are visible.;
+:Select the entire rectangle(click-drag) representing the two Chrs for comparison.;
+:Select zoom in. An empty chart appears.;
+
+|Track Selection|
+:Click tract selector(&#9776);
+:In the “Available tracks panel” (right) choose aradu.gnm2-x-araca.gnm1.;
+|Viewer|
+:Dotplot of the selected region or Chr appears.;
+:Next: (Optional)if need to add synteny view of the region;
+:Select a region from dotplot (click-drag).;
+:Select open linear synteny viewi from popup options.;
+:A new view window appears below with synteny view.;
+'/
+@enduml
+

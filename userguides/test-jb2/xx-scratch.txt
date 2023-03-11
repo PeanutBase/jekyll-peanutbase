@@ -1,0 +1,67 @@
+
+## works in mermaid live <<
+flowchart LR
+  subgraph User
+    1[Choose Dotplot view]
+    1 -- Assembly selector --> 2
+    2[Select Assemblies <br>Ardu.gnm2 and Araca.gnm1.]     
+    2 -- Matrix View --> 3
+    3[Zoom until <br>needed Chrs visible]
+    3 -- Tract selection &#9776 -->
+    4[Choose aradu.gnm2-x-araca.gnm1]
+    5[Dotplot of the selected region or Chr appears]
+    4 --> 5
+    6
+  end
+
+  subgraph JB2
+    
+  end 
+  
+  User -.-> JB2
+
+
+
+##>>
+
+
+
+
+
+graph LR
+    st[Start:View Dotplot]
+    ad[Add Dotplot]
+    subgraph P
+        direction TB
+        b[Assembly Selection Aradu.gnm2xAraca.gnm1] -- opens --> c[matrix view]
+    end
+    
+st --Launch--> P
+ad --Launch--> P
+
+
+
+
+
+graph TB
+    sq[Square shape] --> ci((Circle shape))
+
+    subgraph A
+        od>Odd shape]-- Two line<br/>edge comment --> ro
+        di{Diamond with <br/> line break} -.-> ro(Rounded<br>square<br>shape)
+        di==>ro2(Rounded square shape)
+    end
+
+    %% Notice that no text in shape are added here instead that is appended further down
+    e --> od3>Really long text with linebreak<br>in an Odd shape]
+
+    %% Comments after double percent signs
+    e((Inner / circle<br>and some odd <br>special characters)) --> f(,.?!+-*ز)
+
+    cyr[Cyrillic]-->cyr2((Circle shape Начало));
+
+     classDef green fill:#9f6,stroke:#333,stroke-width:2px;
+     classDef orange fill:#f96,stroke:#333,stroke-width:4px;
+     class sq,e green
+     class di orange
+

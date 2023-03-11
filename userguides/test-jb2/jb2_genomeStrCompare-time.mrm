@@ -1,0 +1,20 @@
+timeline
+  title Genome Structure Comparison (Aradu vs Araca)
+
+    1. START  <br>Choose Dotplot view
+       : Assembly selection 
+       : (Ardu.gnm2 and Araca.gnm1)
+    2. Genome Viewer
+       : Matrix view
+       : Zoom until <br>needed Chrs visible
+       : Tract selection(&#9776) in right panel
+       : Choose aradu.gnm2-x-araca.gnm1
+       : Dotplot of the selected region or Chr appears
+    3. Optional, add synteny view    
+       : Select a region from dotplot (click-drag)
+       : Options in Popup
+       : Select open linear synteny view
+       : Synteny is drawn in the bottom viewer
+
+
+

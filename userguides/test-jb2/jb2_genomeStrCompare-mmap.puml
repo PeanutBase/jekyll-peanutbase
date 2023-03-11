@@ -1,0 +1,25 @@
+### JBrowse2: Genome structure comparison between two genomes
+@startmindmap
+title: **Comparison between duranensis and cardenasii genomes**
+* New Session
+** Launch DotplotView
+** Assembly selection: \n\
+   (Ardu.gnm2 and Araca.gnm1)
+* Genome Viewer
+** At Matrix view
+** Zoom until two\n needed Chrs visible\n\
+   (e.g. both Chr05)
+** Select the entire rectangle(click-drag) \n\
+   representing the two Chrs for comparison.
+** Select zoom in: An empty chart appears.
+** Open Tract Selection(&#9776;) \n\
+   (Opens in right panel)
+*** Choose aradu.gnm2 with \n araca.gnm1
+**[#lightgreen] Dotplot of the selected region or Chr appears
+* Optional: Add synteny view
+** Select a region from dotplot (click-drag)
+** Options in Popup
+*** Select: open linear synteny view
+**[#lightgreen] Synteny is drawn in the bottom viewer
+@endmindmap
+
