@@ -38,6 +38,11 @@ date_format: "%B %d, %Y"
 # Set the LIS Datastore base URL here
 datastoreurl: https://data.legumeinfo.org
 
+card_item_limit: 5
+#news_card_item_limit: 2
+#events_card_item_limit: 3
+#twitter_card_item_limit: 2
+
 # Build settings
 theme: jekyll-theme-legumeinfo
 # Enable display of future Events
