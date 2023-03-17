@@ -1,0 +1,31 @@
+---
+#-
+#  category: ""
+#  #heading=Display text (heading or title)
+#  heading: ""
+#  #location=file location, file url
+#  location: ""
+#  description: ""
+-
+  category: "traits"
+  heading: "Peanut Traits"
+  title: "peanut traits defined by PeanutBase"
+  location: ""
+  description: "Use and development of formal ontologies are essential. We are working with other legume communities to create a consistent trait terminology, using specialized terms for peanut where necessary. This will enable PeanutBase to integrate with trait information for multiple legume species available at LegumeInfo.org(link is external) and other plant genetic databases. Peanut QTL data are collected from published resources; we then apply our standard trait terminology and definitions before presentation on the site. We have made the evolving trait terminology available for download as an excel spreadsheet."
+-
+  category: "qtl_datasets"
+#  heading: "BurowStarr2014.xls"
+  title: "BurowStarr2014.xls"
+  size: "45.5KB"
+  date_modified: "2015/10/08"
+  location: ""
+  description: "The QTL dataset associated with 'Burow, Star et al., 2014a'."
+- 
+  category: "qtl_datasets"
+#  heading: "CavalcanteMoretzsohn2014.xls"
+  title: "CavalcanteMoretzsohn2014.xls"
+  size: "18KB"
+  date_modified: "2015/10/08"
+  location: ""
+  description: "The QTL dataset associated with 'Cavalcante, Moretzsohn et al., 2014a'."
+
