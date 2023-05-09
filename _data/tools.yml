@@ -43,7 +43,7 @@
   category: "Sequence Search"
   description: Run BLASTs against LIS genomes, CDSes, and proteins.
   name: "BLAST"
-  url: "/tools/sequenceserver"
+  url: "/tools/sequenceserver/"
 -
   category: "Sequence Search"
   description: BLAT is a tool for aligning gene/transcript sequences, or highly-similar DNA sequences, to a genome.
@@ -68,7 +68,7 @@
   category: "Visualize / Browse"
   description: Genetic variation viewer.
   name: "GCViT"
-  url: "/tools/gcvit.html"
+  url: "/tools/gcvit"
 -
   category: "Visualize / Browse"
   description: "Functional keyword search for gene families."
@@ -93,7 +93,7 @@
   category: "Visualize / Browse"
   description: Genetic variation viewer.
   name: "Gigwa"
-  url: "https://peanutbase.org/germplasm/gigwa"
+  url: "/gigwa"
 -
   category: "Visualize / Browse"
   description: Genome browser.
