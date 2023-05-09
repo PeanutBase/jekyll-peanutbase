@@ -28,7 +28,7 @@
   category: "Genomes"
   description: "High-quality genome assembly for peanut (<i>Arachis hypogaea</i>)."
   name: "The Peanut Genome"
-  url: "https://peanutbase.org/peanut_genome"
+  url: "/genome"
 -
   category: "Genomes"
   description: "Genome assembly for <i>Arachis duranensis</i>."
