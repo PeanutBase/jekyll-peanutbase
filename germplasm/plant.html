@@ -1,0 +1,14 @@
+---
+layout: default
+title: Germplasm - Plant Images
+---
+<h1><i>Arachis</i> Germplasm Image Collection</h1>
+<h2>Plant Images</h2>
+
+<ol>
+{% assign plant_images = site.data.germplasm_images | where: "category", "Plant images" %}
+{% for img in plant_images %}
+  <li><a href="/germplasm/{{ img.page_name | downcase }}">{{ img.name }}</a>
+{% endfor %}
+</ol>
+

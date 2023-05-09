@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<h2>Arachis Germplasm Image Collection</h2>
+<h3>{{ page.category }}. {{ page.title }}</h3>
+
+<p>Contributor: {{ page.contributor }}
+<br/>Photographed by {{ page.photographer }}
+
+<table>
+{% tablerow img in page.images cols:4 %}
+  <a href="{{ img.large }}" title="{{ img.title }}"><img src="{{ img.small }}" width=150 height=148></a>
+  <br/>{{ img.title }}
+{% endtablerow %}
+</table>
+
+<script type="text/javascript" src="/germplasm/js/lightbox.js"></script>
+<link rel="stylesheet" href="/germplasm/css/lightbox.css">
+

@@ -1,0 +1,14 @@
+---
+layout: default
+title: Germplasm - Pod Images
+---
+<h1><i>Arachis</i> Germplasm Image Collection</h1>
+<h2>Pod Images</h2>
+
+<ol>
+{% assign pod_images = site.data.germplasm_images | where: "category", "Pod images" %}
+{% for img in pod_images %}
+  <li><a href="/germplasm/{{ img.page_name | downcase }}">{{ img.name }}</a>
+{% endfor %}
+</ol>
+
