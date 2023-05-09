@@ -49,6 +49,11 @@ theme: jekyll-theme-legumeinfo
 future: true
 plugins:
   - jekyll-feed
+  - jekyll-datapage-generator
+
+# Pages to generate automatically
+page_gen-dirs: false
+page_gen: []
 
 style:
     link_color: '#0071B3'

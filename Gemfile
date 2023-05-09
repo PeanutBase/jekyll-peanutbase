@@ -27,3 +27,6 @@ end
 
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
+
+# To automatically generate pages from a YAML file (in _data/) and HTML template (in _layouts/)
+gem "jekyll-datapage-generator", "~> 1.4.0"
