@@ -128,5 +128,5 @@
   category: "Miscellaneous"
   description: Peanut Core Collection Genotype Phenotype Project.
   name: NIFA PCCGP Project
-  url: "https://peanutbase.org/germplasm/nifa_pccgp"
+  url: "/germplasm/nifa_pccgp"
 
