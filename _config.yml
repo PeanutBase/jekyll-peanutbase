@@ -53,7 +53,11 @@ plugins:
 
 # Pages to generate automatically
 page_gen-dirs: false
-page_gen: []
+page_gen:
+- data: "mas_traits"
+  dir: "mas"
+  name: "page_name"
+  title: "name"
 
 style:
     link_color: '#0071B3'

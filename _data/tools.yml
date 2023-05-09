@@ -123,7 +123,7 @@
   category: "Miscellaneous"
   description: A list of traits, compiled from literature, for which MAS has been used.
   name: Marker-Assisted Selection
-  url: "https://peanutbase.org/mas"
+  url: "/mas"
 -
   category: "Miscellaneous"
   description: Peanut Core Collection Genotype Phenotype Project.

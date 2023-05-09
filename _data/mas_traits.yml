@@ -1,0 +1,954 @@
+--- 
+-
+  category: "MAS traits"
+  name: "Late leaf spot (<i>Phaeoisariopsis personata</i> infection)"
+  symbol: "Late leaf spot"
+  contributors: "PeanutBase"
+  sources:
+    - "<a href='https://link.springer.com/article/10.1007/s00122-010-1366-x'>Khedikar, Gowda et al., 2010</a>"
+    - "<a href='https://link.springer.com/article/10.1007/s10681-012-0718-9'>Shoba, Manivannan et al., 2012</a>"
+  background_info: "Reaction to Late Leaf Spot (LLS) is caused by the fungus <i>Phaeoisariopsis personata</i>. Late leaf spot (LLS) is a major foliar disease that reduces the pod yield and severely affects the fodder and seed quality in groundnut."
+  details: "TO:0000439
+<br/>Trait synonyms: Fungal disease resistance, LLS res, Late Leaf Spot resistance (<i>Phaeoisariopsis personata</i>)
+The organism was previously known as <i>Cercospora personata</i>, <i>Cercosporidium personatum</i>, and <i>Mycosphaerella berkeleyi</i>.
+<p>
+Late leaf spot (LLS) and rust are two major foliar diseases of peanut that often occur together leading to 50–70% yield loss in the crop. The symptoms of LLS are circular and darker spots appear on the lower surface of the leaves and also forms in stems and pegs resulting in severe yield loss to the groundnut growers. LLS also has an adverse influence on seed quality as well as on quality of haulms. The regular incidence of the above disease under late sown conditions warrants the development of resistant cultivars in groundnut. Though there are many chemical control methods available, development of disease resistant varieties is the best way to control the disease to improve production quality and reduce the adverse effects of chemicals on our ecosystem.
+<p>
+<img src='/files/mas/pics/late_leaf_spot_xa/late_leaf_spot_lower1.jpg' width='450' height='400'>
+&nbsp; <img src='/files/mas/pics/late_leaf_spot_xa/late_leaf_spot_upper1.jpg' width='450' height='400'>
+<p>Image source: <a href='http://www.peanut.ncsu.edu/Diseases/Early_and_Late_Leaf_Spot.aspx'>http://www.peanut.ncsu.edu/Diseases/Early_and_Late_Leaf_Spot.aspx</a>"
+  marker_sets:
+    -
+      id: "1"
+      markers:
+        -
+          name: "IPAHM103"
+          source: "Khedikar, Gowda et al., 2010"
+          comments: "&quot;<span style='color: red'>*</span> <a href='https://peanutbase.org/feature/arachis/hypogaea/genetic_marker/arahy.IPAHM103'>IPAHM 103</a> was strongly associated with resistance in the
+majority of cases (hybrid derivatives from NcAcs, interspecific
+derivatives, mutant lines) except in few (VR 5, MN 1-28, Girnar 1, ICGV
+86590, ICGV 87921, ICGV 86156) germplasm lines.&quot; (Khedikar, Gowda et
+al., 2010)"
+          type: "SSR"
+          repeat: "(CA)3(GA)17"
+          forward_primer: "GCATTCACCACCATAGTCCA"
+          reverse_primer: "TCCTCTGACTTTCCTCCATCA"
+          bp_susceptible: "160"
+          bp_resistant: "~140"
+      genotypes:
+        -
+          accession: "TAG 24"
+          susceptibility: "Susceptible"
+          aAllele: "A"
+          pedigree: ""
+          plant_type: ""
+          accession_source: ""
+        -
+          accession: "R8808"
+          susceptibility: "Susceptible"
+          aAllele: "A"
+          pedigree: "ICGS 11× Chico"
+          plant_type: "Spanish bunch"
+          accession_source: "ICRISAT"
+        -
+          accession: "Dh 40"
+          susceptibility: "Susceptible"
+          aAllele: "A"
+          pedigree: "Dh 3-30 × TGE 2"
+          plant_type: "Spanish bunch"
+          accession_source: "ICRISAT"
+        -
+          accession: "K 134"
+          susceptibility: "Susceptible"
+          aAllele: "A"
+          pedigree: "Kadiri 3 × JL 24"
+          plant_type: "Spanish bunch"
+          accession_source: "ICRISAT"
+        -
+          accession: "TG 41"
+          susceptibility: "Susceptible"
+          aAllele: "A"
+          pedigree: "TG 28 × TG 22"
+          plant_type: "Spanish bunch"
+          accession_source: "ICRISAT"
+        -
+          accession: "KRG 1"
+          susceptibility: "Susceptible"
+          aAllele: "A"
+          pedigree: "Selection from Argentina"
+          plant_type: "Spanish bunch"
+          accession_source: "ICRISAT"
+        -
+          accession: "TMV 2"
+          susceptibility: "Susceptible"
+          aAllele: "A"
+          pedigree: "Mass selction “Gudhiatham Bunch”"
+          plant_type: "Spanish bunch"
+          accession_source: "ICRISAT"
+        -
+          accession: "JL 24"
+          susceptibility: "Susceptible"
+          aAllele: "A"
+          pedigree: "Selection from EC 94943"
+          plant_type: "Spanish bunch"
+          accession_source: "ICRISAT"
+        -
+          accession: "Dh 8"
+          susceptibility: "Susceptible"
+          aAllele: "A"
+          pedigree: "Selection from RS 144"
+          plant_type: "Spanish bunch"
+          accession_source: "ICRISAT"
+        -
+          accession: "DH 43"
+          susceptibility: "Susceptible"
+          aAllele: "A"
+          pedigree: "Mardur local"
+          plant_type: "Virginia runner"
+          accession_source: "ICRISAT"
+        -
+          accession: "Chitra"
+          susceptibility: "Susceptible"
+          aAllele: "A"
+          pedigree: "Spanish 5B-1 × EC 1688"
+          plant_type: "Virginia runner"
+          accession_source: "ICRISAT"
+        -
+          accession: "R 9227"
+          susceptibility: "Susceptible"
+          aAllele: "A"
+          pedigree: "(ICGS 7 × NC Ac 2214) × ICGV 86031"
+          plant_type: "Spanish bunch"
+          accession_source: "NC Ac derived"
+        -
+          accession: "ICGV 86031"
+          susceptibility: "Susceptible"
+          aAllele: "A"
+          pedigree: "F 334 A-B-14 × NC Ac 2214"
+          plant_type: "Spanish bunch"
+          accession_source: "NC Ac derived"
+        -
+          accession: "R 9214"
+          susceptibility: "Susceptible"
+          aAllele: "A"
+          pedigree: "(ICGS 7 × NC Ac 2214) × ICGV 86031"
+          plant_type: "Spanish bunch"
+          accession_source: "NC Ac derived"
+        -
+          accession: "ICGV 91180"
+          susceptibility: "Susceptible"
+          aAllele: "A"
+          pedigree: "[(TMV 2 × FSB 7-2) × NC Ac 2232) × (F 334 A-B-14 × NC Ac 2214)]"
+          plant_type: "Virginia bunch"
+          accession_source: "NC Ac derived"
+        -
+          accession: "ICGV 99004"
+          susceptibility: "Susceptible"
+          aAllele: "A"
+          pedigree: "TMV 2 × ( A. hypogaea × A. cardenasii)"
+          plant_type: "Spanish bunch"
+          accession_source: "interspecific"
+        -
+          accession: "ICGV 99001"
+          susceptibility: "Susceptible"
+          aAllele: "A"
+          pedigree: "Robut 33-1 × A. villosa"
+          plant_type: "Virginia bunch"
+          accession_source: "interspecific"
+        -
+          accession: "GPBD 4"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: " "
+          plant_type: "Spanish bunch"
+          accession_source: " "
+        -
+          accession: "ICGV 93008"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "[(Mani Pintar × (Robut 33-1 × NC Ac 2232)] × ICG 2320"
+          plant_type: "Virginia bunch"
+          accession_source: "NC Ac derived"
+        -
+          accession: "ICGV 90266"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "[((J 11 × (M 13 × NC Ac 2214)) × ICG 2271]"
+          plant_type: "Virginia bunch"
+          accession_source: "NC Ac derived"
+        -
+          accession: "R 8972"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "ICGS 59 × NC Ac 2240"
+          plant_type: "Spanish bunch"
+          accession_source: "NC Ac derived"
+        -
+          accession: "ICGV 87264"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Manfredi × NC Ac 17133RF"
+          plant_type: "Spanish bunch"
+          accession_source: "NC Ac derived"
+        -
+          accession: "Dh 73"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Dh 3-30 × ICGV 87264"
+          plant_type: "Spanish bunch"
+          accession_source: "NC Ac derived"
+        -
+          accession: "ICGV 92188"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "[(Robut 33-1 × (M 13 × NC Ac 2214)] × JL 24"
+          plant_type: "Virginia bunch"
+          accession_source: "NC Ac derived"
+        -
+          accession: "ICGV 93023"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "[(Robut 33-1 × NC Ac 2214) × Cyto 213-2]"
+          plant_type: "Virginia bunch"
+          accession_source: "NC Ac derived"
+        -
+          accession: "ICGV 87807"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "[(MK 374 × Robut 33-1) × FESR 2"
+          plant_type: "VL"
+          accession_source: "NC Ac derived"
+        -
+          accession: "ICGV 91177"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "(F 334 A-B-14 × NC Ac 2232) × ((TMV 7 × FSB 7-2) × NC Ac 2214)"
+          plant_type: "Virginia bunch"
+          accession_source: "NC Ac derived"
+        -
+          accession: "D 39d (Purple & large)"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "KRG 1 × CS 16 (ICGV 86855)"
+          plant_type: "Spanish bunch"
+          accession_source: "interspecific"
+        -
+          accession: "D 39d (Purple & small)"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "KRG 1 × CS 16 (ICGV 86855)"
+          plant_type: "Spanish bunch"
+          accession_source: "interspecific"
+        -
+          accession: "B 37c"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "JL 24 × ICGV 87165"
+          plant_type: "Spanish bunch"
+          accession_source: "interspecific"
+        -
+          accession: "A 30b"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "KRG 1 × ICGV 87165"
+          plant_type: "Virginia bunch"
+          accession_source: "interspecific"
+        -
+          accession: "ICGV 88256"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "(CS 9 × (Robut 33-1 × NC Ac 316)"
+          plant_type: "Virginia bunch"
+          accession_source: "interspecific"
+        -
+          accession: "MG 8"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Mutant 45 × GBFDS 272"
+          plant_type: "Spanish bunch"
+          accession_source: "interspecific"
+        -
+          accession: "GBFDS 272"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "(A. hypogaea × A. caredenasii)"
+          plant_type: "Virginia bunch"
+          accession_source: "interspecific"
+        -
+          accession: "JG Thin shell"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "JL 24 × GBFDS 272"
+          plant_type: "Spanish bunch"
+          accession_source: "interspecific"
+        -
+          accession: "ICG 99005"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "TMV 2 × (A. hypogaea × A. batizocoi × A duranensis)"
+          plant_type: "Virginia bunch"
+          accession_source: "interspecific"
+      notes: "<p>aAllele: A = allele present in TAG 24 genotype (susceptible to rust) and B = allele present in GPBD 4 genotype (resistant to rust)
+<br/>NC Ac derived: derived from accession from North Carolina germplasm"
+    -
+      id: "2"
+      markers:
+        -
+          name: "PM384"
+          source: "Shoba, Manivannan et al., 2012"
+          comments: "&quot;While validating the three primers over a set of resistant
+and susceptible genotypes, the primer PM 384100 allele had association
+with resistance. Hence PM 384 could be utilized in the marker assisted
+breeding programme over a wide range of genetic background.&quot; (Shoba,
+Manivannan et al., 2012)"
+          type: "SSR"
+          repeat: ""
+          forward_primer: "GGCGTGCCAATAGAGGTTTA"
+          reverse_primer: "TGAAAACCAACAAGTTTAGTCTCTCT"
+          bp_susceptible: ""
+          bp_resistant: ""
+      genotypes:
+        -
+          accession: "COG 0437"
+          susceptibility: "Resistant"
+          aAllele: "A"
+          pedigree: ""
+          plant_type: "Virginia bunch"
+          accession_source: "ICRISAT"
+        -
+          accession: "TMV 2"
+          susceptibility: "Susceptible"
+          aAllele: "A"
+          pedigree: "mass selection from Gudiatham bunch (AH 32) and COG 0437
+originated from the cross CO 2 × ICGV 94118"
+          plant_type: "Spanish bunch"
+          accession_source: "ICRISAT"
+  links:
+    - "<span style='color: red'>*</span> <a href='https://peanutbase.org/search/qtl?qtl_name=leaf+spot'>List of Late leaf spot QTLs</a> at PeanutBase"
+    - "<span style='color: red'>*</span> <a href='https://peanutbase.org/feature/arachis/hypogaea/genetic_marker/IPAHM103-arahy'>Marker IPAHM103</a> at PeanutBase"
+  page_name: "late_leaf_spot_xa"
+-
+  category: "MAS traits"
+  name: "Peanut root-knot nematode"
+  symbol: ""
+  contributors: "PeanutBase (Sudhansu Dash)"
+  sources: "Y. Chu, C. L. Wu, C. C. Holbrook, B. L. Tillman, G. Person, and P. Ozias-Akins. <a href='https://www.crops.org/publications/tpg/pdfs/4/2/110'>Marker-Assisted Selection to Pyramid Nematode Resistance and the High Oleic Trait in Peanut.</a> The Plant Genome (2011) 4(2):110-117"
+  background_info: "<i>Meloidogyne arenaria</i>, Chitwood race 1 (rootknot nematode [RKN]), damage to peanut roots and pods causes significant economic loss in infested fields. A gene for nematode resistance, Rma (resistance to <i>M. arenaria</i>), from <i>Arachis cardenasii</i> (a wild peanut relative), has been introgressed into cultivated peanut through either interspecific hybridization involving a synthetic tetraploid (<i>Arachis batizocoi</i> × [<i>A.cardenasii</i> × <i>Arachis diogoi</i>]) crossed with <i>A. hypogaea</i> or a hexaploid introgression pathway (<i>A. hypogaea</i> × <i>A. cardenasii</i>). The synthetic tetraploid approach, using ‘Florunner’ as the recurrent female parent to introgress Rma, has yielded the resistant cultivars COAN and Nema-TAM. The introgressed region carrying Rma has been found to be collinear with a portion of chromosome 9A and is shared with Tifguard, a high-yielding elite cultivar with near immunity to RKN and high resistance to tomato spotted wilt virus (TSWV)."
+  details: "Reaction to <i>Meloidogyne arenaria</i> damage and the QTL symbol is &quot;Peanut root-knot nematode&quot;.
+<p>
+<img src='/files/mas/pics/nematode_root_knot_xa/peanut_rootknot_nematode_resistance.jpg' width= height=>
+&nbsp;
+<img src='/files/mas/pics/nematode_root_knot_xa/peanut_rootknot_nematode_pic_300x274.jpg' width= height=>
+<p>
+Image source:
+<br/><a href='http://www.plantmanagementnetwork.org/pub/php/management/rootknot/'>http://www.plantmanagementnetwork.org/pub/php/management/rootknot/</a>
+<br/><a href='http://oziasakinslab.org/projects/plant-biotechnology-peanut-grasses/marker-assisted-selection-for-nematod-resistance-in-peanut/'>http://oziasakinslab.org/projects/plant-biotechnology-peanut-grasses/marker-assisted-selection-for-nematod-resistance-in-peanut/</a>"
+  marker_sets:
+    -
+      id: "1"
+      markers:
+        -
+          name: "GM565"
+          source: ""
+          comments: ""
+          type: ""
+          repeat: ""
+          forward_primer: ""
+          reverse_primer: ""
+          bp_susceptible: ""
+          bp_resistant: ""
+        -
+          name: "CAPS marker 1169/1170"
+          source: ""
+          comments: ""
+          type: ""
+          repeat: ""
+          forward_primer: ""
+          reverse_primer: ""
+          bp_susceptible: ""
+          bp_resistant: ""
+        -
+          name: "S197"
+          source: ""
+          comments: ""
+          type: ""
+          repeat: ""
+          forward_primer: ""
+          reverse_primer: ""
+          bp_susceptible: ""
+          bp_resistant: ""
+      notes: "<p>Primers and PCR products of the markers:
+<br/>(from the primary citation)
+<p><img src='/files/mas/pics/nematode_root_knot_xa/nematode-resist-markers-prop.png'>"
+  links:
+    - "Find <span style='color: red'>*</span> <a href='https://peanutbase.org/gbrowse_aradu1.0?query=q=GM565'>GM565</a> and <span style='color: red'>*</span> <a href='https://peanutbase.org/gbrowse_aradu1.0?query=q=S197'>S197</a> in the genome browser."
+    - "QTLs for <span style='color: red'>*</span> <a href='https://peanutbase.org/search/qtl?qtl_name=root-knot+nematode'>peanut root-knot nematode</a>."
+  page_name: "root_knot_nematode_xa"
+-
+  category: "MAS traits"
+  name: "Seed oleic acid to linoleic acid ratio"
+  symbol: "Seed oleic/linol"
+  contributors: "PeanutBase (Sudhansu Dash)"
+  sources: "Y. Chu, C. L. Wu, C. C. Holbrook, B. L. Tillman, G. Person, and P. Ozias-Akins. <a href='https://www.crops.org/publications/tpg/pdfs/4/2/110'>Marker-Assisted Selection to Pyramid Nematode Resistance and the High Oleic Trait in Peanut.</a> The Plant Genome. July 2011. Vol. 4, No. 2"
+  background_info: "Ratio of oleic acid content to linoleic acid content in a seed."
+  details: "Seed oleic/linoleic; Seed oleic acid to linoleic acid ratio QTL_oil; TO:0000491; Fat and essential oil composition related trait; OLratio, Oleic acid to Linoleic acid ratio.
+<p>
+Approximately 50% of peanut seed dry weight is oil of which oleic acid and linoleic acid account for 80% of the total fatty acid. Normal O:L cultivars such as Tifguard have an O:L ratio of 1.0 to 4.0 whereas the ratio can reach as high as 30 to 40 in high O:L cultivars. The high O:L trait is desired by the peanut industry because it confers high oxidative stability to the oil. The reported health benefits of dietary monounsaturated fatty acids, such as lowering of blood low-density lipoprotein levels in postmenopausal hypercholesterolemic women, also makes the conversion of current elite cultivars to high O:L attractive. Delta-12-desaturase (oleoyl-PC desaturase), which catalyzes the addition of a second double bond into oleic acid to make linoleic acid, is the key enzyme regulating the O:L ratio in peanut (Ray et al., 1993). Spontaneous recessive mutants for this enzyme, identified and double mutants have high O:L. Expression of two homeologous genes encoding this enzyme, ahFAD2A and ahFAD2B, must be repressed to achieve high O:L in peanut. ol1 and ol2, have been identified and double mutants have high O:L. Expression of two homeologous genes encoding this enzyme, ahFAD2A and ahFAD2B, must be repressed to achieve high O:L in peanut.
+<p>
+*Extracted from the primary citation"
+  marker_sets:
+    -
+      id: "1"
+      markers:
+        -
+          name: "ahFAD2A"
+        -
+          name: "ahFAD2B"
+      notes: "<p>PCR primers and sizes:
+<br/>(* from the primary citation)
+<p><img src='/files/mas/pics/seed_oleic_to_linol_ratio_xa/linoleic-to-oleic-ratio-markers-prop.png'>"
+  links:
+    - "<span style='color: red'>*</span> <a href='https://peanutbase.org/search/qtl?qtl_name=oleic'>List of oleic and linoleic QTLs</a> at PeanutBase"
+  page_name: "seed_oleic_to_linoleic_ratio_xa"
+-
+  category: "MAS traits"
+  name: "Rust, Puccinia"
+  symbol: "Leaf rust"
+  contributors: "PeanutBase (Jugpreet Singh)"
+  sources:
+    - "Rajeev K. Varshney, Manish K. Pandey, Pasupuleti Janila, Shyam N. Nigam, Harikishan Sudini, M.V.C. Gowda, Manda Sriswathi, T. Radhakrishnan, Surendra S. Manohar, Patne Nagesh. <a href='https://link.springer.com/article/10.1007/s00122-014-2338-3'>Marker-assisted introgression of a QTL region to improve rust resistance in three elite and popular varieties of peanut (<i>Arachis hypogaea</i> L.)</a>. Theoretical and Applied Genetics (2014) 127(8):1771-1781."
+    - "Suvendu Mondal, Poonam Hande, Anand M. Badigannavar. <a href='https://onlinelibrary.wiley.com/doi/10.1111/jph.12220'>Identification of Transposable Element Markers for a Rust (<i>Puccinia arachidis</i> Speg.) Resistance Gene in Cultivated Peanut</a>. Journal of Phytopathology (2014) 162: 548-552"
+  background_info: "Leaf rust, caused by <i>Puccinia arachidis</i>, is a widespread disease in peanut that leads to severe yield losses in almost all peanut growing countries. Together with late leaf spot, leaf rust causes signifcant decrease in productivity and fodder quality in peanut."
+  details: "Trait synonyms: Fungal disease resistance, Leaf Rust (<i>Puccinia arachidis</i> Speg)
+<p>
+Peanut leaf rust is caused by <i>Puccinia arachidis</i>. The synonym terms used for this fungus are <i>Bullaria arachidis</i> (Speg.) Arthur & Mains, (1922) and <i>Uromyces arachidis</i> Henn. (1896) <a href='https://en.wikipedia.org/wiki/Puccinia_arachidis'>[Wikipedia]</a>. The term rust is used for both the disease and the causative fungus (Sillero et al., 2006).
+<p>
+The disease symptoms can be recognized by the appearance of orange pustules on the lower surface of the leaves. The rupturing of these pustules expose masses of reddish brown urediniospores which leads to the spread of infection to the neighboring plants. In highly susceptible genotypes, secondary pustules might surround the original pustules. Later, pustules may form on the upper surface corresponding to the position on the lower surface of leaf. These pustules develop on all the plant parts except flowers. Pustules are usually circular in shape that ranges from 0.5 to 1.4mm in diameter. Rust infection lead to dried and necrotic leaves which stay intact with the plant. The disease is usually spread through urediniospores by air, infected crop debris like surface contaminated pods, seeds or dried leaves. However, spread through seed borne pathogen or germplasm exchange is not evident. Leaf rust can cause infection to plants at any development age. Also, warm and humid weather can facilitate the spread of this fungus. Under favorable circumstances, leaf rust can spread to the entire field and can cause desiccation of all the plants. Early season rust infection may lead to significant yield losses as compared to late season rust epidemics (Sillero et al., 2006; Rashid & Bernier, 1991). In essence, severe disease infection can lead to approximately 50% of the yield losses.
+<p>
+<img src='/files/mas/pics/rust_puccinia/Slide4.png' height='400' width='500'>
+&nbsp;
+<img src='/files/mas/pics/rust_puccinia/Slide5.png' height='400' width='500'>"
+  marker_sets:
+    -
+      id: "1"
+      markers:
+        -
+          name: "IPAHM103"
+          source: "Varshney, Pandey et al., 2014"
+          comments: "&quot;The marker-assisted backcrossing approach employed a total of four markers including one dominant (IPAHM103) and three co-dominant (GM2079, GM1536, GM2301) markers present in the QTL region.&quot; (Varshney, Pandey et al., 2014)"
+          type: "SSR"
+          repeat: "NULL"
+          forward_primer: "GCATTCACCACCATAGTCCA"
+          reverse_primer: "TCCTCTGACTTTCCTCCATCA"
+          bp_susceptible: "130"
+          bp_resistant: "154"
+        -
+          name: "GM1536"
+          source: "Varshney, Pandey et al., 2014"
+          comments: ""
+          type: ""
+          repeat: ""
+          forward_primer: "AAAGCCCTGAAAAGAAAGCAG"
+          reverse_primer: "TATGCATTTGCAGGTTCTGGT"
+          bp_susceptible: "482"
+          bp_resistant: "473"
+        -
+          name: "GM2301"
+          source: "Varshney, Pandey et al., 2014"
+          comments: ""
+          type: ""
+          repeat: ""
+          forward_primer: "GTAACCACAGCTGGCATGAAC"
+          reverse_primer: "TCTTCAAGAACCCACCAACAC"
+          bp_susceptible: "136"
+          bp_resistant: "127"
+        -
+          name: "GM2079"
+          source: "Varshney, Pandey et al., 2014"
+          comments: ""
+          type: ""
+          repeat: ""
+          forward_primer: "GGCCAAGGAGAAGAAGAAAGA"
+          reverse_primer: "GAAGGAGTAGTGGTGCTGCTG"
+          bp_susceptible: "436"
+          bp_resistant: "416"
+      genotypes:
+        -
+          accession: "ICGV91114"
+          susceptibility: "Susceptible"
+          aAllele: "A"
+          pedigree: "ICGV 86055' X 'ICGV 86533'"
+          plant_type: "Spanish Bunch"
+          accession_source: "ICRISAT"
+        -
+          accession: "GPBD4"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "KRG 1' X 'CS 16'"
+          plant_type: "Spanish Bunch"
+          accession_source: "inter-specific hybridization"
+        -
+          accession: "TMV2"
+          susceptibility: "Susceptible"
+          aAllele: "A"
+          pedigree: "Mass Selection 'Gudhiatham Bunch'"
+          plant_type: "Spanish Bunch"
+          accession_source: "ICRISAT"
+        -
+          accession: "RBC2F5R12_13"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'ICGV 91114' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+        -
+          accession: "RBC2F5R12_15"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'ICGV 91114' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+        -
+          accession: "RBC2F5R12_16"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'ICGV 91114' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+        -
+          accession: "RBC2F5R12_17"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'ICGV 91114' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+        -
+          accession: "RBC2F5R12_18"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'ICGV 91114' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+        -
+          accession: "RBC2F5R12_19"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'ICGV 91114' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+        -
+          accession: "RBC2F5R12_23"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'ICGV 91114' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+        -
+          accession: "RBC2F5R12_25"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'ICGV 91114' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+        -
+          accession: "RBC2F5R12_29"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'ICGV 91114' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+        -
+          accession: "RBC2F5R12_30"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'ICGV 91114' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+        -
+          accession: "JL24"
+          susceptibility: "Susceptible"
+          aAllele: "A"
+          pedigree: "Selection from 'EC 94943'"
+          plant_type: "Spanish Bunch"
+          accession_source: "Oilseeds Research Station, Jalgaon, Maharashtra (India)"
+        -
+          accession: "RBC2F5R12_45"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'JL 24' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+        -
+          accession: "RBC2F5R12_46"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'JL 24' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+        -
+          accession: "RBC2F5R12_78"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'JL 24' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+        -
+          accession: "RBC2F5R12_87"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'JL 24' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+        -
+          accession: "RBC2F5R12_88"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'JL 24' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+        -
+          accession: "RBC2F5R12_97"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'JL 24' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+        -
+          accession: "RBC2F5R12_138"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'JL 24' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+        -
+          accession: "RBC2F5R12_139"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'JL 24' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+        -
+          accession: "RBC2F5R12_140"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'JL 24' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+        -
+          accession: "RBC2F5R12_143"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'JL 24' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+        -
+          accession: "TAG24"
+          susceptibility: "Susceptible"
+          aAllele: "A"
+          pedigree: "TGS2' X 'TGE1'"
+          plant_type: "Spanish Bunch"
+          accession_source: "Bhabha Atomic Research Center, Trombay (India)"
+        -
+          accession: "RBC2F5R12_103"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'TAG 24' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+        -
+          accession: "RBC2F5R12_104"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'TAG 24' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+        -
+          accession: "RBC2F5R12_107"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'TAG 24' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+        -
+          accession: "RBC2F5R12_108"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'TAG 24' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+        -
+          accession: "RBC2F5R12_114"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'TAG 24' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+        -
+          accession: "RBC2F5R12_117"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'TAG 24' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+        -
+          accession: "RBC2F5R12_118"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'TAG 24' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+        -
+          accession: "RBC2F5R12_129"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'TAG 24' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+        -
+          accession: "RBC2F5R12_130"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'TAG 24' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+        -
+          accession: "RBC2F5R12_133"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "Introgression line from 'TAG 24' X 'GPBD 4'"
+          plant_type: "Parental source 'Spanish Bunch'"
+          accession_source: "Marker-assisted backcrossing"
+      notes: "* aAllele: A = allele present in the rust susceptible genotypes, and B = allele present in the rust resistant genotypes"
+    -
+      id: "2"
+      markers:
+        -
+          name: "TE 360"
+          source: "Mondal, Hande et al., 2013"
+          comments: "&quot;Total of 40 TE primer pairs were found polymorphic between parents and two transposable element markers, and TE 360 and TE 498 were found associated with rust resistance gene. Based on genetic mapping, TE 360 was found linked to the rust resistance gene at 4.5 cM distance.&quot; (Mondal, Hande et al., 2013)"
+          type: "Transposable element markers"
+          repeat: "AhMITE1-2"
+          forward_primer: "GGATATGATGCCCATAGCTGA"
+          reverse_primer: "TGCTGACTACTTGCAATGCC"
+          bp_susceptible: "approximately 200"
+          bp_resistant: "approximately 450"
+        -
+          name: "TE 498"
+          source: ""
+          comments: ""
+          type: ""
+          repeat: ""
+          forward_primer: "ATGACTTACATGTAGCAATTG"
+          reverse_primer: "TGAAAGGAGTCAAAGGTCATG"
+          bp_susceptible: ""
+          bp_resistant: ""
+      genotypes:
+        -
+          accession: "VG 9514"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "CO 1' X 'A. cardenasii'"
+          plant_type: ""
+          accession_source: ""
+        -
+          accession: "TAG 24"
+          susceptibility: "Susceptible"
+          aAllele: "A"
+          pedigree: "TGS2' X 'TGE1'"
+          plant_type: "Spanish Bunch"
+          accession_source: "Bhabha Atomic Research Center, Trombay (India)"
+      notes: "* aAllele: A = allele present in the rust susceptible genotypes, and B = allele present in the rust resistant genotypes
+<p>
+<img src='/files/mas/pics/rust_puccinia/Slide2.png'>"
+    -
+      id: "3"
+      markers:
+        -
+          name: "SSR_GO340445"
+          source: "Mondel, Badigannavar et al., 2012b"
+          comments: "&quot;Through genetic mapping, EST-SSR markers SSR_ GO340445 and SSR_HO115759 were found closely linked to a rust resistance gene at 1.9 and 3.8 cM distances, respectively.&quot; (Mondel, Badigannavar et al., 2012b)"
+          type: "SSR"
+          repeat: "(TC)8"
+          forward_primer: "GGCGGCGGCTGAGGAAGAAG"
+          reverse_primer: "ACGCGACGCAGAGTGAAAGAA"
+          bp_susceptible: ""
+          bp_resistant: ""
+        -
+          name: "SSR_HO115759"
+          source: ""
+          comments: ""
+          type: ""
+          repeat: "(GA)9"
+          forward_primer: "TATCAACGCAACCTTTTGCAG"
+          reverse_primer: "GACTTGTGTGGCTGAAACTTGA"
+          bp_susceptible: ""
+          bp_resistant: ""
+      genotypes:
+        -
+          accession: "VG 9514"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "A. cardenasii' X 'CO 1'"
+          plant_type: "NA"
+          accession_source: "NA"
+          comment: "Used for making cross"
+        -
+          accession: "GPBD 4"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "KRG 1' X 'ICGV 86855'"
+          plant_type: "Spanish Bunch"
+          accession_source: "NA"
+          comment: "Used for original rust resistant screening"
+        -
+          accession: "FDS 272"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "NA"
+          plant_type: "NA"
+          accession_source: "NA"
+          comment: "Used for original rust resistant screening"
+        -
+          accession: "NCAc 343"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "NC bunch' X 'PI 1216067'"
+          plant_type: "NA"
+          accession_source: "NA"
+          comment: "Used for original rust resistant screening"
+        -
+          accession: "M 28-2"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "EMS mutant of VL 1"
+          plant_type: "NA"
+          accession_source: "NA"
+          comment: "Used for original rust resistant screening"
+        -
+          accession: "DTG 57"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "TAG 24' X 'GPBD 4'"
+          plant_type: "NA"
+          accession_source: "NA"
+          comment: "Used for original rust resistant screening"
+        -
+          accession: "DTG 60"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "TG 26' X 'M 28-2'"
+          plant_type: "NA"
+          accession_source: "NA"
+          comment: "Used for original rust resistant screening"
+        -
+          accession: "DTG 58"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "TG 26' X 'M 28-2'"
+          plant_type: "NA"
+          accession_source: "NA"
+          comment: "Used for original rust resistant screening"
+        -
+          accession: "DTG 27"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "TG 49' X 'B 37c'"
+          plant_type: "NA"
+          accession_source: "NA"
+          comment: "Used for original rust resistant screening"
+        -
+          accession: "TDG 56"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "GPBD 4' X 'TG 49'"
+          plant_type: "NA"
+          accession_source: "NA"
+          comment: "Used for original rust resistant screening"
+        -
+          accession: "TFDRG 5"
+          susceptibility: "Resistant"
+          aAllele: "B"
+          pedigree: "TAG 24' X 'VG 9514'"
+          plant_type: "NA"
+          accession_source: "NA"
+          comment: "Used for original rust resistant screening"
+        -
+          accession: "TMV 2"
+          susceptibility: "Susceptible"
+          aAllele: "B"
+          pedigree: "Mass selection from 'Gudhiatham bunch'"
+          plant_type: "Spanish Bunch"
+          accession_source: "NA"
+          comment: "Used for original rust resistant screening"
+        -
+          accession: "SB XI"
+          susceptibility: "Susceptible"
+          aAllele: "B"
+          pedigree: "Selection from EC 94943"
+          plant_type: "NA"
+          accession_source: "NA"
+          comment: "Used for original rust resistant screening"
+        -
+          accession: "JL24"
+          susceptibility: "Susceptible"
+          aAllele: "B"
+          pedigree: "Ah 4213' X 'Ah4354'"
+          plant_type: "Spanish Bunch"
+          accession_source: "NA"
+          comment: "Used for original rust resistant screening"
+        -
+          accession: "TAG 24"
+          susceptibility: "Susceptible"
+          aAllele: "A"
+          pedigree: "TGS2' X 'TGE1'"
+          plant_type: "Spanish Bunch"
+          accession_source: "Bhabha Atomic Research Center, Trombay (India)"
+          comment: "Used for making cross"
+        -
+          accession: "TG 37A"
+          susceptibility: "Susceptible"
+          aAllele: "A"
+          pedigree: "TG 25' X 'TG 26'"
+          plant_type: "NA"
+          accession_source: "NA"
+          comment: "Used for original rust resistant screening"
+        -
+          accession: "TG 39"
+          susceptibility: "Susceptible"
+          aAllele: "A"
+          pedigree: "TAG 24' X 'TG 19'"
+          plant_type: "NA"
+          accession_source: "NA"
+          comment: "Used for original rust resistant screening"
+        -
+          accession: "TG 40"
+          susceptibility: "Susceptible"
+          aAllele: "A"
+          pedigree: "TAG 24' X 'TG 19'"
+          plant_type: "NA"
+          accession_source: "NA"
+          comment: "Used for original rust resistant screening"
+        -
+          accession: "TPG 41"
+          susceptibility: "Susceptible"
+          aAllele: "A"
+          pedigree: "TG 28A' X 'TG 22'"
+          plant_type: "NA"
+          accession_source: "NA"
+          comment: "Used for original rust resistant screening"
+        -
+          accession: "TG 42"
+          susceptibility: "Susceptible"
+          aAllele: "A"
+          pedigree: "TG 19' X ' TG 26'"
+          plant_type: "NA"
+          accession_source: "NA"
+          comment: "Used for original rust resistant screening"
+      notes: "* aAllele: A = allele present in the rust susceptible genotypes, and B = allele present in the rust resistant genotypes
+<br/>* Accessions 'VG 9514' and 'TAG 24' were used to generate recombinant inbred population. The remaining accessions were originally screened for rust resistance in Mondal and Badigannavar, 2010.
+<p>
+<img src='/files/mas/pics/rust_puccinia/Slide1.png'>"
+  links:
+    - "<span style='color: red'>*</span> <a href='https://peanutbase.org/search/qtl?qtl_name=rust'>List of Rust, Puccinia QTLs</a> at PeanutBase"
+  page_name: "rust_puccinia_b03a"
+

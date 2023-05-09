@@ -1,0 +1,128 @@
+---
+layout: default
+---
+<head>
+<style>
+  th { text-align: left; background-color: gray; color: white; }
+</style>
+</head>
+
+<h1>{{ page.title }}</h1>
+
+<p><b>Trait Symbol:</b> {{ page.symbol }}
+
+<p><b>Page Contributors:</b> {{ page.contributors }}
+
+<p><b>Major Information Sources:</b>
+<ul>
+{% for src in page.sources %}
+  <li>{{ src }}</li>
+{% endfor %}
+</ul>
+
+{% for marker_set in page.marker_sets %}
+  <br/>
+  {% for marker in marker_set.markers %}
+    &bull; <a href="/mas/{{ page.page_name }}#{{ marker.name }}">{{ marker.name }}</a>
+  {% endfor %}
+{% endfor %}
+
+<p><b>Background Information:</b> {{ page.background_info }}
+
+<p><b>Trait Details:</b> {{ page.details }}
+
+<p><b>Markers for MAS:</b>
+{% for marker_set in page.marker_sets %}
+  <table><tr>
+    <th>Marker</th>
+    {% for marker in marker_set.markers %}
+      <th id="{{ marker.name }}">{{ marker.name }}</th>
+    {% endfor %}
+  </tr><tr>
+    <td>Source</td>
+    {% for marker in marker_set.markers %}
+      <td>{{ marker.source }}</td>
+    {% endfor %}
+  </tr><tr>
+    <td>Comments</td>
+    {% for marker in marker_set.markers %}
+      <td>{{ marker.comments }}</td>
+    {% endfor %}
+  </tr><tr>
+    <td>Type</td>
+    {% for marker in marker_set.markers %}
+      <td>{{ marker.type }}</td>
+    {% endfor %}
+  </tr><tr>
+    <td>Repeat</td>
+    {% for marker in marker_set.markers %}
+      <td>{{ marker.repeat }}</td>
+    {% endfor %}
+  </tr><tr>
+    <td>Forward primer</td>
+    {% for marker in marker_set.markers %}
+      <td>{{ marker.forward_primer }}</td>
+    {% endfor %}
+  </tr><tr>
+    <td>Reverse primer</td>
+    {% for marker in marker_set.markers %}
+      <td>{{ marker.reverse_primer }}</td>
+    {% endfor %}
+  </tr><tr>
+    <td>Size (bp) in susceptible lines</td>
+    {% for marker in marker_set.markers %}
+      <td>{{ marker.bp_susceptible }}</td>
+    {% endfor %}
+  </tr><tr>
+    <td>Size (bp) in resistant lines</td>
+    {% for marker in marker_set.markers %}
+      <td>{{ marker.bp_resistant }}</td>
+    {% endfor %}
+  </tr></table>
+
+  {% if marker_set.genotypes %}
+    <p>Genotypes:
+    <table><tr>
+      {% for g in marker_set.genotypes[0] %}
+        <td>{{ g[0] | replace: "_", " " | capitalize }}</td>
+      {% endfor %}
+{% comment %}
+      <td><b>Accession</b></td>
+      <td><b>Susceptibility</b></td>
+      <td><b>aAllele</b></td>
+      <td><b>Pedigree</b></td>
+      <td><b>Plant type</b></td>
+      <td><b>Accession source</b></td>
+      <td><b>Comment</b></td>
+{% endcomment %}
+    {% for genotype in marker_set.genotypes %}
+      </tr><tr>
+      {% for g in genotype %}
+        <td>{{ g[1] }}</td>
+      {% endfor %}
+{% comment %}
+      <td>{{ genotype.accession }}</td>
+      <td>{{ genotype.susceptibility }}</td>
+      <td>{{ genotype.aAllele }}</td>
+      <td>{{ genotype.pedigree }}</td>
+      <td>{{ genotype.plant_type }}</td>
+      <td>{{ genotype.accession_source }}</td>
+      <td>{{ genotype.comment }}</td>
+{% endcomment %}
+    {% endfor %}
+    </tr></table>
+    <p>
+  {% endif %}
+
+  {% if marker_set.notes %}
+    {{ marker_set.notes }}
+  {% endif %}
+{% endfor %}
+
+<p><b>Links:</b>
+<ul>
+{% for link in page.links %}
+  <li>{{ link }}</li>
+{% endfor %}
+</ul>
+

@@ -1,0 +1,26 @@
+---
+layout: default
+title: Marker-Assisted Selection
+---
+
+<h1>Marker-Assisted Selection</h1>
+
+<p>A list of traits, compiled from literature, for which MAS has been used. Each item will take you to a page with detailed information on the trait, commonly used markers, citations, germplasm resources, etc. We plan to add more traits to this list, preferably with help from the community experts. If you want to edit or manage a trait page, <a href="/contact">please let us know</a>.
+
+{% if site.data.mas_traits %}
+{% assign traits = site.data.mas_traits | sort: "name" %}
+<ul>
+{% for trait in traits %}
+  <li><a href="/mas/{{ trait.page_name }}">{{ trait.name }}</a></li>
+{% endfor %}
+</ul>
+{% endif %}
+
+<h3>Tutorials</h3>
+
+<p><a href="/files/mas/pdf/SNPS_in_breeding_AAGB2018_Ozias.pdf">Single Nucleotide Polymorphism Arrays and Their Interpretation in the Context of Peanut Breeding</a>
+<br/>Presented at the 2018 AAGB meeting in Saly, Senegal by Dr. Peggy Ozias-Akins.
+
+<p><a href="/files/mas/pdf/OziasAkins_MAS_protocols_2018-12.pdf">Marker-Assisted Selection</a>
+<br/>Presented at the 2018 Peanut Breeder's Tools Workshop held in conjunction with the 2018 APRES meeting in Williamsburg, VA by Dr. Peggy Ozias-Akins.
+
