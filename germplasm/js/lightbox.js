@@ -38,12 +38,12 @@ function is_vimeolink(url,el) {
     xmlhttp.send();
 }
 function setGallery(el) {
-    var elements = document.body.querySelectorAll(".gallery");
+    var elements = document.body.querySelectorAll("a[class*='lightbox-']");
     elements.forEach(element => {
         element.classList.remove('gallery');
 	});
-	if(el.closest('ul, p')) {
-		var link_elements = el.closest('ul, p').querySelectorAll("a[class*='lightbox-']");
+	if(el.closest('a')) {
+		var link_elements = document.body.querySelectorAll("a[class*='lightbox-']");
 		link_elements.forEach(link_element => {
 			link_element.classList.remove('current');
 		});
