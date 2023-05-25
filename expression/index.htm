@@ -1,0 +1,24 @@
+---
+layout: default
+title: Expression
+tools_menu: true
+---
+
+<h1>Expression Data</h1>
+
+{% if site.data.expression %}
+{% assign groups = site.data.expression | group_by: "category" %}
+{% for group in groups %}
+  <dl>
+    <th>
+      <h4> {{ group.name }} </h4>
+      <ul>
+      {% for item in group.items %}
+      <li><b>{{ item.html }}</b>:<br/>{{ item.description }} </li> 
+      {% endfor %}
+      </ul>
+    </th>
+  </dl>
+{% endfor %}
+{% endif %}
+

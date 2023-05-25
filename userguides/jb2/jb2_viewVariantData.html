@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<h3>JBrowse2: View Variant Data</h3>
+<!--
+<div name="infogrphics-act">
+<details>
+<summary>Infographic(puml:act):</summary>
+<img src="http://www.plantuml.com/plantuml/proxy?cache=no&src=https://dev.peanutbase.org/userguides/jb2/jb2_genomeStrCompare-act.puml">
+</details>
+</div>
+-->
+<div name="steps-md">
+{% capture x %}
+{% include_relative jb2_viewVariantData.md %}
+{% endcapture %}{{ x | markdownify }}
+</div>
+<hr/>

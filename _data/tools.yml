@@ -12,8 +12,8 @@
 -
   category: "Download / Query"
   description: "InterMine interface to <i>Arachis</i> (peanut) species at LIS."
-  name: "PeanutMine"
-  url: "https://mines.legumeinfo.org/peanutmine/begin.do"
+  name: "ArachisMine"
+  url: "https://mines.legumeinfo.org/arachismine/begin.do"
 -
   category: "Download / Query"
   description: "Search ArachisMine for genes by keyword."
@@ -121,12 +121,18 @@
   url: "https://zzbrowse.legumeinfo.org/?tab=Manage&twoSpecies=n&datasets=Peanut%20GWAS&chr=Arahy.01&selected=100000&window=250000&traitsFromOntology=y"
 -
   category: "Miscellaneous"
-  description: A list of traits, compiled from literature, for which MAS has been used.
-  name: Marker-Assisted Selection
-  url: "/mas"
+  description: Gene expression resources at PeanutBase.
+  name: Gene Expression Resources
+  url: "/expression"
 -
+   category: "Miscellaneous"
+   description: A list of traits, compiled from literature, for which MAS has been used.
+   name: Marker-Assisted Selection
+   url: "/mas"
+- 
   category: "Miscellaneous"
   description: Peanut Core Collection Genotype Phenotype Project.
   name: NIFA PCCGP Project
   url: "/germplasm/nifa_pccgp"
-
+  
+  

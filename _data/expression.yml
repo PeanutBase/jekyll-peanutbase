@@ -1,0 +1,46 @@
+--- 
+-
+  category: "Gene Expression Resources for <i>Arachis</i> at PeanutBase and elsewhere"
+  html: "<a href='https://peanutbase.org/gene_expression' target='_blank'>Gene expression resources for Arachis</a>(<b>at legacy PeanutBase site</b>)"
+  description: "A page of gene expression resources for Arachis microarray and high throughput sequencing data sets at NCBI GEO, Array Express and Seq Read Archive (SRA) compiled at the legacy PeanutBase site."
+-
+  category: "Gene Expression Resources for <i>Arachis</i> at PeanutBase and elsewhere"
+    #html: "Expression atlas: <a href='https://peanutbase.org/gene_expression/atlas'>tissue expression</a>"
+  html: "<a href='/expression/expr_tissue_Hyp.html'>Gene expression in tissues</a>"  
+  description: "Comparison of RNA-Seq read counts from 22 Arachis hypogaea tissues against Arachis hypogaea genome. This analysis includes a table of counts of genes with differential expression from each tissue comparison. From differentially expressed genes, there are links to gene sequences, gene annotations, and views of expression in the genome browsers. This is the work of Dr. Peggy Ozias-Akins and colleagues."
+-
+  category: "Gene Expression Resources for <i>Arachis</i> at PeanutBase and elsewhere"
+  #html: "Expression atlas: <a href='https://peanutbase.org/gene_expression/atlas_nematode>nematode experiment'</a>"
+  html: "<a href='/expression/expr_nematode_DurSte.html'>Gene expression in nematode experiments</a>"
+  description: "Root transcriptome data for <i>A. duranensis</i> and <i>A. stenosperma</i> infected with <i>Meloidogyne arenaria</i>. Reference: Guimaraes PM, et al. (2015) Root Transcriptome Analysis of Wild Peanut Reveals Candidate Genes for Nematode Resistance. PLoS ONE 10(10): e0140937. <a href='http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4619257' target='_blank'>(PubMed)</a>."
+-
+  category: "Gene Expression Resources for <i>Arachis</i> at PeanutBase and elsewhere"
+  #html: "Expression atlas: <a href='https://peanutbase.org/gene_expression/atlas_drought'>drought experiment</a>"
+  html: "<a href='/expression/expr_drought_DurSte'> Gene expression during drought stress</a>"
+  description: "Comparison of RNA-Seq read counts from <i>A. duranensis</i> and <i>A. stenosperma</i> under drought treatment and control conditions. Reference: Guimaraes PM, et al. (2015) Transcriptome Profiling of Wild Arachis from Water-Limited Environments Uncovers Drought Tolerance Candidate Genes.<a href='https://www.ncbi.nlm.nih.gov/pubmed/26752807' target='_blank'> (PubMed)</a>."
+-
+  category: "Gene Expression Resources for <i>Arachis</i> at PeanutBase and elsewhere"
+  html: "<a href='https://mines.legumeinfo.org/arachismine/begin.do' target='_blank'>At ArachisMine</a>"
+  description: "(<b>**CURRENTLY NO EXPRESSION DATA LOADED INTO ArachisMine</b>)Please click the EXPRESSION tab at the ArachisMine."
+-
+  category: "Gene Expression Resources for <i>Arachis</i> at PeanutBase and elsewhere"
+  html: "<a>NFCore as webpage </a>"
+  description: "NFCore output served as webpage (adf) with interactive graphics."
+-
+  category: "Gene Expression Resources for <i>Arachis</i> at PeanutBase and elsewhere"
+  html: "<a href='https://conekt.legumeinfo.org/species/view/5' target='_blank'>Comparative gene expression</a>"
+  description: "Arachis gene expression in the <a href='https://conekt.legumeinfo.org/species/' target='_blank'>CoNekT</a> tool in a comparative context with other legumes."
+-
+  category: "Gene Expression Resources for <i>Arachis</i> at PeanutBase and elsewhere"
+  html: "<a href='http://bar.utoronto.ca/efp_arachis/cgi-bin/efpWeb.cgi' target='_blank'>The <i>Arachis</i> Arachis eFP Browser from BAR</a>"
+  description: "The Arachis eFP Browser at the <a href='https://bar.utoronto.ca/' target='_blank'>BAR</a> site, Univ. of Toronto."
+#
+#-
+#  category: "Selected genetic and genomic resources for peanut and related legumes"
+#  html: "<a href='http://bioinfolab.muohio.edu/txid3818v1/'>PeanutDB</a> - peanut transcriptome assembly and related tools"
+#-
+#  category: "Selected genetic and genomic resources for peanut and related legumes"
+#  html: "<a href='http://soybase.org/'>SoyBase</a> - soybean trait/QTL/map data; genome browser; sequence search tools; pathway and gene expression information"
+#-
+#  category: "Selected genetic and genomic resources for peanut and related legumes"
+#  html: "<a href='https://peanutbase.org/transcriptomes'>Transcriptomes (this site)</a>"
