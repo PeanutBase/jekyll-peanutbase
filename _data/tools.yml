@@ -109,11 +109,11 @@
   description: Search for protein domain annotations derived from InterProScan analysis.
   name: "Protein Domains"
   url: "https://peanutbase.org/search/protein_domains"
--
-  category: "Visualize / Browse"
-  description: Search for <i>Arachis</i> (peanut) quantitative trait loci.
-  name: "QTL Search"
-  url: "https://peanutbase.org/search/qtl"
+#-
+#  category: "Visualize / Browse"
+#  description: Search for <i>Arachis</i> (peanut) quantitative trait loci.
+#  name: "QTL Search"
+#  url: "https://peanutbase.org/search/qtl"
 -
   category: "Visualize / Browse"
   description: "Interactive visualization of multiple GWAS and QTL data sets, using synteny to identify potentially conserved association regions between species."
