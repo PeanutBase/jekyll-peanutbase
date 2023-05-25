@@ -68,7 +68,7 @@ title: ArachisMine gene keyword search
         description
         organism { genus species }
         strain { identifier }
-        geneFamilyAssignments { geneFamily { identifier } }
+        geneFamilyAssignments { geneFamily { id identifier } }
         locations { chromosome { identifier } supercontig { identifier } start end strand }
       }
     }
@@ -128,7 +128,7 @@ title: ArachisMine gene keyword search
           data.genes.map(({organism: {genus, species}, strain, ...gene}) => {
             const geneFamilyAssignments =
               gene.geneFamilyAssignments
-                .map(({geneFamily: {identifier}}) => identifier);
+                .map(({geneFamily: {id, identifier}}) => '<a href="https://mines.legumeinfo.org/arachismine/report.do?id=' + id + '" target="_blank">' + identifier + '</a>');
             const locations =
               gene.locations.map(({chromosome, supercontig, start, end, strand}) => {
                 const interval = `${start}-${end} (${strand})`;
