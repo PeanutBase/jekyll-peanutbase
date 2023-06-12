@@ -10,11 +10,11 @@
       {% for sp in spp %}
         {% for organism in sp.items %}
           {% if organism.category == "main" %}
-            <li> <a href="/taxa/{{ organism.species | downcase | relative_url }}"> {{ organism.species }} {{ organism.description }}</a></li>
+	    <li> <a href="/taxa/{{ organism.genus | downcase }}#{{ organism.species | downcase }}"> {{ organism.species }} {{ organism.description }}</a></li>
           {% endif %}
         {% endfor %}
       {% endfor %}
-      <li><a href="{{ "/taxa" | relative_url }}">OTHERS(#New#) (Many special-focus species and collections)</a></li>
+      <!--<li><a href="{{ "/taxa" | relative_url }}">OTHERS(#New#) (Many special-focus species and collections)</a></li>-->
       </ul>
     </div>
     {% endif %}
