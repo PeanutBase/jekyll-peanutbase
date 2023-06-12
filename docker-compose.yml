@@ -6,6 +6,7 @@ services:
       - bundle-cache:/usr/local/bundle
       - gem-cache:/usr/gem
       - /falafel/peanutbase/files:/srv/jekyll/files
+      - /falafel/peanutbase/files:/srv/jekyll/_site/files
 ## for Windows hosts
     environment:
       JEKYLL_UID: ${UID:?please set UID with your userid in the .env file}
