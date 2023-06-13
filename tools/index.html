@@ -5,7 +5,8 @@ title: Tools
 <h1>Tools</h1>
 
 {% if site.data.tools %}
-{% assign groups = site.data.tools | group_by: "category" | sort: "name" %}
+#{% assign groups = site.data.tools | group_by: "category" | sort: "name" %}
+{% assign groups = site.data.tools | group_by: "category" %} #sort by name removed for retaining specified order of items  
 {% for group in groups %}
   <dl>
     <th>
