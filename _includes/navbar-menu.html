@@ -2,7 +2,7 @@
   <li><a href="{{ "/" | relative_url }}">Home</a></li>
   <li>
   <!--   <a href="{{ "/taxa" | relative_url }}">Taxa</a>  -->
-    <a href="{{ "/taxa" | relative_url }}">Species</a>
+    <a href="{{ "/taxa/arachis" | relative_url }}">Species</a>
     {% if site.data.species_list %}
     {% assign spp = site.data.species_list | group_by: "species"  %}
     <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">

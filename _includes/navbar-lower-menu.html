@@ -1,7 +1,7 @@
 <ul class="uk-navbar-nav uk-hidden@l uk-visible@s">
   <li><a href="{{ "/" | relative_url }}">Home</a></li>
   <li>
-    <a href="{{ "/taxa" | relative_url }}">SPECIES(TAXA)</a>
+    <a href="{{ "/taxa/arachis" | relative_url }}">SPECIES(TAXA)</a>
     <!-- ORIGINAL code -->  
     {% if site.data.species_list %}
     {% assign spp = site.data.species_list | group_by: "species"  %}
