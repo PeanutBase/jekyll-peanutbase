@@ -28,7 +28,7 @@
   category: "Sequence Search"
   description: Run BLASTs against LIS genomes, CDSes, and proteins.
   name: "BLAST"
-  url: "/tools/sequenceserver/"
+  url: "https://sequenceserver.peanutbase.org/"
 -
   category: "Sequence Search"
   description: Annotate your sequences.
@@ -99,12 +99,12 @@
   category: "Genomes"
   description: "Genome assembly for <i>Arachis duranensis</i>."
   name: "Browse <i>A. duranensis</i>"
-  url: "https://peanutbase.org/gbrowse_aradu1.0"
+  url: "https://legacy.peanutbase.org/gbrowse_aradu1.0"
 -
   category: "Genomes"
   description: "Genome assembly for <i>Arachis ipaensis</i>."
   name: "Browse <i>A. ipaensis</i>"
-  url: "https://peanutbase.org/gbrowse_araip1.0"
+  url: "https://legacy.peanutbase.org/gbrowse_araip1.0"
 #-
 #  category: "Sequence Search"
 #  description: BLAT is a tool for aligning gene/transcript sequences, or highly-similar DNA sequences, to a genome.
