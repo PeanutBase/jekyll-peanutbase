@@ -28,7 +28,7 @@
   category: "Sequence Search"
   description: Run BLASTs against LIS genomes, CDSes, and proteins.
   name: "BLAST"
-  url: "https://sequenceserver.peanutbase.org/"
+  url: "/tools/sequenceserver/"
 -
   category: "Sequence Search"
   description: Annotate your sequences.
