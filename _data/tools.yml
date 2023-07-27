@@ -15,14 +15,14 @@
   name: "ArachisMine"
   url: "https://mines.legumeinfo.org/arachismine/begin.do"
 -
-  category: "Download / Query"
+  category: "Search"
   description: "Search ArachisMine for genes by keyword."
-  name: "ArachisMine Gene Keyword Search"
+  name: "Gene Search Tool"
   url: "/tools/gene-keyword-search.html"
 -
-  category: "Download / Query"
+  category: "Search"
   description: "Search ArachisMine for traits by keyword."
-  name: "ArachisMine Trait Keyword Search"
+  name: "Trait Search Tool"
   url: "/tools/trait-keyword-search.html"
 -
   category: "Sequence Search"
