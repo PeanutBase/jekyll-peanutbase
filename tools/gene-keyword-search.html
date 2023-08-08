@@ -4,7 +4,7 @@ title: ArachisMine gene keyword search
 ---
 
 <script type="text/javascript" src="./js/graphql.js"></script>
-<script type="module" src="./js/web-components.bundled.js"></script>
+<script type="module" src="./js/web-components.min.js"></script>
 
 <h2>ArachisMine Gene Keyword Search</h2>
 
@@ -19,10 +19,12 @@ title: ArachisMine gene keyword search
   const geneFormDataQuery = `
     query FormDataQuery {
       organisms {
-        genus
-        species
-        strains {
-          identifier
+        results {
+          genus
+          species
+          strains {
+            identifier
+          }
         }
       }
     }
@@ -33,7 +35,7 @@ title: ArachisMine gene keyword search
       .then(({data}) => {
         // bin the strains by genus then species
         const binnedFormData = {};
-        data.organisms.forEach(({genus, species, strains}) => {
+        data.organisms.results.forEach(({genus, species, strains}) => {
           if (!(genus in binnedFormData)) {
             binnedFormData[genus] = {}
           }
@@ -60,16 +62,24 @@ title: ArachisMine gene keyword search
   }
 
   const geneQuery = `
-    query Query($identifier: String, $name: String, $description: String, $genus: String, $species: String, $strain: String, $geneFamilyIdentifier: String, $start: Int, $size: Int) {
-      genes(genus: $genus, species: $species, strain: $strain, identifier: $identifier, name: $name, description: $description, geneFamilyIdentifier: $geneFamilyIdentifier, start: $start, size: $size) {
-        id
-        identifier
-        name
-        description
-        organism { genus species }
-        strain { identifier }
-        geneFamilyAssignments { geneFamily { id identifier } }
-        locations { chromosome { identifier } supercontig { identifier } start end strand }
+    query Query($identifier: String, $name: String, $description: String, $genus: String, $species: String, $strain: String, $family: String, $page: Int, $pageSize: Int) {
+      genes(genus: $genus, species: $species, strain: $strain, identifier: $identifier, name: $name, description: $description, geneFamilyIdentifier: $family, page: $page, pageSize: $pageSize) {
+        results {
+          id
+          identifier
+          name
+          description
+          organism { genus species }
+          strain { identifier }
+          geneFamilyAssignments { geneFamily { id identifier } }
+          locations { chromosome { identifier } supercontig { identifier } start end strand }
+        }
+        pageInfo {
+          hasNextPage
+          numResults
+          pageSize
+          pageCount
+        }
       }
     }
   `;
@@ -81,28 +91,26 @@ title: ArachisMine gene keyword search
     const strain = searchData['strain'];
     const identifier = searchData['identifier'];
     const description = searchData['description'];
-    const geneFamilyIdentifier = searchData['geneFamilyIdentifier'];
-    const pageSize = 10;
-    const start = (page-1)*pageSize;
-    // pageSize+1 because we want to see if there's a "next" page
+    const family = searchData['family'];
     const variables = {
       genus,
       species,
       strain,
       identifier,
       description,
-      geneFamilyIdentifier,
-      start,
-      size: pageSize+1
+      family,
+      page,
+      pageSize: 10,
     };
     // returns a Promise that resolves to an array of Gene objects the gene search
     // webcomponent knows how to parse: {name: string, description: string}[]
     return graphqlQuery(uri, geneQuery, variables, abortSignal)
       .then(({data}) => {
-        const hasNext = pageSize+1 === data.genes.length;
-        // remove the lookahead result
-        if (hasNext) data.genes.pop();
-        for (var gene of data.genes) {
+        // extract the page info
+        const { hasNextPage: hasNext, numResults, pageSize, pageCount: numPages }
+          = data.genes.pageInfo;
+        // tweak results for presentation
+        for (var gene of data.genes.results) {
           gene.name = '<a href="https://mines.legumeinfo.org/arachismine/report.do?id=' + gene.id + '" target="_blank">' + gene.name + '</a>';
           if (gene.description == null) {
             gene.description = '';
@@ -125,7 +133,7 @@ title: ArachisMine gene keyword search
         }
         // flatten results
         const results =
-          data.genes.map(({organism: {genus, species}, strain, ...gene}) => {
+          data.genes.results.map(({organism: {genus, species}, strain, ...gene}) => {
             const geneFamilyAssignments =
               gene.geneFamilyAssignments
                 .map(({geneFamily: {id, identifier}}) => '<a href="https://mines.legumeinfo.org/arachismine/report.do?id=' + id + '" target="_blank">' + identifier + '</a>');
@@ -149,7 +157,7 @@ title: ArachisMine gene keyword search
             };
           });
         // construct the expected paginated results object
-        const paginatedResults = { hasNext, results };
+        const paginatedResults = { hasNext, numResults, pageSize, numPages, results };
         return paginatedResults;
       }
     );

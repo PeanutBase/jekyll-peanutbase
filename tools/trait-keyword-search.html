@@ -4,7 +4,7 @@ title: ArachisMine trait keyword search
 ---
 
 <script type="text/javascript" src="./js/graphql.js"></script>
-<script type="module" src="./js/web-components.bundled.js"></script>
+<script type="module" src="./js/web-components.min.js"></script>
 
 <h2>ArachisMine Trait Keyword Search</h2>
 
@@ -16,18 +16,26 @@ title: ArachisMine trait keyword search
 <!-- set the search function by property because functions can't be set as attributes -->
 <script type="text/javascript">
   const traitQuery = `
-    query Query($name: String!, $start: Int, $size: Int) {
-      traits(name: $name, start: $start, size: $size) {
-        id
-        name
-        description
-        gwas {
-          identifier
+    query Query($name: String!, $page: Int, $pageSize: Int) {
+      traits(name: $name, page: $page, pageSize: $pageSize) {
+        results {
+          id
+          name
           description
+          gwas {
+            identifier
+            description
+          }
+          qtlStudy {
+            identifier
+            description
+          }
         }
-        qtlStudy {
-          identifier
-          description
+        pageInfo {
+          hasNextPage
+          numResults
+          pageSize
+          pageCount
         }
       }
     }
@@ -36,17 +44,16 @@ title: ArachisMine trait keyword search
   // the search function given to the LIS trait search webcomponent
   function getTraits(searchData, page, {abortSignal}) {
     const name = searchData['query'];
-    const pageSize = 10;
-    const start = (page-1)*pageSize;
-    const variables = {name, start, size: pageSize+1};
+    const variables = {name, page, pageSize: 10};
     // returns a Promise that resolves to an array of Trait objects the trait search
     // webcomponent knows how to parse: {name: string, description: string}[]
     return graphqlQuery(uri, traitQuery, variables, abortSignal)
       .then(({data}) => {
-        const hasNext = pageSize+1 === data.traits.length;
-        // remove the lookahead result
-        if (hasNext) data.traits.pop();
-        for (var trait of data.traits) {
+        // extract the page info
+        const { hasNextPage: hasNext, numResults, pageSize, pageCount: numPages }
+          = data.traits.pageInfo;
+        // tweak results for presentation
+        for (var trait of data.traits.results) {
           trait.name = '<a href="https://mines.legumeinfo.org/arachismine/report.do?id=' + trait.id + '" target="_blank">' + trait.name + '</a>';
           if (trait.description == null) trait.description = '';
           if (trait.gwas != null) {
@@ -66,7 +73,10 @@ title: ArachisMine trait keyword search
         // construct the expected paginated results object
         const paginatedResults = {
           hasNext,
-          results: data.traits,
+          numResults,
+          pageSize,
+          numPages,
+          results: data.traits.results,
         };
         return paginatedResults;
       }
