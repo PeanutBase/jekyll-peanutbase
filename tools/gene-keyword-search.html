@@ -115,7 +115,6 @@ title: ArachisMine gene keyword search
         // tweak results for presentation
         for (var gene of data.genes.results) {
           gene.identifier = '<a href="#modal" data-gene="' + gene.identifier + '" uk-toggle>' + gene.identifier + '</a>';
-          gene.name = '<a href="https://mines.legumeinfo.org/arachismine/report.do?id=' + gene.id + '" target="_blank">' + gene.name + '</a>';
           if (gene.description == null) {
             gene.description = '';
           } else {
@@ -240,5 +239,24 @@ title: ArachisMine gene keyword search
     });
   };
 
+  // configure results table
+  geneSearchElement.resultAttributes = [
+    'identifier',
+    'locations',
+    'description',
+    'geneFamilyAssignments',
+    'genus',
+    'species',
+    'strain'
+  ];
+  geneSearchElement.tableHeader = {
+    identifier: 'Identifier',
+    locations: 'Locations',
+    description: 'Description',
+    geneFamilyAssignments: 'Gene Family Assignments',
+    genus: 'Genus',
+    species: 'Species',
+    strain: 'Strain'
+  };
 </script>
 
