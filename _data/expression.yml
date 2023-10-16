@@ -21,11 +21,11 @@
 -
   category: "Gene Expression Resources for <i>Arachis</i> at PeanutBase and elsewhere"
   html: "<a href='https://mines.legumeinfo.org/arachismine/report.do?id=37242068' target='_blank'>At ArachisMine</a>"
-  description: "The peanut expression data (Clevenger 2016, publication_doi: 10.3389/fpls.2016.01446) after remapping the reads to Tifrunner.gnm2.ann2 has now been integrated into the ArachisMine gene report pages."
+  description: "The peanut expression data (<a href='https://doi.org/10.3389/fpls.2016.01446' target='_blank'>Clevenger 2016</a>) after remapping the reads to Tifrunner.gnm2.ann2 has now been integrated into the ArachisMine gene report pages."
 -
   category: "Gene Expression Resources for <i>Arachis</i> at PeanutBase and elsewhere"
   html: "<a href='https://data.legumeinfo.org/Arachis/hypogaea/expression/Tifrunner.gnm2.ann2.expr.Tifrunner.Clevenger_2016/' target='_blank'>At DataStore</a>"
-  description: "The peanut expression data (Clevenger 2016, publication_doi: 10.3389/fpls.2016.01446) after remapping the reads to Tifrunner.gnm2.ann2 is now available at the DataStore."
+  description: "The peanut expression data (<a href='https://doi.org/10.3389/fpls.2016.01446' target='_blank'>Clevenger 2016</a    >) after remapping the reads to Tifrunner.gnm2.ann2 is now available at the DataStore."
 -
   category: "Gene Expression Resources for <i>Arachis</i> at PeanutBase and elsewhere"
   html: "<a>NFCore as webpage </a>"
