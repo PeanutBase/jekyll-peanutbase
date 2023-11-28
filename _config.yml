@@ -33,6 +33,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://peanutbase.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: peanutbaseorg #legumefed
 github_username: peanutbase #legumeinfo
+google_analytics_id: "UA-49655154-2"
 newsletter: http://eepurl.com/cX_JjL
 date_format: "%B %d, %Y"
 # Set the LIS Datastore base URL here
