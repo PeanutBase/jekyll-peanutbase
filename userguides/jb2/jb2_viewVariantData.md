@@ -1,8 +1,5 @@
-<!-- 
-### JBrowse2: View Variant Data 
--->
+<!--  JBrowse2: View Variant Data   -->
 **View Variant Data in JBrowse2**
-(**Work in progress)
 * <a href="https://dev.peanutbase.org/tools/jbrowse2/" target="_blank">Start a new session</a>  
 * Select Linear Genome view and launch.  
 * At Select the assembly (variant data must exist for this genome).  

@@ -1,0 +1,5 @@
+20231128: Copied from
+scp dal:/data/adf/nf-core/rnaseq/arahy_clevenger_2016/multiqc/star_salmon/multiqc_report.html  .
+
+
+

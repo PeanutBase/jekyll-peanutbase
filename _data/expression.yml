@@ -28,8 +28,8 @@
   description: "The peanut expression data (<a href='https://doi.org/10.3389/fpls.2016.01446' target='_blank'>Clevenger 2016</a    >) after remapping the reads to Tifrunner.gnm2.ann2 is now available at the DataStore."
 -
   category: "Gene Expression Resources for <i>Arachis</i> at PeanutBase and elsewhere"
-  html: "<a>NFCore as webpage </a>"
-  description: "NFCore output served as webpage (adf) with interactive graphics."
+  html: "<a href='/expression/Clevenger2016_nfcore_multiqc/multiqc_report.html'> MultiQC(quality metrics) for Clevenger 2016 expression data</a>"
+  description: "NFCore output MultiQC report served as webpage  with interactive graphics."
 -
   category: "Gene Expression Resources for <i>Arachis</i> at PeanutBase and elsewhere"
   html: "<a href='https://conekt.legumeinfo.org/species/view/5' target='_blank'>Comparative gene expression</a>"
