@@ -1,6 +1,9 @@
+---
+layout: blank
+---
+
 // query a local instance of the LIS GraphQL server:
-// https://github.com/legumeinfo/graphql-server
-const uri = 'https://dev.peanutbase.org/graphql';
+const uri = "{{ site.graphql_uri }}";
 
 // A function that gets data from a GraphQL server via a POST request.
 // Adapted from https://graphql.org/graphql-js/graphql-clients/

@@ -1,0 +1,3 @@
+# Settings specific to production version
+graphql_uri: https://www.peanutbase.org/graphql
+
