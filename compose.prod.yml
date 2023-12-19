@@ -1,4 +1,5 @@
 services:
   jekyll:
-    command: jekyll serve --incremental --config=_config.yml,_config.prod.yml
+    command: jekyll serve --incremental --config _config.yml,_config.prod.yml
+    restart: always
 
