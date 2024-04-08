@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<h3>Gigwa: Compare multiple genotypes in flapjack format</h3>
+
+<!--  # Check dev or prod server & modify image URL  -->
+{% assign siteUrl = site.url %}
+{% if siteUrl contains 'peanutbase' %}
+{% assign srcHostname = 'peanutbase' %}
+{% else  %}
+{% assign srcHostname = 'dev.peanutbase'  %}
+{% endif %}
+<!--
+ {{ "Result: " | append: srcHostname  }} <br/> 
+ {{ siteUrl }}
+ -->
+<table>
+<tr>
+<td>
+<div name="infogrphics-act">
+<details>
+<summary>Infographic:</summary>
+<!--  (puml:act)  -->
+
+<!--
+<img src="http://www.plantuml.com/plantuml/proxy?cache=no&src=https://peanutbase.org/userguides/gigwa/gigwa_flapjack-act.puml">  
+-->
+<img src="https://www.plantuml.com/plantuml/proxy?cache=no&src=https://{{ srcHostname }}.org/userguides/gigwa/gigwa_flapjack-act.puml">
+</details>
+</div>
+<td>  
+<div name="steps-md">
+{% capture x %}
+{% include_relative gigwa_flapjack.md %}
+{% endcapture %}{{ x | markdownify }}
+</div>
+</td>
+</tr>
+</table>
+
+<hr/>
