@@ -4,17 +4,16 @@ layout: default
 
 <h3>Gigwa: Compare multiple genotypes in flapjack format</h3>
 
-<!--  # Check dev or prod server & modify image URL  -->
+<!--  # Check dev or prod server & modify image URL  
 {% assign siteUrl = site.url %}
 {% if siteUrl contains 'peanutbase' %}
 {% assign srcHostname = 'peanutbase' %}
 {% else  %}
 {% assign srcHostname = 'dev.peanutbase'  %}
 {% endif %}
-<!--
  {{ "Result: " | append: srcHostname  }} <br/> 
- {{ siteUrl }}
- -->
+ {{ siteUrl }}  
+-->
 <table>
 <tr>
 <td>
@@ -25,8 +24,9 @@ layout: default
 
 <!--
 <img src="http://www.plantuml.com/plantuml/proxy?cache=no&src=https://peanutbase.org/userguides/gigwa/gigwa_flapjack-act.puml">  
--->
 <img src="https://www.plantuml.com/plantuml/proxy?cache=no&src=https://{{ srcHostname }}.org/userguides/gigwa/gigwa_flapjack-act.puml">
+-->
+<img src="/userguides/gigwa/gigwa_flapjack-act.svg">
 </details>
 </div>
 <td>  
