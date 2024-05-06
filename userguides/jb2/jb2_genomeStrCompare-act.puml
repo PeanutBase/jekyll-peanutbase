@@ -1,6 +1,6 @@
 ### JBrowse2: Genome structure comparison between two genome@startuml
 @startuml
-  'title Genome Structure Comparison (Aradu vs Araca)
+  title "Comparison between duranensis and cardenasii genomes" 
     
   :New session; 
   Note: Launch Dotplot view;

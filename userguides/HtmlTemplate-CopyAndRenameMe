@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<h3>Title</h3>
+
+<table style="width:100%" ><tr>
+<td style="width:35%">
+<div>
+<img src="/userguides/<dir>/<filename.svg>">
+</div></td>
+<td><div>
+<img src="/userguides/<dir>/<filename.png>"  border=1px>
+</div></td>
+</table>
+<hr/>
+<div name="steps-md">
+{% comment %}  IMP:  UNCOMMENT THIS BLOCK WHEN USING
+{% capture x %}
+{% include_relative filename.md  %}
+{% endcapture %}{{ x | markdownify }}
+{% endcomment %}
+</div>
+

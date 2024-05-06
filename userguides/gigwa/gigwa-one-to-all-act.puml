@@ -1,0 +1,46 @@
+
+@startuml
+title "Gigwa: Compare one to all genotypes in minicore"
+
+:PB home page:
+Tools panel(left);
+-> clk Gigwa;
+
+:Gigwa home page:
+a. Top left, Database dropdown=US_Peanut_minicore,
+b. Enable Browse and export;
+-> Search;
+
+:Genotype data appears;
+-> Download icon;
+
+:Popup:
+a. Export format= Flapjack,
+b. Keep files on server;
+-> Export;
+
+:Popup;
+-> View in flapjack-byte;
+
+:Viewer window as a large popup;
+-> (Optional)\n Open in separate window(top of popup);
+
+group "Viewer window opens in new tab"
+:Controls Tab (Top):
+a. Choose a Chromosome, ex. = A02 (from A01 to B10); 
+
+:Clk Color schemes Tab= Similarity to line
+b. Dropdown: Select line (ex., C10 from dropdown);  
+
+:Clk Sorting Tab:  
+c. By similarity to line (ex., C10 from dropdown);  
+
+- Top panel: Genotype at SNP
+- Bottom panel: Flapjack view(visually comapre pattern);
+end group   
+
+@enduml
+
+
+
+
