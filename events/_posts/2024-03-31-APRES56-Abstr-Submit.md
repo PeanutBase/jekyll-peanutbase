@@ -1,9 +1,9 @@
 ---
 layout:     event
-title:      APRE(2024), Abstract By Mar 31
+title:      APRES(2024), Abstract By Mar 31
 author:     Sudhansu Dash
 summary:    APRES 2024 Abstract
-enddate:    2024-04-05
+end_date:    2024-04-05
 categories: jekyll pixyll
 ---
 
