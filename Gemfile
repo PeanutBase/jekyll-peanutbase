@@ -7,7 +7,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 4.2.0"
+gem "jekyll", "~> 4.3.0"
 gem "webrick", "~> 1.7"
 gem "jekyll-theme-legumeinfo", path: "./_themes/jekyll-theme-legumeinfo"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
@@ -15,6 +15,7 @@ gem "jekyll-theme-legumeinfo", path: "./_themes/jekyll-theme-legumeinfo"
 #gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
+  gem "jekyll-plantuml"
   gem "jekyll-feed", "~> 0.12"
   ## handy way to see if an image exists on the site
   gem 'jekyll_file_exists', :git => 'https://github.com/asperduti/jekyll_file_exists.git'

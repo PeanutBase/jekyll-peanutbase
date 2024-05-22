@@ -1,4 +1,4 @@
 services:
-  jekyll:
-    command: jekyll serve --incremental --config _config.yml,_config.dev.yml
+  serve:
+    command: --incremental --profile --trace --host 0.0.0.0 --config _config.yml,_config.dev.yml
 
