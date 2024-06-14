@@ -1,23 +1,16 @@
 services:
-  jekyll:
-    image: jekyll/jekyll:4.2.0
+  serve:
+    build: .
+    command: --incremental --profile --trace --host 0.0.0.0
     volumes:
-      - ./:/srv/jekyll
-      - bundle-cache:/usr/local/bundle
-      - gem-cache:/usr/gem
-## for Windows hosts
-    environment:
-      JEKYLL_UID: ${UID:?please set UID with your userid in the .env file}
-      JEKYLL_GID: ${GID:?please set GID with your groupid in the .env file}
-      VERBOSE: 1
-#     FORCE_POLLING: 1
-#
-# Moved command to compose.dev.yml and compose.prod.yml
-#original: livereload severely delays browser refresh#    command: jekyll serve --incremental --livereload
-    # command: jekyll serve --incremental
+      - ./:/app
     ports:
       - "4000:4000"
-      - "35729:35729"
-volumes:
-  bundle-cache:
-  gem-cache:
+
+  build:
+    build: .
+    entrypoint: bundle exec jekyll build --profile --trace
+    volumes:
+      - ./:/app
+    profiles:
+      - build
