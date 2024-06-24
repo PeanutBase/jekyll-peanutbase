@@ -7,7 +7,7 @@ GIT
 PATH
   remote: _themes/jekyll-theme-legumeinfo
   specs:
-    jekyll-theme-legumeinfo (1.0.0)
+    jekyll-theme-legumeinfo (1.1.0)
       jekyll (>= 3.5, < 5.0)
       jekyll-datapage-generator (~> 1.4.0)
 
