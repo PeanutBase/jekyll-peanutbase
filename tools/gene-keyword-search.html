@@ -75,6 +75,7 @@ title: ArachisMine gene keyword search
           organism { genus species }
           strain { identifier }
           geneFamilyAssignments { geneFamily { id identifier } }
+          panGeneSets { identifier }
           locations { chromosome { identifier } supercontig { identifier } start end strand }
         }
         pageInfo {
@@ -140,6 +141,8 @@ title: ArachisMine gene keyword search
             const geneFamilyAssignments =
               gene.geneFamilyAssignments
                 .map(({geneFamily: {id, identifier}}) => '<a href="https://mines.legumeinfo.org/arachismine/report.do?id=' + id + '" target="_blank">' + identifier + '</a>');
+            const panGeneSets =
+              gene.panGeneSets.map(({identifier}) => `<a href="#modal" data-pangeneset="${identifier}" uk-toggle>${identifier}</a>`);
             const locations =
               gene.locations.map(({chromosome, supercontig, start, end, strand}) => {
                 let location = `unknown`;
@@ -164,6 +167,7 @@ title: ArachisMine gene keyword search
               strain: strain.identifier,
               ...gene,
               geneFamilyAssignments,
+              panGeneSets,
               locations,
             };
           });
@@ -198,6 +202,18 @@ title: ArachisMine gene keyword search
   }
   `;
 
+  // pangene set linkout query for the LIS GraphQL API
+  const panGeneSetLinkoutsQuery = `
+  query PanGeneSetLinkoutsQuery($identifier: ID!) {
+    panGeneSetLinkouts(identifier: $identifier) {
+      results {
+        href
+        text
+      }
+    }
+  }
+  `;
+
   // the linkout function to give to the linkout component
   function linkoutFunction({type, variables}, {abortSignal}) {
     if (type == 'gene') {
@@ -210,6 +226,11 @@ title: ArachisMine gene keyword search
       // linkout Web Component knows how to parse: {text: string, href: string}[]
       return graphqlQuery(uri, locationLinkoutsQuery, variables, abortSignal)
         .then(({data}) => ({results: data.locationLinkouts.results}));
+    } else if (type == 'panGeneSet') {
+      // returns a Promise that resolves to an array of linkout objects that the
+      // linkout Web Component knows how to parse: {text: string, href: string}[]
+      return graphqlQuery(uri, panGeneSetLinkoutsQuery, variables, abortSignal)
+        .then(({data}) => ({results: data.panGeneSetLinkouts.results}));
     }
     return Promise.reject();
   }
@@ -225,7 +246,7 @@ title: ArachisMine gene keyword search
     const modal = document.getElementById('modal');
     modal.addEventListener('toggle', (event) => {
       const [{$el: link}, ...uikitComponents] = event.detail;
-      const {gene, location, start, end} = link.dataset;
+      const {gene, location, start, end, pangeneset} = link.dataset;
       let type = '';
       let variables = {};
       if (gene !== undefined) {
@@ -234,6 +255,9 @@ title: ArachisMine gene keyword search
       } else if (location !== undefined && start !== undefined && end !== undefined) {
         type = 'location';
         variables = {identifier: location, start: parseInt(start), end: parseInt(end)};
+      } else if (pangeneset !== undefined) {
+        type = 'panGeneSet';
+        variables = {identifier: pangeneset};
       }
       linkoutElement.getLinkouts({type, variables});
     });
@@ -245,6 +269,7 @@ title: ArachisMine gene keyword search
     'locations',
     'description',
     'geneFamilyAssignments',
+    'panGeneSets',
     'genus',
     'species',
     'strain'
@@ -254,6 +279,7 @@ title: ArachisMine gene keyword search
     locations: 'Locations',
     description: 'Description',
     geneFamilyAssignments: 'Gene Family Assignments',
+    panGeneSets: 'PanGene Sets',
     genus: 'Genus',
     species: 'Species',
     strain: 'Strain'
