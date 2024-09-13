@@ -42,15 +42,9 @@ species:
     name: Tifrunner
     origin: Southeastern United States
     resources:
-    - URL: https://legacy.peanutbase.org/gbrowse_peanut1.0
-      description: GBrowse for Tifrunner assembly 1.0
-      name: Peanutbase Genome Browser (GBrowse)
-    - URL: https://legacy.peanutbase.org/genomes/jbrowse?data=arahy.Tifrunner.gnm1
-      description: JBrowse for Tifrunner assembly 1.0
-      name: Peanutbase Genome Browser (JBrowse)
-    - URL: https://legacy.peanutbase.org/gb2/gbrowse/arahy.Tifrunner.gnm2/
-      description: GBrowse for Tifrunner assembly 2.0
-      name: PeanutBase Genome Browser (GBrowse)
+    - URL: https://www.ncbi.nlm.nih.gov/nuccore/PIVG00000000
+      description: Tifrunner gnm2.ann2 (assembly 2.0 annotation 2.0) at NCBI
+      name: NCBI Tifrunner assembly 2.0
     - URL: https://www.peanutbase.org/tools/sequenceserver/
       description: SequenceServer BLAST against the Tifrunner v2 assembly
       name: LIS SequenceServer
@@ -64,6 +58,46 @@ species:
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 arahy.Tifrunner.gnm2
+    - URL: '/tools/jbrowse2/?config=config.json&session=spec-{%22views%22: [{%22type%22:
+        %22DotplotView%22, %22views%22: [{%22assembly%22: %22arahy.Tifrunner.gnm2%22},
+        {%22assembly%22: %22aradu.V14167.gnm2%22}], %22tracks%22: [%22arahy.Tifrunner.gnm2.x.aradu.V14167.gnm2.DWM1.paf%22]}]}'
+      description: JBrowse2 Dotplot View
+      name: JBrowse2 arahy.Tifrunner.gnm2.x.aradu.V14167.gnm2.DWM1.paf.gz
+    - URL: '/tools/jbrowse2/?config=config.json&session=spec-{%22views%22: [{%22type%22:
+        %22DotplotView%22, %22views%22: [{%22assembly%22: %22arahy.Tifrunner.gnm2%22},
+        {%22assembly%22: %22aradu.K30065.gnm1%22}], %22tracks%22: [%22arahy.Tifrunner.gnm2.x.aradu.K30065.gnm1.DWM1.paf%22]}]}'
+      description: JBrowse2 Dotplot View
+      name: JBrowse2 arahy.Tifrunner.gnm2.x.aradu.K30065.gnm1.DWM1.paf.gz
+    - URL: '/tools/jbrowse2/?config=config.json&session=spec-{%22views%22: [{%22type%22:
+        %22DotplotView%22, %22views%22: [{%22assembly%22: %22arahy.Tifrunner.gnm2%22},
+        {%22assembly%22: %22arahy.Shitouqi.gnm1%22}], %22tracks%22: [%22arahy.Tifrunner.gnm2.x.arahy.Shitouqi.gnm1.DWM1.paf%22]}]}'
+      description: JBrowse2 Dotplot View
+      name: JBrowse2 arahy.Tifrunner.gnm2.x.arahy.Shitouqi.gnm1.DWM1.paf.gz
+    - URL: '/tools/jbrowse2/?config=config.json&session=spec-{%22views%22: [{%22type%22:
+        %22DotplotView%22, %22views%22: [{%22assembly%22: %22arahy.Tifrunner.gnm2%22},
+        {%22assembly%22: %22aradu.K30060.gnm1%22}], %22tracks%22: [%22arahy.Tifrunner.gnm2.x.aradu.K30060.gnm1.DWM1.paf%22]}]}'
+      description: JBrowse2 Dotplot View
+      name: JBrowse2 arahy.Tifrunner.gnm2.x.aradu.K30060.gnm1.DWM1.paf.gz
+    - URL: '/tools/jbrowse2/?config=config.json&session=spec-{%22views%22: [{%22type%22:
+        %22DotplotView%22, %22views%22: [{%22assembly%22: %22arahy.Tifrunner.gnm2%22},
+        {%22assembly%22: %22araip.K30076.gnm2%22}], %22tracks%22: [%22arahy.Tifrunner.gnm2.x.araip.K30076.gnm2.DWM1.paf%22]}]}'
+      description: JBrowse2 Dotplot View
+      name: JBrowse2 arahy.Tifrunner.gnm2.x.araip.K30076.gnm2.DWM1.paf.gz
+    - URL: '/tools/jbrowse2/?config=config.json&session=spec-{%22views%22: [{%22type%22:
+        %22DotplotView%22, %22views%22: [{%22assembly%22: %22arahy.Tifrunner.gnm2%22},
+        {%22assembly%22: %22arahy.Tifrunner.gnm1%22}], %22tracks%22: [%22arahy.Tifrunner.gnm2.x.arahy.Tifrunner.gnm1.DWM1.paf%22]}]}'
+      description: JBrowse2 Dotplot View
+      name: JBrowse2 arahy.Tifrunner.gnm2.x.arahy.Tifrunner.gnm1.DWM1.paf.gz
+    - URL: '/tools/jbrowse2/?config=config.json&session=spec-{%22views%22: [{%22type%22:
+        %22DotplotView%22, %22views%22: [{%22assembly%22: %22arahy.Tifrunner.gnm2%22},
+        {%22assembly%22: %22arahy.BaileyII.gnm1%22}], %22tracks%22: [%22arahy.Tifrunner.gnm2.x.arahy.BaileyII.gnm1.DWM1.paf%22]}]}'
+      description: JBrowse2 Dotplot View
+      name: JBrowse2 arahy.Tifrunner.gnm2.x.arahy.BaileyII.gnm1.DWM1.paf.gz
+    - URL: '/tools/jbrowse2/?config=config.json&session=spec-{%22views%22: [{%22type%22:
+        %22DotplotView%22, %22views%22: [{%22assembly%22: %22arahy.Tifrunner.gnm2%22},
+        {%22assembly%22: %22arahy.Fuhuasheng.gnm1%22}], %22tracks%22: [%22arahy.Tifrunner.gnm2.x.arahy.Fuhuasheng.gnm1.DWM1.paf%22]}]}'
+      description: JBrowse2 Dotplot View
+      name: JBrowse2 arahy.Tifrunner.gnm2.x.arahy.Fuhuasheng.gnm1.DWM1.paf.gz
   - accession: GH00910
     description: "The mid-twentieth century landrace Fuhuasheng, from North China,\
       \ is a widely used parent from which \u223C70% of Chinese peanut cultivars released\
@@ -104,6 +138,26 @@ species:
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 arahy.BaileyII.gnm1
+    - URL: '/tools/jbrowse2/?config=config.json&session=spec-{%22views%22: [{%22type%22:
+        %22DotplotView%22, %22views%22: [{%22assembly%22: %22arahy.BaileyII.gnm1%22},
+        {%22assembly%22: %22araca.K10017.gnm1%22}], %22tracks%22: [%22arahy.BaileyII.gnm1.x.araca.K10017.gnm1.Z93X.paf%22]}]}'
+      description: JBrowse2 Dotplot View
+      name: JBrowse2 arahy.BaileyII.gnm1.x.araca.K10017.gnm1.Z93X.paf.gz
+    - URL: '/tools/jbrowse2/?config=config.json&session=spec-{%22views%22: [{%22type%22:
+        %22DotplotView%22, %22views%22: [{%22assembly%22: %22arahy.BaileyII.gnm1%22},
+        {%22assembly%22: %22aradu.V14167.gnm2%22}], %22tracks%22: [%22arahy.BaileyII.gnm1.x.aradu.V14167.gnm2.Z93X.paf%22]}]}'
+      description: JBrowse2 Dotplot View
+      name: JBrowse2 arahy.BaileyII.gnm1.x.aradu.V14167.gnm2.Z93X.paf.gz
+    - URL: '/tools/jbrowse2/?config=config.json&session=spec-{%22views%22: [{%22type%22:
+        %22DotplotView%22, %22views%22: [{%22assembly%22: %22arahy.BaileyII.gnm1%22},
+        {%22assembly%22: %22araip.K30076.gnm2%22}], %22tracks%22: [%22arahy.BaileyII.gnm1.x.araip.K30076.gnm2.Z93X.paf%22]}]}'
+      description: JBrowse2 Dotplot View
+      name: JBrowse2 arahy.BaileyII.gnm1.x.araip.K30076.gnm2.Z93X.paf.gz
+    - URL: '/tools/jbrowse2/?config=config.json&session=spec-{%22views%22: [{%22type%22:
+        %22DotplotView%22, %22views%22: [{%22assembly%22: %22arahy.BaileyII.gnm1%22},
+        {%22assembly%22: %22arast.V10309.gnm1%22}], %22tracks%22: [%22arahy.BaileyII.gnm1.x.arast.V10309.gnm1.Z93X.paf%22]}]}'
+      description: JBrowse2 Dotplot View
+      name: JBrowse2 arahy.BaileyII.gnm1.x.arast.V10309.gnm1.Z93X.paf.gz
   taxid: 3818
 - abbrev: aradu
   commonName: diploid wild peanut - A-genome
@@ -124,10 +178,6 @@ species:
     by domestication in South America from where it appeared in most part of the world
     by 1600. Arachis duranensis is described further in Bertioli et al., 2016 (doi:10.1038/ng.3517)'
   genus: Arachis
-  resources:
-  - URL: https://data.legumeinfo.org/Arachis/duranensis/
-    description: DataStore dir for Arachis duranensis.
-    name: Dowload at DS
   species: duranensis
   strains:
   - accession: V14167
@@ -141,25 +191,99 @@ species:
     name: V14167
     origin: Argentina, via USDA National Plant Germplasm Repository
     resources:
-    - URL: https://legacy.peanutbase.org/gb2/gbrowse/Aradu1.0
-      description: GBrowse for V14167 assembly 1.0
-      name: Peanutbase Genome Browser (GBrowse)
-    - URL: https://legacy.peanutbase.org/genomes/jbrowse?data=Aradu1.0
-      description: JBrowse for V14167 assembly 1.0
-      name: Peanutbase Genome Browser (JBrowse)
-    - URL: http://www.ncbi.nlm.nih.gov/assembly/GCA_000817695.1/
+    - URL: https://data.legumeinfo.org/Arachis/duranensis/
+      description: DataStore directory for Arachis duranensis.
+      name: Download at Data Store
+    - URL: https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000817695.3/
       description: Genome assembly at NCBI, V14167
       name: Genome assembly at NCBI
-    - URL: '/tools/jbrowse2/?config=config.json&session=spec-{%22views%22: [{%22assembly%22:
-        %22aradu.V14167.gnm1%22, %22loc%22: %22aradu.V14167.gnm1.Aradu.A01:1-107035537%22,
-        %22type%22: %22LinearGenomeView%22}]}'
-      description: JBrowse2 Linear Genome View
-      name: JBrowse2 aradu.V14167.gnm1
     - URL: '/tools/jbrowse2/?config=config.json&session=spec-{%22views%22: [{%22assembly%22:
         %22aradu.V14167.gnm2%22, %22loc%22: %22aradu.V14167.gnm2.chr01:1-106063421%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 aradu.V14167.gnm2
+    - URL: '/tools/jbrowse2/?config=config.json&session=spec-{%22views%22: [{%22assembly%22:
+        %22aradu.V14167.gnm1%22, %22loc%22: %22aradu.V14167.gnm1.Aradu.A01:1-107035537%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 aradu.V14167.gnm1
+    - URL: '/tools/jbrowse2/?config=config.json&session=spec-{%22views%22: [{%22type%22:
+        %22DotplotView%22, %22views%22: [{%22assembly%22: %22aradu.V14167.gnm2%22},
+        {%22assembly%22: %22aradu.K30065.gnm1%22}], %22tracks%22: [%22aradu.V14167.gnm2.x.aradu.K30065.gnm1.96TT.paf%22]}]}'
+      description: JBrowse2 Dotplot View
+      name: JBrowse2 aradu.V14167.gnm2.x.aradu.K30065.gnm1.96TT.paf.gz
+    - URL: '/tools/jbrowse2/?config=config.json&session=spec-{%22views%22: [{%22type%22:
+        %22DotplotView%22, %22views%22: [{%22assembly%22: %22aradu.V14167.gnm2%22},
+        {%22assembly%22: %22araip.K30076.gnm2%22}], %22tracks%22: [%22aradu.V14167.gnm2.x.araip.K30076.gnm2.96TT.paf%22]}]}'
+      description: JBrowse2 Dotplot View
+      name: JBrowse2 aradu.V14167.gnm2.x.araip.K30076.gnm2.96TT.paf.gz
+    - URL: '/tools/jbrowse2/?config=config.json&session=spec-{%22views%22: [{%22type%22:
+        %22DotplotView%22, %22views%22: [{%22assembly%22: %22aradu.V14167.gnm2%22},
+        {%22assembly%22: %22aradu.K30060.gnm1%22}], %22tracks%22: [%22aradu.V14167.gnm2.x.aradu.K30060.gnm1.96TT.paf%22]}]}'
+      description: JBrowse2 Dotplot View
+      name: JBrowse2 aradu.V14167.gnm2.x.aradu.K30060.gnm1.96TT.paf.gz
+    - URL: '/tools/jbrowse2/?config=config.json&session=spec-{%22views%22: [{%22type%22:
+        %22DotplotView%22, %22views%22: [{%22assembly%22: %22aradu.V14167.gnm2%22},
+        {%22assembly%22: %22arast.V10309.gnm1%22}], %22tracks%22: [%22aradu.V14167.gnm2.x.arast.V10309.gnm1.96TT.paf%22]}]}'
+      description: JBrowse2 Dotplot View
+      name: JBrowse2 aradu.V14167.gnm2.x.arast.V10309.gnm1.96TT.paf.gz
+    - URL: '/tools/jbrowse2/?config=config.json&session=spec-{%22views%22: [{%22type%22:
+        %22DotplotView%22, %22views%22: [{%22assembly%22: %22aradu.V14167.gnm2%22},
+        {%22assembly%22: %22araca.K10017.gnm1%22}], %22tracks%22: [%22aradu.V14167.gnm2.x.araca.K10017.gnm1.96TT.paf%22]}]}'
+      description: JBrowse2 Dotplot View
+      name: JBrowse2 aradu.V14167.gnm2.x.araca.K10017.gnm1.96TT.paf.gz
+  - accession: K30060
+    description: Arachis duranensis Krapov. & W.C. Greg is a wild peanut relative
+      native to Argentina, Bolivia, and Paraguay. Identified as one of the diploid
+      ancestors of cultivated tetraploid peanut (A. hypogaea), contributing the A-genome
+      to the tetraploid species. Accession K30060 is one of the closest identified
+      to A. hypogaea. It was originally collected from 1km North of Rio Perico, on
+      highway to Jujuy airport (El Cadillal), Argentina; seed multiplied and maintained
+      by USDA since then. This accession was sequenced with PacBio long reads, with
+      contributions by USDA-ARS and researchers at Mars Inc. and the University of
+      Georgia.
+    identifier: K30060
+    name: K30060
+    origin: Argentina, via USDA National Plant Germplasm Repository
+    resources:
+    - URL: https://data.legumeinfo.org/Arachis/duranensis/
+      description: DataStore directory for Arachis duranensis.
+      name: Download at Data Store
+    - URL: http://www.ncbi.nlm.nih.gov/assembly/GCA_000817695.1/
+      description: Genome assembly at NCBI, K30060
+      name: Genome assembly at NCBI
+    - URL: '/tools/jbrowse2/?config=config.json&session=spec-{%22views%22: [{%22assembly%22:
+        %22aradu.K30060.gnm1%22, %22loc%22: %22aradu.K30060.gnm1.chr01:1-109840503%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 aradu.K30060.gnm1
+    - URL: '/tools/jbrowse2/?config=config.json&session=spec-{%22views%22: [{%22type%22:
+        %22DotplotView%22, %22views%22: [{%22assembly%22: %22aradu.K30060.gnm1%22},
+        {%22assembly%22: %22aradu.K30065.gnm1%22}], %22tracks%22: [%22aradu.K30060.gnm1.x.aradu.K30065.gnm1.LXVF.paf%22]}]}'
+      description: JBrowse2 Dotplot View
+      name: JBrowse2 aradu.K30060.gnm1.x.aradu.K30065.gnm1.LXVF.paf.gz
+  - accession: K30065
+    description: Arachis duranensis is a wild annual plant native to Argentina, Bolivia,
+      and Paraguay. It is thought to be one of the diploid ancestors of cultivated
+      tetraploid peanut. Accession K30065 was collected from northern Argentina, from
+      the Banks of Bio Seco at Hwy 81 bridge, 3km SE of Senda Hachada, Salta. This
+      accession was sequenced with PacBio long reads, with contributions by USDA-ARS
+      and researchers at Mars Inc. and the University of Georgia.
+    identifier: K30065
+    name: K30065
+    origin: Argentina, via USDA National Plant Germplasm Repository
+    resources:
+    - URL: https://data.legumeinfo.org/Arachis/duranensis/
+      description: DataStore directory for Arachis duranensis.
+      name: Download at Data Store
+    - URL: https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_014805325.1/
+      description: Genome assembly at NCBI, K30065
+      name: Genome assembly at NCBI
+    - URL: '/tools/jbrowse2/?config=config.json&session=spec-{%22views%22: [{%22assembly%22:
+        %22aradu.K30065.gnm1%22, %22loc%22: %22aradu.K30065.gnm1.chr01:1-110111402%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 aradu.K30065.gnm1
   taxid: 130453
 - abbrev: araip
   commonName: diploid wild peanut - B genome
@@ -189,12 +313,6 @@ species:
     name: K30076
     origin: Southern Bolivia
     resources:
-    - URL: https://legacy.peanutbase.org/gb2/gbrowse/Araip1.0
-      description: GBrowse for K30076 assembly 1.0
-      name: Peanutbase Genome Browser (GBrowse)
-    - URL: https://legacy.peanutbase.org/genomes/jbrowse?data=Araip1.0
-      description: JBrowse for K30076 assembly 1.0
-      name: Peanutbase Genome Browser (JBrowse)
     - URL: http://www.ncbi.nlm.nih.gov/assembly/GCA_000816755.1/
       description: Genome assembly at NCBI, K30076
       name: Genome assembly at NCBI
@@ -208,6 +326,21 @@ species:
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 araip.K30076.gnm2
+    - URL: '/tools/jbrowse2/?config=config.json&session=spec-{%22views%22: [{%22type%22:
+        %22DotplotView%22, %22views%22: [{%22assembly%22: %22araip.K30076.gnm2%22},
+        {%22assembly%22: %22aradu.K30060.gnm1%22}], %22tracks%22: [%22araip.K30076.gnm2.x.aradu.K30060.gnm1.08ZF.paf%22]}]}'
+      description: JBrowse2 Dotplot View
+      name: JBrowse2 araip.K30076.gnm2.x.aradu.K30060.gnm1.08ZF.paf.gz
+    - URL: '/tools/jbrowse2/?config=config.json&session=spec-{%22views%22: [{%22type%22:
+        %22DotplotView%22, %22views%22: [{%22assembly%22: %22araip.K30076.gnm2%22},
+        {%22assembly%22: %22aradu.K30065.gnm1%22}], %22tracks%22: [%22araip.K30076.gnm2.x.aradu.K30065.gnm1.08ZF.paf%22]}]}'
+      description: JBrowse2 Dotplot View
+      name: JBrowse2 araip.K30076.gnm2.x.aradu.K30065.gnm1.08ZF.paf.gz
+    - URL: '/tools/jbrowse2/?config=config.json&session=spec-{%22views%22: [{%22type%22:
+        %22DotplotView%22, %22views%22: [{%22assembly%22: %22araip.K30076.gnm2%22},
+        {%22assembly%22: %22araca.K10017.gnm1%22}], %22tracks%22: [%22araip.K30076.gnm2.x.araca.K10017.gnm1.08ZF.paf%22]}]}'
+      description: JBrowse2 Dotplot View
+      name: JBrowse2 araip.K30076.gnm2.x.araca.K10017.gnm1.08ZF.paf.gz
   taxid: 130454
 - abbrev: araca
   commonName: Mani silvestre (wild peanut)
