@@ -32,17 +32,24 @@ title: Contact
 
 <hr width="50%">
 
-{% if site.data.personnel %}
-{% assign groups = site.data.personnel | group_by: "category" %}
-{% for group in groups %}
-  <dl>
-    <th>
-      <h4> {{ group.name }} </h4>
-      {% for item in group.items %}
-        <dd><b>{{ item.name }}</b>, {{ item.description }}</dd>
-      {% endfor %}
-    </th>
-  </dl>
-{% endfor %}
-{% endif %}
+PeanutBase personnel
+<ul>
+  <li>Sudhansu Dash, National Center for Genome Resources, Santa Fe, NM</li>
+  <li>Andrew Farmer, National Center for Genome Resources, Santa Fe, NM</li>
+</ul>
 
+Contributors
+<ul>
+  <li>Steven Cannon, USDA-ARS, Ames, Iowa</li>
+  <li>Connor Cameron, National Center for Genome Resources, Santa Fe, NM</li>
+  <li>Evan Lavelle, National Center for Genome Resources, Santa Fe, NM</li>
+  <li>Alan Cleary, National Center for Genome Resources, Santa Fe, NM</li>
+</ul>
+
+Alumni
+<ul>
+  <li>Ethy Cannon, Iowa State University, lead and software developer</li>
+  <li>Sudhansu Dash, National Center for Genome Resources, data curator and developer</li>
+  <li>Paul Otyama (former PhD student), Iowa State University, Ames, IA</li>
+  <li>Roshan Kulkarni (former PhD student), Iowa State University, Ames, IA</li>
+</ul>
