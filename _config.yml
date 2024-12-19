@@ -64,18 +64,6 @@ page_gen:
   dir: "mas"
   name: "page_name"
   title: "name"
-- data: taxon_list
-  template: taxon
-  dir: taxa
-  name: genus
-  index_files: true
-  debug: true
-- data: taxon_list
-  template: collection
-  dir: collections
-  name: genus
-  index_files: true
-  debug: true
 
 style:
     link_color: '#0071B3'
