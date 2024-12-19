@@ -2,63 +2,223 @@
 title: Home
 layout: home
 tools_menu: true
+blog_card: true
 news_card: true
 events_card: true
-twitter_card: true
 ---
-<!-- <span style="color:red;">We have moved to a new technology platform and it is still work in progress. Please alert us with your feedback when something is missing/fails/incomplete. We will treat it as a priority.</span> -->
-<h3 class="uk-header-large">About PeanutBase</h3>
-<p class="uk-text-default">PeanutBase integrates genetic and genomic information across many Arachis species including cultivated peanut. Access this information by selecting a genus under <a href="{{ "/taxa/arachis/" | relative_url }}">TAXA</a>, or a tool or method under <a href="{{ "/tools" | relative_url }}">TOOLS</a>, or select <a href="{{ "https://data.legumeinfo.org/Arachis/" | absolute_url  }}">DOWNLOAD(DataStore)</a>  via the Data Store. You can also explore most of the data via the rich toolsets at <a href="{{ "https://mines.legumeinfo.org/arachismine/begin.do" | absolute_url }}">ArachisMine</a> (also accessed throughout this website).</p>  
-<div class="uk-button-default">
-  <a href="{{ "/taxa/arachis/" | relative_url }}">Taxa</a> 
-  <class="uk-text-default"> - Resources for legumes at various taxonomic levels (species, genera, and the family as a whole): data sets, genome browsers, pan-gene sets, synteny visualizations, sequence and keyword search, etc.</class>
+
+<p>
+  PeanutBase integrates genetic and genomic information across many <i>Arachis</i> species including cultivated peanut. 
+  See <a href="/genomics">GENOMICS</a> to access resources and tools such as browsers, organized by species and accession. 
+  See <a href="/download">DOWNLOAD</a> to access data sets for download. 
+  See <a href="/tools">TOOLS</a> if you have particular tasks in mind. 
+  You can also explore most of the data via the rich toolsets 
+  at <a href="{{ "https://mines.legumeinfo.org/arachismine/begin.do" | absolute_url }}">ArachisMine</a> (also accessed throughout this website). 
+  Please <a href="/about">contact us</a> if you have questions, suggestions, or contributions.
+</p>
+
+<div>
+<div class="search-container">
+  <div class="uk-text-nowrap uk-margin-remove-bottom uk-margin-small-top uk-align-center">
+    <form action="https://mines.legumeinfo.org/arachismine/keywordSearchResults.do" name="search" method="get">
+      <div class="uk-text-left">
+        <label class="uk-text-bold" for="quickSearchInput">Keyword Search</label><br>
+      <input class="uk-input uk-form-small custom-width uk-text-primary uk-text-italic"  type="text" id="quickSearchInput" name="searchTerm"
+      value="&quot;flowering time&quot;" onFocus="clearElement(this);" />
+      <button type="submit" id="quickSearchButton" name="searchSubmit" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button>
+    </div>
+    </form>
+  </div>
+
+  <div class="uk-text-nowrap uk-margin-remove-bottom uk-margin-small-top uk-align-center">
+    <form action="/tools/search/gene.html" name="search" method="get">
+      <div class="uk-text-left">
+        <label class="uk-text-bold" for="identifier">Gene identifier search</label><br>
+        <input class="uk-input uk-form-small custom-width  uk-text-primary uk-text-italic" id="identifier" type="text" name="identifier"
+        value="Aradu.A9H9T" onFocus="clearElement(this);" />
+        <button type="submit" id="quickSearchButton" name="searchSubmit" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="uk-text-nowrap uk-margin-remove-bottom uk-margin-small-top uk-align-center">
+    <form action="https://www.peanutbase.org/tools/gcv/search" name="search" method="get">
+      <div class="uk-text-left">
+        <label class="uk-text-bold" for="q">Synteny viewer</label><br>
+        <input type="hidden" id="sources" name="sources" value="lis">
+        <input class="uk-input uk-form-small custom-width uk-text-primary uk-text-italic" id="q" type="text" name="q"
+        value="Aradu.A9H9T" onFocus="clearElement(this);" />
+        <button type="submit" id="quickSearchButton" name="searchSubmit" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button>
+      </div>
+    </form>
+  </div>
 </div>
 
-<br>
 
-<div class="uk-button-default">
-  <a href="{{ "/tools" | relative_url }}">Tools</a> 
-  <class="uk-text-default"> - Pan-legume tools: sequence and keyword search, gene families and phylogenies, synteny visualization, etc. search, etc.</class>
+<hr>
+
+<div>
+    <div class="uk-child-width-1-2@s uk-child-width-1-2@l uk-child-width-1-3@xl uk-flex-center uk-grid-column-small uk-grid-row-small" uk-grid>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="Data overviews (genomes)">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap cornsilk col3-antiquewhite" type="button" >
+          <a href="https://dscensor.legumeinfo.org/multiqc-demo/genome_main:Arachis"><b>Data overviews (genomes):</b></a>
+        </button>
+      </div>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="Data overviews (annotations)">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap cornsilk col3-antiquewhite" type="button" >
+          <a href="https://dscensor.legumeinfo.org/multiqc-demo/gene_models_main:Arachis"><b>Data overviews (annotations):</b></a>
+        </button>
+      </div>
+
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="Enter one or more sequences and search against soybean genomes, proteins, or transcript sequences.">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap cornsilk col3-cornsilk" type="button" >
+          <a href="/tools/sequenceserver/"><b>Sequence search (BLAST)</b></a>
+        </button>
+      </div>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="Enter one or more sequences and annotate them, view in a phylogenetic tree, etc.">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap cornsilk col3-cornsilk" type="button" >
+          <a href="https://funnotate.legumeinfo.org/"><b>Annotate sequences</b></a>
+        </button>
+      </div>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="Arachis gene search, by ID or descriptor..">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap seashell col3-cornsilk" type="button" >
+          <a href="/tools/search/gene.html"><b>Gene search</b></a>
+        </button>
+      </div>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="Arachis pangenes, or look up corresponding gene IDs between annotations.">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap seashell col3-cornsilk" type="button" >
+          <a href="/tools/translate/"><b>Pangene search / translator</b></a>
+        </button>
+      </div>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="GCViT tool for visualizing variants (SNPs) between selected genotypes.">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap antiquewhite col3-azure" type="button">
+          <a href="/tools/gcvit/" | absolute_url><b>Genotype comparisons</b></a>
+        </button>
+      </div>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="Soybean GWAS features from many studies, against a common framework (ZZbrowse tools).">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap antiquewhite col3-mistyrose" type="button">
+          <a href="https://zzbrowse.legumeinfo.org/?tab=WhGen&twoSpecies=n&datasets=Soybean%20GWAS&chr=Gm01&selected=100000&window=250000&traitsFromOntology=y"><b>GWAS viewer</b></a>
+        </button>
+      </div>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="Soybean QTL features from many studies, against a common framework (ZZbrowse tools).">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap cornsilk col3-mistyrose" type="button">
+          <a href="https://zzbrowse.legumeinfo.org/?tab=WhGen&twoSpecies=n&datasets=Soybean%20QTL&chr=Gm01&selected=100000&window=250000&traitsFromOntology=y" target="_blank"><b>QTL viewer</b></a>
+        </button>
+      </div>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="QTL and/or GWAS features from many studies; compare between soybean and another selected species (slow; please be patient).">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap cornsilk col3-mistyrose" type="button">
+          <a href="https://zzbrowse.legumeinfo.org/?tab=WhGen&twoSpecies=y&datasets=Soybean%20GWAS&chr=Gm01&selected=100000&window=250000&traitsFromOntology=y" target="_blank"><b>cross-species QTL/GWAS</b></a>
+        </button>
+      </div>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="View geographic origins of Glycine accessions in the USDA GRIN-Global system.">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap customgreen col3-cumstomgreen" type="button">
+          <a href="https://germplasm-map.legumeinfo.org/#?zoom=5&maxRecs=1000&taxonQuery=Arachis&traitOverlay=&traitScale=global&country=&geocodedOnly&traitExcludeUnchar=false&limitToMapExtent=false&lat=-11.70&lng=-59.08&mapHeight=350&baseMap=ESRI%20-%20NatGeo%20(default,%20reference%20map)&ne_lat=-4.083452772038619&ne_lng=-29.663085937500004&sw_lat=-19.103648251663632&sw_lng=-88.50585937500001&accessionIdsInclusive=false"><b>Germplasm GIS</b></a>
+        </button>
+      </div>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="View soybean varieties and accessions and their pedigrees.">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap customgreen col3-cumstomgreen" type="button">
+          <a href="/expression"><b>Expression resources</b></a>
+        </button>
+      </div>
+    </div>
 </div>
 
-<br>
-
-<div class="uk-button-default">
-  <a href="{{ "https://data.legumeinfo.org/Arachis/" | absolute_url }}">Download(DataStore)</a> 
-  <class="uk-text-default"> - Browse and download data sets from the LIS Data Store.</class>
-</div>
 <br/>
-<!--  UIKit Accordion Trying  -->
+
 <h3>Cite PeanutBase and the peanut genomes</h3>
 <ul uk-accordion>
     <li>
-	    <a class="uk-accordion-title" href="#"  style="font-size:100%"><b>Cite PeanutBase</b></a>
-        <div class="uk-accordion-content">
-		Sudhansu Dash, Ethalinda K.S. Cannon, Scott R. Kalberer, Andrew D. Farmer and Steven B. Cannon. <b>PeanutBase and Other Bioinformatic Resources for Peanut</b> (<a  href="http://www.sciencedirect.com/science/article/pii/B9781630670382000083"  target="_blank">    Chapter 8</a>). In <b><a href="http://www.sciencedirect.com/science/book/9781630670382" target="_blank">Peanuts Genetics, Process    ing, and Utilization</a></b>, edited by H. Thomas Stalker and Richard F. Wilson, AOCS Press, 2016, Pages 241-252. (ISBN 978163067    0382, doi:10.1016/B978-1-63067-038-2.00008-3).
-	</div>
+      <a class="uk-accordion-title" href="#"  style="font-size:100%"><b>Cite PeanutBase</b></a>
+      <div class="uk-accordion-content">
+        Sudhansu Dash, Ethalinda K.S. Cannon, Scott R. Kalberer, Andrew D. Farmer and Steven B. Cannon. <b>PeanutBase and Other Bioinformatic Resources for Peanut</b> (<a  href="http://www.sciencedirect.com/science/article/pii/B9781630670382000083"  target="_blank">    Chapter 8</a>). In <b><a href="http://www.sciencedirect.com/science/book/9781630670382" target="_blank">Peanuts Genetics, Process    ing, and Utilization</a></b>, edited by H. Thomas Stalker and Richard F. Wilson, AOCS Press, 2016, Pages 241-252. (ISBN 978163067    0382, doi:10.1016/B978-1-63067-038-2.00008-3).
+      </div>
     </li>
     <li>
-	    <a class="uk-accordion-title" href="#"   style="font-size:100%"><b>Cite peanut genome</b></a>
-	<div class="uk-accordion-content">
-	David J. Bertioli, Jerry Jenkins, Josh Clevenger, Olga Dudchenko, Dongying Gao, Guillermo Seijo, Soraya C. M. Leal-Bertioli, Long    hui Ren, Andrew D. Farmer, Manish K. Pandey, Sergio S. Samoluk, Brian Abernathy, Gaurav Agarwal, Carolina Ballén-Taborda, Connor     Cameron, Jacqueline Campbell, Carolina Chavarro, Annapurna Chitikineni, Ye Chu, Sudhansu Dash, Moaine El Baidouri, Baozhu Guo, We    i Huang, Kyung Do Kim, Walid Korani, Sophie Lanciano, Christopher G. Lui, Marie Mirouze, Márcio C. Moretzsohn, Melanie Pham, Jin     Hee Shin, Kenta Shirasawa, Senjuti Sinharoy, Avinash Sreedasyam, Nathan T. Weeks, Xinyou Zhang, Zheng Zheng, Ziqi Sun, Lutz Froen    icke, Erez L. Aiden, Richard Michelmore, Rajeev K. Varshney, C. Corley Holbrook, Ethalinda K. S. Cannon, Brian E. Scheffler, Jane     Grimwood, Peggy Ozias-Akins, Steven B. Cannon, Scott A. Jackson & Jeremy Schmutz. The genome sequence of segmental allotetraploi    d peanut Arachis hypogaea. <a href="https://doi.org/10.25739/hb5x-wx74">Nature Genetics 51, 877–884 (2019)</a>.
-	<br/><br/>
-		Bertioli DJ, Cannon SB, Froenicke L, Huang G, Farmer AD, Cannon EK, Liu X, Gao D, Clevenger J, Dash S, Ren L, Moretzsohn MC, Shir    asawa K, Huang W, Vidigal B, Abernathy B, Chu Y, Niederhuth CE, Umale P, Araújo AC, Kozik A, Do Kim K, Burow MD, Varshney RK, Wan    g X, Zhang X, Barkley N, Guimarães PM, Isobe S, Guo B, Liao B, Stalker HT, Schmitz RJ, Scheffler BE, Leal-Bertioli SC, Xun X, Jac    kson SA, Michelmore R, Ozias-Akins P. The genome sequences of Arachis duranensis and Arachis ipaensis, the diploid ancestors of c    ultivated peanut. <a  href="http://www.nature.com/ng/journal/v48/n4/full/ng.3517.html" target="_blank">Nature Genetics 48:438–446     (2016)</a>. doi: 10.1038/ng.3517.  PubMed PMID: <a  href="http://www.ncbi.nlm.nih.gov/pubmed/26901068"  target="_blank">26901068    </a>.&nbsp;&nbsp;&nbsp;&nbsp;
-	</div>
+      <a class="uk-accordion-title" href="#"   style="font-size:100%"><b>Cite peanut genome</b></a>
+  <div class="uk-accordion-content">
+    David J. Bertioli, Jerry Jenkins, Josh Clevenger, Olga Dudchenko, Dongying Gao, Guillermo Seijo, Soraya C. M. Leal-Bertioli, Long    hui Ren, Andrew D. Farmer, Manish K. Pandey, Sergio S. Samoluk, Brian Abernathy, Gaurav Agarwal, Carolina Ballén-Taborda, Connor     Cameron, Jacqueline Campbell, Carolina Chavarro, Annapurna Chitikineni, Ye Chu, Sudhansu Dash, Moaine El Baidouri, Baozhu Guo, We    i Huang, Kyung Do Kim, Walid Korani, Sophie Lanciano, Christopher G. Lui, Marie Mirouze, Márcio C. Moretzsohn, Melanie Pham, Jin     Hee Shin, Kenta Shirasawa, Senjuti Sinharoy, Avinash Sreedasyam, Nathan T. Weeks, Xinyou Zhang, Zheng Zheng, Ziqi Sun, Lutz Froen    icke, Erez L. Aiden, Richard Michelmore, Rajeev K. Varshney, C. Corley Holbrook, Ethalinda K. S. Cannon, Brian E. Scheffler, Jane     Grimwood, Peggy Ozias-Akins, Steven B. Cannon, Scott A. Jackson & Jeremy Schmutz. The genome sequence of segmental allotetraploi    d peanut Arachis hypogaea. <a href="https://doi.org/10.25739/hb5x-wx74">Nature Genetics 51, 877–884 (2019)</a>.
+    <br/><br/>
+    Bertioli DJ, Cannon SB, Froenicke L, Huang G, Farmer AD, Cannon EK, Liu X, Gao D, Clevenger J, Dash S, Ren L, Moretzsohn MC, Shir    asawa K, Huang W, Vidigal B, Abernathy B, Chu Y, Niederhuth CE, Umale P, Araújo AC, Kozik A, Do Kim K, Burow MD, Varshney RK, Wan    g X, Zhang X, Barkley N, Guimarães PM, Isobe S, Guo B, Liao B, Stalker HT, Schmitz RJ, Scheffler BE, Leal-Bertioli SC, Xun X, Jac    kson SA, Michelmore R, Ozias-Akins P. The genome sequences of Arachis duranensis and Arachis ipaensis, the diploid ancestors of c    ultivated peanut. <a  href="http://www.nature.com/ng/journal/v48/n4/full/ng.3517.html" target="_blank">Nature Genetics 48:438–446     (2016)</a>. doi: 10.1038/ng.3517.  PubMed PMID: <a  href="http://www.ncbi.nlm.nih.gov/pubmed/26901068"  target="_blank">26901068    </a>.&nbsp;&nbsp;&nbsp;&nbsp;
+  </div>
     </li>
 </ul>
 
-<!--    -->
+<div class="uk-hidden@l">
+  {% if page.blog_card %}
+    {% include blog-card.html %}
+  {% endif %}
 
+  {% if page.news_card %}
+    {% include news-card.html %}
+  {% endif %}
 
+  <div class="uk-card uk-card-small uk-card-default uk-margin-bottom">
+    <div class="uk-card-header">
+      <div class="uk-grid-small uk-flex-middle" uk-grid>
+        <div class="uk-width-expand">
+          <h3 class="uk-card-title uk-margin-remove-bottom">EVENTS</h3>
+        </div>
+      </div>
+    </div>
+    <div id="custom-event-card" class="uk-card-body"></div>
+    <div class="uk-card-footer">
+      <a href="/events" class="uk-button uk-button-text">More Events</a>
+    </div>
+  </div>
+</div>
+</div>
 
 <h3>Funding and Development</h3>
-<p>PaeanutBase is funded by The Peanut Research Foundation (TPRF) and in kind support from LIS at (NCGR and USDA-ARS). It is developed and hosted by the National Center for Genome Resources (NCGR) and the USDA-ARS Legume Clade Database group at Ames, IA.</p>
+<p>
+  PeanutBase is funded by The Peanut Research Foundation (TPRF) and in-kind support from LIS at NCGR and USDA-ARS. 
+  It is developed and hosted by the National Center for Genome Resources (NCGR) and the USDA-ARS Legume Clade Database group at Ames, IA.
+</p>
+
 <div class="uk-child-width-expand@s uk-flex uk-flex-middle" uk-grid>
-   <a href="https://peanutresearchfoundation.org/" target="_blank" title="TPRF Website" ><img src="{{ "assets/img/tprf_logo_4clr_rgb.jpg" | relative_url }}" width="150" height="auto" />
-   <a href="https://www.ars.usda.gov/main/main.htm" target="_blank" title="USDA ARS website">
+  <a href="https://peanutresearchfoundation.org/" target="_blank" title="TPRF Website" >
+    <img src="{{ "assets/img/tprf_logo_4clr_rgb.jpg" | relative_url }}" width="150" height="auto" />
+  </a>
+  <a href="https://www.ars.usda.gov/main/main.htm" target="_blank" title="USDA ARS website">
     <img src="{{ "assets/img/usda.svg" | relative_url }}" width="150" height="auto" />
   </a>
   <a href="http://www.ncgr.org/" target="_blank" title="NCGR website">
     <img src="{{ "assets/img/ncgr.png" | relative_url }}" width="200" height="auto" />
   </a>
 </div>
+
+<script>
+    async function clearElement(e) {
+    var value = await document.getElementById('quickSearchInput').value;
+  }
+
+  addEventListener("load", (event) => {
+    buildURLdscensor1()
+    buildURLdscensor2()
+    buildURLdatastore()
+  })
+
+  function buildURLdscensor1(){
+   let urlgenus1 = parturl1.value +''+ document.getElementById('genus1').value.trim();
+        document.getElementById('gotogenusform1').action = urlgenus1;
+  }
+  function buildURLdscensor2(){
+   let urlgenus2 = parturl2.value +''+ document.getElementById('genus2').value.trim();
+        document.getElementById('gotogenusform2').action = urlgenus2;
+  }
+  function buildURLdatastore(){
+   let urlgenus3 = parturl3.value +''+ document.getElementById('genus3').value.trim();
+        document.getElementById('gotogenusform3').action = urlgenus3;
+  }
+</script>
+
+<script type="module">
+  /* render upcoming events to #custom-event-card when screen is smaller than 1200px */
+  import { upcomingEvents } from "lis-events";
+      function displayUpcomingEvents(){
+      document.getElementById('custom-event-card').innerHTML += upcomingEvents.map(event => 
+      `
+      <li style="margin-left: 10px"><a class="uk-text-bold" href=${event.url}>${event.title}</a><div style="margin-left: 20px; color: black">${event.date} - ${event.endDate}</div></li>
+      `).join('');
+      }
+      displayUpcomingEvents()
+</script>
