@@ -6,14 +6,14 @@
   url: "https://data.legumeinfo.org/Arachis/"
 -
   category: "Download / Query"
-  description: "Overviews of data characteristics at LIS: genome assembly sizes, gene counts, BUSCO coverage, etc."
-  name: "DSCensor"
-  url: "https://dscensor.legumeinfo.org/multiqc-demo/genome_main:Arachis"
--
-  category: "Download / Query"
   description: "InterMine interface to <i>Arachis</i> (peanut) species at LIS."
   name: "ArachisMine"
   url: "https://mines.legumeinfo.org/arachismine/begin.do"
+-
+  category: "Download / Query"
+  description: "Overviews of data characteristics at LIS: genome assembly sizes, gene counts, BUSCO coverage, etc."
+  name: "Data Overviews for peanut genomic data"
+  url: "https://dscensor.legumeinfo.org/multiqc-demo/genome_main:Arachis"
 -
   category: "Search"
   description: "Search for genes by identifier or keyword."
@@ -26,7 +26,7 @@
   url: "/tools/search/trait.html"
 - category: "Search"
   description: "Find corresponding gene IDs between accessions"
-  name: "Gene-name translator / pangene search"
+  name: "Gene-name translator"
   url: "/tools/translate/"
 -
   category: "Sequence Search"
@@ -37,7 +37,7 @@
   category: "Sequence Search"
   description: "Annotate your sequences."
   name: "Funnotate"
-  url: "tools/annotate/"
+  url: "/tools/annotate/"
 -
   category: "Visualize / Browse"
   description: "Repository for population scale phenotype data for <i>Arachis</i> (peanut) species."
@@ -48,11 +48,6 @@
   description: "Genetic variation viewer."
   name: "GCViT"
   url: "/tools/gcvit"
--
-  category: "Visualize / Browse"
-  description: "Functional keyword search for gene families."
-  name: "Gene Family Search"
-  url: "https://funnotate.legumeinfo.org/?search=arachis"
 -
   category: "Visualize / Browse"
   description: "Browser for dynamically discovering and viewing genomic synteny across selected species."
@@ -102,7 +97,7 @@
   category: "Genomes"
   description: "High-quality genome assembly for peanut (<i>Arachis hypogaea</i>)."
   name: "The Peanut Genome"
-  url: "/genome"
+  url: "/genomics"
 -
   category: "Genomes"
   description: "Genome assembly for <i>Arachis duranensis</i>."
