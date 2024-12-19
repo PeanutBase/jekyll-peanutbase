@@ -1,0 +1,35 @@
+---
+layout: full-width
+title: Trait Association Search
+web_components: true
+---
+
+
+<lis-trait-association-search-element id="trait-search" genus="Arachis" traitsExample="Seed weight" publicationExample="10.1111/pbi.13311" authorExample="Holbrook"></lis-trait-association-search-element>
+<lis-modal-element modalId="modal">
+  <lis-linkout-element id="linkouts"></lis-linkout-element>
+</lis-modal-element>
+
+
+<script type="module">
+    import {
+      getOrganismsFormDataFunction, 
+      traitSearchFunctionFactory,
+      traitAllModalLinksFactory,
+      allLinkoutsFunction,
+      modalEventToLinkData
+    } from "lis-graphql";
+    const traitSearchElement = document.getElementById('trait-search');
+    traitSearchElement.formDataFunction = getOrganismsFormDataFunction;
+    const searchDataProcessors = traitAllModalLinksFactory('modal');
+    traitSearchElement.searchFunction = traitSearchFunctionFactory(...searchDataProcessors);
+    const linkoutElement = document.getElementById('linkouts');
+    const modal = document.getElementById('modal'); 
+    modal.addEventListener('toggle', (event) => {
+      const [{$el: link}, ...uikitComponents] = event.detail;
+      const {identifier, type} = link.dataset;
+      let linkoutData = {identifier};
+      linkoutElement.linkoutFunction=allLinkoutsFunction;
+      linkoutElement.getLinkouts({type, linkoutData});
+    });
+</script>

@@ -1,4 +1,4 @@
---- 
+---
 -
   category: "MAS traits"
   name: "Late leaf spot (<i>Phaeoisariopsis personata</i> infection)"
@@ -951,4 +951,3 @@ The disease symptoms can be recognized by the appearance of orange pustules on t
   links:
     - "<span style='color: red'>*</span> <a href='https://peanutbase.org/search/qtl?qtl_name=rust'>List of Rust, Puccinia QTLs</a> at PeanutBase"
   page_name: "rust_puccinia_b03a"
-

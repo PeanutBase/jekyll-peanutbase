@@ -153,7 +153,7 @@ The [NCBI annotations](https://www.ncbi.nlm.nih.gov/genome/annotation_euk/proces
 
 **(June 2017) PeanutBase now hosts Peanut Bioscience content**
 
-  - PeanutBase now hosts the contents of the Peanut Biosciences website in new pages for the [IGPI/PGC meetings](https://peanutbase.org/IPGI) and the [AAGB conference](https://peanutbase.org/AAGB).
+  - PeanutBase now hosts the contents of the Peanut Biosciences website in new pages for the [IGPI/PGC meetings](/community/IPGI.html) and the [AAGB conference](https://peanutbase.org/AAGB).
   - Added sequences for the 476 markers described in [Nagy and Cho 2010](https://peanutbase.org/pub/113).
 
 **(May 2017) Peanut downloads in the data store, more marker data**

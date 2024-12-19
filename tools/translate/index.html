@@ -1,0 +1,112 @@
+---
+title: Correspondence
+tools_menu: true
+web_components: true
+layout: full-width
+---
+
+<h2>Gene Model Translation / Correspondence</h2>
+
+<div class="uk-card uk-card-default uk-card-body uk-padding-small">
+<ul uk-accordion>
+  <li>
+    <a class="uk-accordion-title">Background and methods</a>
+      <div class="uk-accordion-content">
+        <p>
+          The set of allelic genes found in multiple individuals in a species or closely related species may be called a "pangene set," 
+          with the gene models that correspond by homology and position being called a pangene. The pangene set calculated 
+          for <i>Arachis</i> accessions at PeanutBase can be used to find corresponding genes across assemblies and annotations.
+        </p>
+        <p>
+          If you have one or several (fewer than 100) genes to look up, use the Pangene Lookup tool below. 
+          This page accepts a list of genes (separated by spaces or line returns).
+        </p>
+
+        <p>If you have hundreds or thousands of genes to look up, you can download a correspondence table for 
+             <a href="https://data.soybase.org/Arachis/GENUS/pangenes/Arachis.pan3.BYQ9/Arachis.pan3.BYQ9.table.tsv.gz">
+               <b>for all pangene accessions</b>.
+             </a>
+         </p>
+
+
+        <p>The method for generating the pangene correspondences is described briefly here:</p>
+
+        <button class="uk-button uk-button-primary uk-button-small uk-margin-small-bottom" type="button" uk-toggle="target: #pandagma-software-package; animation: uk-animation-fade; cls: uk-hidden" onclick="rotateTriangle(this)" value="triangle-icon-method"><div class="uk-flex">details<span id="triangle-icon-method" uk-icon="icon:triangle-right" class="toggle-top-margin"></span></div></button>
+        <div id="pandagma-software-package" class="uk-margin-small uk-hidden">
+        <p>The Pandagma software package (Cannon, Lee, Weeks, Berendzen) was used to identify pangene and gene family sets. 
+           The main steps in Pandagma's pangene process are:</p>
+        <ul>
+          <li> Make pairwise homology comparisons between each annotation set;</li>
+          <li> Filter by provided percent identity and coverage parameters;</li>
+          <li> Identify synteny blocks among all annotation sets;</li>
+          <li> Cluster genes in synteny blocks;</li>
+          <li> Add back remaining genes based on homology, constraining by chromosome (e.g., chr1 genes to chr1 clusters)</li>
+          <li> Add "extra" annotation sets (those with more fragmentary assemblies or questionable annotation quality) to clusters identified above.</li>
+        </ul>  
+
+        <p>The Pandagma package is available at <a href="https://github.com/legumeinfo/pandagma">https://github.com/legumeinfo/pandagma</a>, including the configuration used to calculate the pangene data above.</p>
+
+        <p>If you have extensive programmatic work and need to translate among arbitrary accessions, 
+          the <a href="https://github.com/legumeinfo/pandagma/blob/main/bin/gene_translate.pl">gene_translate.pl</a> 
+          utility in pandagma may be helpful.
+        </p>
+      </div>
+    </div>
+  </li>
+</ul>
+</div>
+<br>
+
+<div class="uk-card uk-card-default uk-card-body uk-padding-small">
+<!-- the custom pangene lookup element -->
+ <ul uk-accordion>
+  <li class="uk-open">
+    <a class="uk-accordion-title">Pangene Lookup</a>
+    <div class="uk-accordion-content uk-padding uk-padding-remove-vertical">
+      <lis-pangene-lookup-element id="pangene-lookup" genesExample="arahy.Tifrunner.gnm2.ann2.Ah03g029200 arahy.Tifrunner.gnm2.ann2.Ah13g048800 arahy.Tifrunner.gnm2.ann2.Ah03g027800"></lis-pangene-lookup-element>
+      <lis-modal-element modalId="modal">
+        <lis-linkout-element id="linkouts"></lis-linkout-element>
+      </lis-modal-element>
+    </div>
+</li>
+</ul>
+</div>
+<!-- set the form data and search functions by property because functions can't be set by attribute -->
+<script type="module">
+
+  import {
+    // pangenes
+    getPangeneLookupFormDataFunction,
+    pangeneDownloadFunction,
+    pangeneLookupFunctionFactory,
+    pangeneAllModalLinksFactory,
+    // linkouts
+    allLinkoutsFunction,
+    // modal
+    modalEventToLinkData
+  } from "lis-graphql";
+
+  // setup the pangene lookup component
+  const pangeneLookupElement = document.getElementById('pangene-lookup');
+  pangeneLookupElement.formDataFunction = getPangeneLookupFormDataFunction;
+  const lookupDataProcessors = pangeneAllModalLinksFactory('modal');
+  pangeneLookupElement.searchFunction =
+    pangeneLookupFunctionFactory(...lookupDataProcessors);
+  pangeneLookupElement.downloadFunction = pangeneDownloadFunction;
+
+  // setup the linkout component
+  const linkoutElement = document.getElementById('linkouts');
+  linkoutElement.linkoutFunction = allLinkoutsFunction;
+
+  // wait for the modal slot to load before adding an event listener
+  window.onload = (event) => {
+    const modal = document.getElementById('modal');
+    modal.addEventListener('toggle', (event) => {
+      const {type, ...linkoutData} = modalEventToLinkData(event);
+      linkoutElement.getLinkouts({type, linkoutData});
+    });
+  };
+
+</script>
+
+<script src="../../assets/js/utils.js"></script>

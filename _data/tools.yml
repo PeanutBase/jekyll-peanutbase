@@ -1,4 +1,4 @@
---- 
+---
 -
   category: "Download / Query"
   description: "Genetic and genomic data for all <i>Arachis</i> (peanut) data held at LIS, for browsing and download."
@@ -6,34 +6,38 @@
   url: "https://data.legumeinfo.org/Arachis/"
 -
   category: "Download / Query"
-  description: "Overviews of data characteristics at LIS: genome assembly sizes, gene counts, BUSCO coverage, etc."
-  name: "DSCensor"
-  url: "https://dscensor.legumeinfo.org/multiqc-demo/genome_main:Arachis"
--
-  category: "Download / Query"
   description: "InterMine interface to <i>Arachis</i> (peanut) species at LIS."
   name: "ArachisMine"
   url: "https://mines.legumeinfo.org/arachismine/begin.do"
 -
+  category: "Download / Query"
+  description: "Overviews of data characteristics at LIS: genome assembly sizes, gene counts, BUSCO coverage, etc."
+  name: "Data Overviews for peanut genomic data"
+  url: "https://dscensor.legumeinfo.org/multiqc-demo/genome_main:Arachis"
+-
   category: "Search"
-  description: "Search ArachisMine for genes by keyword."
+  description: "Search for genes by identifier or keyword."
   name: "Gene Search Tool"
-  url: "/tools/gene-keyword-search.html"
+  url: "/tools/search/gene.html"
 -
   category: "Search"
   description: "Search ArachisMine for traits by keyword."
   name: "Trait Search Tool"
-  url: "/tools/trait-keyword-search.html"
+  url: "/tools/search/trait.html"
+- category: "Search"
+  description: "Find corresponding gene IDs between accessions"
+  name: "Gene-name translator"
+  url: "/tools/translate/"
 -
   category: "Sequence Search"
-  description: Run BLASTs against LIS genomes, CDSes, and proteins.
-  name: "BLAST"
+  description: "Search sequences against genomes, coding sequences, and proteins."
+  name: "PeanutBase SequenceServer BLAST"
   url: "/tools/sequenceserver/"
 -
   category: "Sequence Search"
-  description: Annotate your sequences.
+  description: "Annotate your sequences."
   name: "Funnotate"
-  url: "https://funnotate.legumeinfo.org/"
+  url: "/tools/annotate/"
 -
   category: "Visualize / Browse"
   description: "Repository for population scale phenotype data for <i>Arachis</i> (peanut) species."
@@ -41,20 +45,14 @@
   url: "https://arachispheno.peanutbase.org"
 -
   category: "Visualize / Browse"
-  description: Genetic variation viewer.
+  description: "Genetic variation viewer."
   name: "GCViT"
   url: "/tools/gcvit"
 -
   category: "Visualize / Browse"
-  description: "Functional keyword search for gene families."
-  name: "Gene Family Search"
-  url: "https://funnotate.legumeinfo.org/?search=arachis"
--
-  category: "Visualize / Browse"
   description: "Browser for dynamically discovering and viewing genomic synteny across selected species."
   name: "Genome Context Viewer"
-  #url: "https://gcv.legumeinfo.org"
-  url: "/tools/gcv/instructions"
+  url: "https://www.peanutbase.org/tools/gcv"
 -
   category: "Visualize / Browse"
   description: View GIS location information for <i>Arachis</i> (peanut) accessions.
@@ -69,7 +67,7 @@
   category: "Visualize / Browse"
   description: Genome browser.
   name: "JBrowse"
-  url: "/tools/jbrowse2/?session=share-ucvWMG5NMH&password=HK9zG" 
+  url: "/tools/jbrowse2/?session=share-ucvWMG5NMH&password=HK9zG"
 -
   category: "Visualize / Browse"
   description: "Interactive visualization of multiple GWAS and QTL data sets, using synteny to identify potentially conserved association regions between species."
@@ -90,7 +88,7 @@
   description: A list of traits, compiled from literature, for which MAS has been used.
   name: Marker-Assisted Selection
   url: "/mas"
-- 
+-
   category: "Miscellaneous"
   description: Peanut Core Collection Genotype Phenotype Project.
   name: NIFA PCCGP Project
@@ -99,7 +97,7 @@
   category: "Genomes"
   description: "High-quality genome assembly for peanut (<i>Arachis hypogaea</i>)."
   name: "The Peanut Genome"
-  url: "/genome"
+  url: "/genomics"
 -
   category: "Genomes"
   description: "Genome assembly for <i>Arachis duranensis</i>."
@@ -110,33 +108,3 @@
   description: "Genome assembly for <i>Arachis ipaensis</i>."
   name: "Browse <i>A. ipaensis</i>"
   url: "https://legacy.peanutbase.org/gbrowse_araip1.0"
-#-
-#  category: "Sequence Search"
-#  description: BLAT is a tool for aligning gene/transcript sequences, or highly-similar DNA sequences, to a genome.
-#  name: "BLAT"
-#  url: "https://peanutbase.org/blat"
-#-
-#  category: "Sequence Search"
-#  description: Search the genome browser for keywords.
-#  name: "Keyword Search"
-#  url: "https://peanutbase.org/keyword_search"
-#-
-#  category: "Visualize / Browse"
-#  description: <i>Arachis</i> (peanut) map search.
-#  name: Maps
-#  url: "https://peanutbase.org/chado/featuremap"
-#-
-#  category: "Visualize / Browse"
-#  description: Search for protein domain annotations derived from InterProScan analysis.
-#  name: "Protein Domains"
-#  url: "https://peanutbase.org/search/protein_domains"
-#-
-#  category: "Visualize / Browse"
-#  description: Search for <i>Arachis</i> (peanut) quantitative trait loci.
-#  name: "QTL Search"
-#  url: "https://peanutbase.org/search/qtl"
-#-
-#  category: "Visualize / Browse"
-#  description: Search for genes and build a list.
-#  name: "Gene Search"
-#  url: "https://peanutbase.org/search/gene"

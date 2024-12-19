@@ -1,4 +1,4 @@
---- 
+---
 -
   category: "Gene Expression Resources for <i>Arachis</i> at PeanutBase and elsewhere"
   html: "A page of <a href='https://peanutbase.org/gene_expression'>gene expression resources for Arachis</a>: microarray and high throughput sequencing data sets at NCBI GEO, Array Express and Seq Read Archive (SRA)"
@@ -14,7 +14,6 @@
 -
   category: "Gene Expression Resources for <i>Arachis</i> at PeanutBase and elsewhere"
   html: "<a href='http://bar.utoronto.ca/efp_arachis/cgi-bin/efpWeb.cgi'>The <i>Arachis</i> eFP browser from BAR</a>"
-
 -
   category: "External Resources for <i>Arachis</i>"
   html: "Pollination/Crossing technique in peanut: A <a href='https://drive.google.com/file/d/0B83uedJc4U40eXhIUHplMEEyNk0/view?usp=sharing'>video tutorial</a> by <a href='http://www.clemson.edu/public/rec/peedee/faculty_staff/tallury.html'>Shyam Tallury</a>, Ph.D. (Peanut Breeder, Advanced Plant Technology, Clemson Pee Dee Research & Education Center)"
@@ -33,7 +32,6 @@
 -
   category: "External Resources for <i>Arachis</i>"
   html: "(Also see other links under <a href='/community'>Community</a>)"
-
 -
   category: "Selected genetic and genomic resources for peanut and related legumes"
   html: "<a href='https://www.legumeinfo.org'>Legume Information System (LIS)</a> - genome browsers, maps, sequence search tools"
@@ -95,4 +93,3 @@
 -
   category: "Articles on the peanut genome"
   html: "<a href='http://www.agprofessional.com/news/First-peanut-genome-sequenced-253612731.html'>AG Professional: First peanut genome sequenced</a>"
- 
