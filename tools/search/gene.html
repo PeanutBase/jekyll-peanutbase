@@ -1,0 +1,46 @@
+---
+layout: full-width
+title: Gene Search
+web_components: true
+---
+<!-- the custom gene search element -->
+<lis-gene-search-element id="gene-search" genus="Arachis" identifierExample="Aradu.A9H9T" descriptionExample="flowering locus protein T" familyExample="L_0FWGQD"></lis-gene-search-element>
+<lis-modal-element modalId="modal">
+  <lis-linkout-element id="linkouts"></lis-linkout-element>
+</lis-modal-element>
+
+<script type="module">
+    import {
+    // genes
+    getOrganismsFormDataFunction,
+    geneSearchFunctionFactory,
+    geneAllModalLinksFactory,
+    // linkouts
+    allLinkoutsFunction,
+    // modal
+    modalEventToLinkData
+  } from "lis-graphql";
+  const geneSearchElement = document.getElementById('gene-search');
+  geneSearchElement.formDataFunction = getOrganismsFormDataFunction;
+  const searchDataProcessors = geneAllModalLinksFactory('modal');
+  geneSearchElement.searchFunction =
+    geneSearchFunctionFactory(...searchDataProcessors);
+
+  const linkoutElement = document.getElementById('linkouts');
+  const modal = document.getElementById('modal');
+  modal.addEventListener('toggle', (event) => {
+    const [{$el: link}, ...uikitComponents] = event.detail;
+    const {identifier, type, start, end} = link.dataset;
+    let linkoutData = {};
+    
+    if( start !== undefined && end !== undefined) {
+      linkoutData = {identifier, start: parseInt(start), end: parseInt(end)};
+    } else {
+      linkoutData = {identifier};
+    }
+
+    linkoutElement.linkoutFunction=allLinkoutsFunction;
+    linkoutElement.getLinkouts({type, linkoutData});
+    
+  });
+</script>
