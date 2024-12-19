@@ -31,7 +31,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 #url: "http://dev.lis.ncgr.org:50053" # the base hostname & protocol for your site, e.g. http://example.com
 url: "https://peanutbase.org" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: peanutbaseorg #legumefed
+#twitter_username: peanutbaseorg #legumefed
 github_username: peanutbase #legumeinfo
 #google_analytics_id: "UA-49655154-2"
 google_analytics_id: "G-EP8B1GVJKL"
