@@ -1,20 +1,18 @@
 <ul class="uk-navbar-nav uk-visible@l">
   <li><a href="{{ "/" | relative_url }}">Home</a></li>
   <li>
-  <!--   <a href="{{ "/taxa" | relative_url }}">Taxa</a>  -->
-    <a href="{{ "/taxa/arachis" | relative_url }}">Species</a>
+    <a href="{{ "/genomics" | relative_url }}">Genomics</a>
     {% if site.data.species_list %}
     {% assign spp = site.data.species_list | group_by: "species"  %}
     <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
-      <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
-      {% for sp in spp %}
-        {% for organism in sp.items %}
-          {% if organism.category == "main" %}
-	  <li> <a href="/taxa/{{ organism.genus | downcase }}#{{ organism.species | downcase }}"> {{ organism.species }} {{ organism.description }}</a></li>
-          {% endif %}
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+        {% for genus in genera %}
+          {% for item in genus.items %}
+            {% if item.category == "main" %}
+              <li> <a href="/genomics/{{ item.genus | downcase | relative_url }}"> {{ item.genus }} ({{ item.description }})</a></li>
+            {% endif %}
+          {% endfor %}
         {% endfor %}
-      {% endfor %}
-      <!--<li><a href="{{ "/taxa" | relative_url }}">OTHERS (Many special-focus species and collections)</a></li>-->
       </ul>
     </div>
     {% endif %}
@@ -24,7 +22,7 @@
     {% if site.data.tools %}
     {% assign groups = site.data.tools | group_by: "category" | sort: "name" %}
     <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
-      <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
       {% for group in groups %}
         {% for item in group.items %}
           <li><a href="{{ item.url }}">{{ item.name }}</a></li>
@@ -34,7 +32,9 @@
     </div>
     {% endif %}
   </li>
-  <li><a href="{{ "/download" | relative_url }}">Download</a></li>
+  <li>
+    <a href="{{ "/download" | relative_url }}">Download</a>
+  </li>
   <li><a href="{{ "/community" | relative_url }}">Community</a></li>
   <li><a href="{{ "/external" | relative_url }}">External</a></li>
   <li><a href="{{ "/contact" | relative_url }}">Contact</a></li>
