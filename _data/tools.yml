@@ -15,61 +15,67 @@
   name: "Data Overviews for peanut genomic data"
   url: "https://dscensor.legumeinfo.org/multiqc-demo/genome_main:Arachis"
 -
-  category: "Search"
+  category: "Download / Query"
+  description: "Genome assemblies for peanut and wild relatives"
+  name: "Genomic resources by species"
+  url: "/genomics/index.html"
+-
+  category: " Search"
   description: "Search for genes by identifier or keyword."
   name: "Gene Search Tool"
   url: "/tools/search/gene.html"
 -
-  category: "Search"
+  category: " Search"
   description: "Search ArachisMine for traits by keyword."
   name: "Trait Search Tool"
   url: "/tools/search/trait.html"
-- category: "Search"
+- 
+  category: " Search"
   description: "Find corresponding gene IDs between accessions"
   name: "Gene-name translator"
   url: "/tools/translate/"
 -
-  category: "Sequence Search"
+  category: " Sequence Search"
   description: "Search sequences against genomes, coding sequences, and proteins."
   name: "PeanutBase SequenceServer BLAST"
   url: "/tools/sequenceserver/"
 -
-  category: "Sequence Search"
+  category: " Sequence Search"
   description: "Annotate your sequences."
   name: "Funnotate"
   url: "/tools/annotate/"
 -
-  category: "Visualize / Browse"
+  category: "Browse / Visualize"
+  description: Genome browsers.
+  name: "Genome browsers"
+  url: "/tools/browsers/"
+-
+  category: "Browse / Visualize"
   description: "Repository for population scale phenotype data for <i>Arachis</i> (peanut) species."
   name: "ArachisPheno"
   url: "https://arachispheno.peanutbase.org"
 -
-  category: "Visualize / Browse"
+  category: "Browse / Visualize"
   description: "Genetic variation viewer."
   name: "GCViT"
   url: "/tools/gcvit"
 -
-  category: "Visualize / Browse"
+  category: "Browse / Visualize"
   description: "Browser for dynamically discovering and viewing genomic synteny across selected species."
   name: "Genome Context Viewer"
   url: "https://www.peanutbase.org/tools/gcv"
 -
-  category: "Visualize / Browse"
+  category: "Browse / Visualize"
   description: View GIS location information for <i>Arachis</i> (peanut) accessions.
   name: "Germplasm"
   url: "/germplasm"
 -
-  category: "Visualize / Browse"
+  category: "Browse / Visualize"
   description: Genetic variation viewer.
   name: "Gigwa"
   url: "/gigwa"
 -
-  category: "Visualize / Browse"
-  description: Genome browser.
-  name: "JBrowse"
-  url: "/tools/jbrowse2/?session=share-ucvWMG5NMH&password=HK9zG"
--
-  category: "Visualize / Browse"
+  category: "Browse / Visualize"
   description: "Interactive visualization of multiple GWAS and QTL data sets, using synteny to identify potentially conserved association regions between species."
   name: "ZZBrowse"
   url: "https://zzbrowse.legumeinfo.org/?tab=Manage&twoSpecies=n&datasets=Peanut%20GWAS&chr=Arahy.01&selected=100000&window=250000&traitsFromOntology=y"
@@ -93,18 +99,3 @@
   description: Peanut Core Collection Genotype Phenotype Project.
   name: NIFA PCCGP Project
   url: "/germplasm/nifa_pccgp"
--
-  category: "Genomes"
-  description: "High-quality genome assembly for peanut (<i>Arachis hypogaea</i>)."
-  name: "The Peanut Genome"
-  url: "/genomics"
--
-  category: "Genomes"
-  description: "Genome assembly for <i>Arachis duranensis</i>."
-  name: "Browse <i>A. duranensis</i>"
-  url: "https://legacy.peanutbase.org/gbrowse_aradu1.0"
--
-  category: "Genomes"
-  description: "Genome assembly for <i>Arachis ipaensis</i>."
-  name: "Browse <i>A. ipaensis</i>"
-  url: "https://legacy.peanutbase.org/gbrowse_araip1.0"
