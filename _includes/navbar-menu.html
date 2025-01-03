@@ -18,7 +18,7 @@
   <li>
     <a href="{{ "/tools" | relative_url }}">Tools</a>
     {% if site.data.tools %}
-    {% assign groups = site.data.tools | group_by: "category" | sort %}
+    {% assign groups = site.data.tools | group_by: "category" | sort: "name" %}
     <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
       <ul class="uk-nav uk-navbar-dropdown-nav">
       {% for group in groups %}
