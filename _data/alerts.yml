@@ -1,0 +1,9 @@
+#---
+#-
+#  type: primary
+#  message: "Welcome to PeanutBase. Questions/suggestions? <a href='/contact'><u>contact us</u>.</a>
+#    Click the bell (<a class='tm-no-underline' title='Toggle alerts'
+#    uk-toggle='target: #alerts; animation: uk-animation-fade')<span uk-icon='bell'></span></a>) to toggle this alert."
+#-
+#  type: danger
+#  message: "This website will be down for maintenance from XXX to XXX."

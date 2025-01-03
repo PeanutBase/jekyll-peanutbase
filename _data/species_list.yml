@@ -1,26 +1,26 @@
 ---
 -
   description: "(peanut: cultivated tetraploid)"
-  genus: arachis
+  genus: Arachis
   species: hypogaea
   category: main
 -
   description: "wild: diploid progenitor of A genome"
-  genus: arachis
+  genus: Arachis
   species: duranensis
   category: main
 -
   description: "wild: diploid progenitor of B genome"
-  genus: arachis
+  genus: Arachis
   species: ipaensis
   category: main
 -
   description: "wild: diploid"
-  genus: arachis
+  genus: Arachis
   species: cardenasii
   category: main
 -
   description: "wild: diploid"
-  genus: arachis
+  genus: Arachis
   species: stenosperma
   category: main

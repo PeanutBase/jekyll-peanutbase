@@ -4,7 +4,7 @@
   {% if site.data.tools %}
   <li class="uk-parent">
     <a href="{{ "/tools" | relative_url }}">Tools</a>
-    {% assign groups = site.data.tools | group_by: "category" | sort: "name" %}
+    {% assign groups = site.data.tools | group_by: "category" %}
     <ul class="uk-nav-sub">
       {% for group in groups %}
         {% for item in group.items %}

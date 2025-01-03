@@ -1,10 +1,6 @@
 ---
 -
   category: "Gene Expression Resources for <i>Arachis</i> at PeanutBase and elsewhere"
-  html: "<a href='https://legacy.peanutbase.org/gene_expression' target='_blank'>Gene expression resources for Arachis</a>(<b>at legacy PeanutBase site</b>)"
-  description: "A page of gene expression resources for Arachis microarray and high throughput sequencing data sets at NCBI GEO, Array Express and Seq Read Archive (SRA) compiled at the legacy PeanutBase site."
--
-  category: "Gene Expression Resources for <i>Arachis</i> at PeanutBase and elsewhere"
   html: "<a href='/expression/expr_tissue_Hyp.html'>Gene expression in tissues</a>"
   description: "Comparison of RNA-Seq read counts from 22 Arachis hypogaea tissues against Arachis hypogaea genome. This analysis includes a table of counts of genes with differential expression from each tissue comparison. From differentially expressed genes, there are links to gene sequences, gene annotations, and views of expression in the genome browsers. This is the work of Dr. Peggy Ozias-Akins and colleagues."
 -
