@@ -1,10 +1,24 @@
 <ul class="uk-navbar-nav uk-visible@l">
   <li><a href="{{ "/" | relative_url }}">Home</a></li>
-  <li><a href="{{ "/genomics" | relative_url }}">Genomics</a></li>
+  <li>
+    <a href="{{ "/genomics" | relative_url }}">Genomics</a>
+    {% if site.data.species_list %}
+    {% assign groups = site.data.species_list | group_by: "category" %}
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+      {% for group in groups %}
+        {% for item in group.items %}
+          <li><a href="/genomics#{{ item.species }}">A. {{ item.species }}</a></li>
+        {% endfor %}
+      {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </li>
   <li>
     <a href="{{ "/tools" | relative_url }}">Tools</a>
     {% if site.data.tools %}
-    {% assign groups = site.data.tools | group_by: "category" | sort: "name" %}
+    {% assign groups = site.data.tools | group_by: "category" | sort %}
     <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
       <ul class="uk-nav uk-navbar-dropdown-nav">
       {% for group in groups %}
@@ -16,7 +30,21 @@
     </div>
     {% endif %}
   </li>
-  <li><a href="{{ "/download" | relative_url }}">Download</a></li>
+  <li>
+    <a href="{{ "/download" | relative_url }}">Download</a>
+    {% if site.data.species_list %}
+    {% assign groups = site.data.species_list | group_by: "category" %}
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+      {% for group in groups %}
+        {% for item in group.items %}
+          <li><a href="/genomics#{{ item.species }}">A. {{ item.species }}</a></li>
+        {% endfor %}
+      {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </li>
   <li><a href="{{ "/community" | relative_url }}">Community</a></li>
   <li><a href="{{ "/external" | relative_url }}">External</a></li>
   <li><a href="{{ "/contact" | relative_url }}">Contact</a></li>
