@@ -1,14 +1,8 @@
 <div id="left-menu" class="tm-sidebar-left uk-visible@m">
 
-  {% if page.tools_menu %}
-    {% include tools-menu.html %}
-  {% endif %}
-  {% if page.download_menu %}
-    {% include download-menu.html %}
-  {% endif %}
-  {% if page.genomics_menu %}
-    {% include genomics-menu.html %}
-  {% endif %}
+{% if page.tools_menu %}
+  {% include tools-menu.html %}
+{% endif %}
 
   <!-- dynamically set the top style property of the left menu when the height of the navbar changes -->
   <!-- NOTE: the script tag is nested so it doesn't break a CSS selector -->
