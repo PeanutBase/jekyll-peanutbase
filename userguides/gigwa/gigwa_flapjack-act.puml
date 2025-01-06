@@ -30,7 +30,7 @@ b. Keep files on server;
 :Viewer window opens in new tab:
 - Top of page: Controls
 - Top panel: Genotype at SNP
-- Bottom panel: Flapjack view(visually comapre pattern);
+- Bottom panel: Flapjack view(visually compare pattern);
 
 @enduml
 
