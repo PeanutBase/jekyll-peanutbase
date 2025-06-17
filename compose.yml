@@ -1,7 +1,7 @@
 services:
   serve:
     build: .
-    command: --incremental --profile --trace --host 0.0.0.0
+    command: --profile --trace --host 0.0.0.0
     volumes:
       - ./:/app
     ports:

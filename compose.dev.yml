@@ -1,4 +1,4 @@
 services:
   serve:
-    command: --incremental --profile --trace --host 0.0.0.0 --config _config.yml,_config.dev.yml
+    command: --profile --trace --host 0.0.0.0 --config _config.yml,_config.dev.yml
 
