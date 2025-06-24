@@ -25,6 +25,7 @@ subtitle: Genetic and genomic data to enable more rapid crop improvement in pean
 logo: /assets/img/logo.png
 favicon: /assets/icons/favicon.ico
 email: sdash@ncgr.org
+contactemail: peanutbase@ncgr.org
 description: >- # this means to ignore newlines until "baseurl:"
   A collaborative, community resource to facilitate peanut improvement by integrating
   genetic, genomic, and trait data across Arachis species.
