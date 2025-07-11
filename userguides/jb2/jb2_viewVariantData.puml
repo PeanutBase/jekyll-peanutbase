@@ -1,0 +1,18 @@
+### JBrowse2: Genome structure comparison between two genome@startuml
+@startuml
+  title "Comparison between duranensis and cardenasii genomes" 
+    
+  :New session; 
+  Note: Launch Linear Genome view;
+  :Select Assemblies;
+  Note: (Araca.gnm1, Araca.gnm1.chr01)
+  :Open Track Selector (&#9776;);
+  :Available Tracks (right panel);
+  Note: Choose ‘Arachis duranensis V14167 Annotations’
+  :diversity subgroup tracks;
+  Note: Choose 'aradu1_araip1.gnm1.div.Otyama_Kulkarni_2020.main.vcf'
+  : Navigate to genic region of interest;
+  Note: example: aradu.V14167.gnm1.Aradu.A01:300,002..528,417
+  : Zoom if necessary to visualize features in range;         
+@enduml
+
