@@ -86,9 +86,9 @@
   url: "/expression"
 -
   category: "Miscellaneous"
-  description: Experimental OpenAI chatbot.
-  name: Legumebot
-  url: "https://legumebot.ncgr.org"
+  description: AI generated contents on traits, their loci and markers.
+  name: Traits, Loci & Markers
+  url: "/traits-genes-markers/"
 -
   category: "Miscellaneous"
   description: A list of traits, compiled from literature, for which MAS has been used.
