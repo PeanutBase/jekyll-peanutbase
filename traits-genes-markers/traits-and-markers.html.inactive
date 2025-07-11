@@ -1,0 +1,34 @@
+---
+layout: default
+title: Traits and Markers
+---
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jekyll Dynamic Content</title>
+    <script>
+        function loadContent(page) {
+            fetch(page)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('content').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading content:', error));
+        }
+    </script>
+</head>
+<body>
+<h2>Traits, genes & loci and markers (An Experimental Pilot Page)</h2>
+<span><b>**IMPORTANT NOTE:</b> The content in these pages are AI generated. We advise caution in interpreting the results and conclusions made in these pages. In most cases AI has generated  references associated with major conclusions and they are very useful in drawing our own conclusions from these contents.</span><br/>
+<strong>Traits:</strong><br/>
+    <a href="#" onclick="loadContent('PeanutSeedSizeGenes.html'); return false;">Seed size</a> (<a href="#" onclick="loadContent('PeanutSeedSizeMarkers.html'); return false;">Markers</a>)
+    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#" onclick="loadContent('PeanutFloweringTimeGenes.html'); return false;">Flowering time</a> ( <a href="#" onclick="loadContent('PeanutFloweringTimeMarkers.html'); return false;">Markers</a>)
+
+    <div id="content" style="border: 1px solid #ddd; padding: 10px; margin-top: 20px;">
+        Click a link above to load content here.
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,57 @@
+---
+layout: default
+title: Traits and Markers
+tools_menu: true
+---
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jekyll Dynamic Content</title>
+    <script>
+        function loadContent(page) {
+            fetch(page)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('content').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading content:', error));
+        }
+    </script>
+</head>
+<body>
+<h2>Traits and their associated genes & loci and markers <br/>(An Experimental Resource)</h2>
+<span><b>**IMPORTANT NOTE:</b> The content here are AI generated and therefore, we advise caution in interpreting the results and conclusions made in these pages. In most cases AI has generated references associated with major conclusions and they are very useful in cross checking and drawing our own conclusions from these contents.</span><br/>
+<strong>Traits:</strong><br/>
+{% if site.data.traits_genes_markers %}
+{% assign traits = site.data.traits_genes_markers | sort: "name" %}
+{% for trait in traits %}
+
+ <span style="font-weight: bold;">
+   <a href="#" onclick="document.getElementById('metadata').innerHTML = 'Content created on {{ trait.trait_contents_date }}:'; 
+               loadContent('{{ trait.trait_filename }}'); return false;"> "{{ trait.name  }}" </a> 
+   (<a href="#" onclick="document.getElementById('metadata').innerHTML = 'Content created on {{ trait.marker_contents_date }}:'; 
+               loadContent('{{ trait.marker_filename }}'); return false;">Markers</a>)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+ </span>
+{% endfor %}
+{% endif %}
+
+<br/><span id="metadata"></span>
+    <div id="content" style="border: 1px solid #ddd; padding: 10px; margin-top: 20px;">
+        <span style="color:gray;">Click a link above to load content here.</span>
+    </div>
+
+
+<!--
+<hr/><hr/>
+<strong>Traits:</strong><br/>
+    <a href="#" onclick="loadContent('PeanutSeedSizeGenes.html'); return false;">Seed size</a> (<a href="#" onclick="loadContent('PeanutSeedSizeMarkers.html'); return false;">Markers</a>)
+    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#" onclick="loadContent('PeanutFloweringTimeGenes.html'); return false;">Flowering time</a> ( <a href="#" onclick="loadContent('PeanutFloweringTimeMarkers.html'); return false;">Markers</a>)
+
+    <div id="content" style="border: 1px solid #ddd; padding: 10px; margin-top: 20px;">
+        <span style="color:gray;">Click a link above to load content here.</span>
+    </div>
+-->
+</body>
+</html>
+

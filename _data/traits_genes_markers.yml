@@ -1,0 +1,30 @@
+---
+-
+  category: "Traits-Genes-Markers"
+  name: "Flowering time"
+  trait_contents_date: 2025-05-07
+  trait_filename: "PeanutFloweringTimeGenes.html"
+  marker_contents_date: 2025-04-22
+  marker_filename: "PeanutFloweringTimeMarkers.html"
+-
+  category: "Traits-Genes-Markers"
+  name: "Seed size"
+  trait_contents_date: 2025-04-22
+  trait_filename: "PeanutSeedSizeGenes.html"
+  marker_contents_date: 2025-05-07
+  marker_filename: "PeanutSeedSizeMarkers.html"
+-
+  category: "Traits-Genes-Markers"
+  name: "Oleic acid"
+  trait_contents_date: 2025-06-05
+  trait_filename: "PeanutHighOleicAcidGenes.html"
+  marker_contents_date: 2025-06-05
+  marker_filename: "PeanutHighOleicMarkers.html"
+-
+  category: "Traits-Genes-Markers"
+  name: "Leaf spot"
+  trait_contents_date: 2025-06-11
+  trait_filename: "PeanutLeafSpotResistanceGenes.html"
+  marker_contents_date: 2025-06-11
+  marker_filename: "PeanutLeafSpotResistanceMarkers.html"
+
