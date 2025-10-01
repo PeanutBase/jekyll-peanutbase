@@ -1,7 +1,7 @@
----
--
-  type: danger
-  message:  "<strong>ALERT: Due to the impending government funding lapse, some functionality at allied sites may be inaccessible.</strong>"
+#---
+#-
+#  type: danger
+#  message:  "<strong>ALERT: Due to the impending government funding lapse, some functionality at allied sites may be inaccessible.</strong>"
 #  message: "This website will be down for maintenance from XXX to XXX."
 #-
 #  type: primary
