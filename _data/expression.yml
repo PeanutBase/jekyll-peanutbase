@@ -13,10 +13,6 @@
   description: "NFCore output MultiQC report served as webpage  with interactive graphics."
 -
   category: "Gene Expression Resources for <i>Arachis</i> at PeanutBase and elsewhere"
-  html: "<a href='https://mines.legumeinfo.org/arachismine/report.do?id=37242068' target='_blank'>At ArachisMine</a> (**Temorarily non-functional)"
-  description: "The peanut expression data (<a href='https://doi.org/10.3389/fpls.2016.01446' target='_blank'>Clevenger 2016</a>) after remapping the reads to Tifrunner.gnm2.ann2 has now been integrated into the ArachisMine gene report pages."
--
-  category: "Gene Expression Resources for <i>Arachis</i> at PeanutBase and elsewhere"
   html: "<a href='/expression/expr_tissue_Hyp.html'>Gene expression in tissues</a>"
   description: "(MAPPED TO OLDER GENOME ANNOTATION VERSION) Comparison of RNA-Seq read counts from 22 Arachis hypogaea tissues against Arachis hypogaea genome. This analysis includes a table of counts of genes with differential expression from each tissue comparison. From differentially expressed genes, there are links to gene sequences, gene annotations, and views of expression in the genome browsers. This is the work of Dr. Peggy Ozias-Akins and colleagues."
 -

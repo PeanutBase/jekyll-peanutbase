@@ -6,6 +6,25 @@ tools_menu: true
 
 <h1>Expression Data</h1>
 
+<b>Expression plot in ArachisMine(gene report page)</b> for genes from the Tifrunner.gnm2.ann2 (Prefix for gene ID):
+<form id="gotogeneform" oninput="urlgene = parturl.value +''+ geneid.value.trim(); gotogeneform.action= urlgene; genelink.href= urlgene; genelink.innerHTML = urlgene;" >
+    <input id="parturl" type="hidden" value="https://mines.legumeinfo.org/arachismine/gene:" />
+    geneID (Full exact ID): <input type="text" id="geneid" defaultValue="arahy.Tifrunner.gnm2.ann2.Ah02g090800"  size="50" />
+    <input type="submit"  value="submit"/><br/>
+    <b>Examples:</b> &nbsp;&nbsp;&nbsp; arahy.Tifrunner.gnm2.ann2.Ah02g090800 &nbsp;&nbsp;&nbsp; arahy.Tifrunner.gnm2.ann2.Ah01g375400
+</form> 
+<font style="color:gray">URL for the gene:</font> <a id="genelink" ></a> <br/>
+<hr/>
+<b>Expression plot in the CoNekT Tool</b> for genes from the Tifrunner.gnm2.ann2 (Prefix for gene ID):
+<form id="gotogeneform2" oninput="urlgene2 = parturl2.value +''+ geneid2.value.trim(); gotogeneform2.action= urlgene2; genelink2.href= urlgene2; genelink2.innerHTML = urlgene2;" >
+    <input id="parturl2" type="hidden" value="https://conekt.legumeinfo.org/sequence/find_forLIS/" />
+    geneID (Full exact ID): <input type="text" id="geneid2" defaultValue="arahy.Tifrunner.gnm2.ann2.Ah02g090800"  size="50" />
+    <input type="submit"  value="submit"/><br/>
+    <b>Examples:</b> &nbsp;&nbsp;&nbsp; arahy.Tifrunner.gnm2.ann2.Ah02g090800 &nbsp;&nbsp;&nbsp; arahy.Tifrunner.gnm2.ann2.Ah01g375400
+</form> 
+<font style="color:gray">URL for the gene:</font> <a id="genelink2" ></a> <br/>
+<hr/>
+
 {% if site.data.expression %}
 {% assign groups = site.data.expression | group_by: "category" %}
 {% for group in groups %}
